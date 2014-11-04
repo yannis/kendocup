@@ -1,0 +1,3 @@
+module Kendocup
+  VERSION = "0.0.1"
+end
