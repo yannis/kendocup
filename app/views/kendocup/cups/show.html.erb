@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Start on:</strong>
+  <%= @cup.start_on %>
+</p>
+
+<p>
+  <strong>End on:</strong>
+  <%= @cup.end_on %>
+</p>
+
+<p>
+  <strong>Deadline:</strong>
+  <%= @cup.deadline %>
+</p>
+
+<%= link_to 'Edit', edit_cup_path(@cup) %> |
+<%= link_to 'Back', cups_path %>

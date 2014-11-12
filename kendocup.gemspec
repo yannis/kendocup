@@ -7,21 +7,30 @@ require "kendocup/version"
 Gem::Specification.new do |s|
   s.name        = "kendocup"
   s.version     = Kendocup::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Kendocup."
-  s.description = "TODO: Description of Kendocup."
+  s.authors     = ["Yannis Jaquet"]
+  s.email       = ["yannisjaquet@mac.com"]
+  s.homepage    = "http://github.com/yannis/kendocup"
+  s.summary     = "Kendo tournament functionality"
+  s.description = "Kendo tournament functionality"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
 
-  s.test_files = Dir["spec/**/*"]
-
   s.add_dependency "rails", "~> 4.1.7"
+  s.add_dependency 'devise'
+  s.add_dependency 'cancancan'
+  s.add_dependency 'omniauth-twitter'
+  s.add_dependency 'omniauth-facebook'
+  s.add_dependency 'omniauth-github'
+  s.add_dependency 'omniauth-google'
+
+  s.test_files = Dir["spec/**/*"]
 
   s.add_development_dependency "pg"
   s.add_development_dependency 'rspec-rails'
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'factory_girl_rails'
+
+  s.add_development_dependency 'shoulda-matchers'
+  s.add_development_dependency 'faker'
 end
