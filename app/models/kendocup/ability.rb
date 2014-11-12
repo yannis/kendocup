@@ -1,4 +1,4 @@
-class Ability
+class KendocupAbility
   include CanCan::Ability
 
   def initialize(user)

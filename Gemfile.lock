@@ -135,6 +135,10 @@ GEM
     rake (10.3.2)
     responders (1.1.2)
       railties (>= 3.2, < 4.2)
+    rspec-activemodel-mocks (1.0.1)
+      activemodel (>= 3.0)
+      activesupport (>= 3.0)
+      rspec-mocks (>= 2.99, < 4.0)
     rspec-core (3.1.7)
       rspec-support (~> 3.1.0)
     rspec-expectations (3.1.2)
@@ -181,5 +185,6 @@ DEPENDENCIES
   faker
   kendocup!
   pg
+  rspec-activemodel-mocks
   rspec-rails
   shoulda-matchers

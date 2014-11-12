@@ -14,33 +14,32 @@ module Kendocup
 
     def self.empty
       includes(:participations).
-      where(participations: {team_id: nil} )
+      where(kendocup_participations: {team_id: nil})
     end
 
     def self.incomplete
       joins(:participations).
-      group('teams.id').
-      having('COUNT(participations.id) < 5')
+      group('kendocup_teams.id').
+      having('COUNT(kendocup_participations.id) < 5')
     end
 
     def self.complete
       joins(:participations).
-      group('teams.id').
-      having('COUNT(participations.id) >= 5')
+      group('kendocup_teams.id').
+      having('COUNT(kendocup_participations.id) >= 5')
     end
 
     def self.valid
       joins(:participations).
-      group('teams.id').
-      having('COUNT(participations.id) >= 3')
+      group('kendocup_teams.id').
+      having('COUNT(kendocup_participations.id) >= 3')
     end
 
     def self.invalid
       joins(:participations).
-      group('teams.id').
-      having('COUNT(participations.id) < 3')
+      group('kendocup_teams.id').
+      having('COUNT(kendocup_participations.id) < 3')
     end
-
 
     def self.tree
       Tree.new(self)
@@ -80,7 +79,7 @@ module Kendocup
       name.mb_chars.normalize(:kd).gsub(/[^\x00-\x7F]/n,'').upcase.to_s
     end
 
-    protected
+  protected
 
     def number_of_participations
       errors.add(:participations, I18n.t('activerecord.errors.models.team.participations')) if self.participations.count > 6

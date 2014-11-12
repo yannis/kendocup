@@ -44,7 +44,7 @@ module Kendocup
     end
 
     def registered_for_cup?(cup)
-      cup.present? && cup.kenshis.where("kenshis.first_name = ? AND kenshis.last_name = ?", first_name, last_name).present?
+      cup.present? && cup.kenshis.where("kendocup_kenshis.first_name = ? AND kendocup_kenshis.last_name = ?", first_name, last_name).present?
     end
 
     def has_kenshis?
