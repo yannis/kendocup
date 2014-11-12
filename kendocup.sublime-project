@@ -2,7 +2,9 @@
 	"folders":
 	[
 		{
-			"path": "/Users/yannis/railsapps/kendocup"
+			"path": "/Users/yannis/railsapps/kendocup",
+      "folder_exclude_patterns": ["bundle", "log", ".sass-cache", ".yardoc", "coverage", "tmp"],
+      "file_exclude_patterns": ["*.sublime-workspace*"]
 		}
 	]
 }

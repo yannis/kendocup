@@ -5,6 +5,7 @@ require 'rspec/rails'
 # require 'rspec/autorun'
 require 'shoulda/matchers'
 require 'factory_girl_rails'
+require 'rspec/active_model/mocks'
 require 'faker'
 Rails.backtrace_cleaner.remove_silencers!
 # Load support files
@@ -21,6 +22,9 @@ RSpec.configure do |config|
   config.order = "random"
   config.run_all_when_everything_filtered = true
   config.filter_run :focus
+
+
+  config.before(:each) { @routes = Kendocup::Engine.routes }
 
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false

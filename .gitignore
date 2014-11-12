@@ -1,6 +1,5 @@
 .DS_Store
-.bundle/
-bundle/
+vendor/bundle/
 log/*.log
 pkg/
 spec/dummy/db/*.sqlite3
