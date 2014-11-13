@@ -1,0 +1,11 @@
+- if target.errors.any?
+  .alert.alert-danger.fade.in
+    %h2
+      - if target.errors.size > 1
+        = t("errors.template.header.other", count: target.errors.count, model: target.class.to_s.downcase)
+      - else
+        = t("errors.template.header.other", count: target.errors.count, model: target.class.to_s.downcase)
+    %ul
+      -  target.errors.full_messages.each do |msg|
+        %li
+          = msg

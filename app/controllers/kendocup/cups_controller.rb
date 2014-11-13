@@ -5,7 +5,7 @@ module Kendocup
 
     def show
       @grouped_events = @cup.events.order(:start_on).group_by{|e| e.start_on.to_date}
-      @headline = @cup.headlines.shown.order("kendo_cup.headlines.created_at DESC").first
+      @headline = @cup.headlines.shown.order("kendocup_headlines.created_at DESC").first
     end
   end
 end

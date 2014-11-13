@@ -14,8 +14,6 @@ module Kendocup
       describe "when GET to :show for cup1," do
         before {  get :show, {year: Date.current.year, :use_route => :cups} }
 
-        p Kendocup::Engine.routes
-
         it {response.should be_success}
         it {assigns(:cup).should_not be_nil}
         it {response.should render_template(:show)}

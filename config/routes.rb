@@ -4,7 +4,6 @@ Kendocup::Engine.routes.draw do
 
   devise_for :users, class_name: "Kendocup::User", module: :devise, controllers: {
       registrations: "users/registrations",
-      # skip: :omniauth_callbacks
       omniauth_callbacks: "users/omniauth_callbacks"
     }
 
@@ -14,9 +13,6 @@ Kendocup::Engine.routes.draw do
       resources :cups, only: :show
       resources :headlines, only: [:index, :show]
       resources :kenshis do
-        # collection do
-        #   match 'category/:category/', :to => :index
-        # end
         get :autocomplete_kenshi_club, on: :collection
       end
 
@@ -35,7 +31,6 @@ Kendocup::Engine.routes.draw do
 
       get 'auth/:provider/callback', to: 'sessions#create'
       get 'auth/failure', to: redirect('/')
-      # match 'signout', to: 'devise/sessions#destroy', as: 'signout'
       devise_scope :user do
         get 'signout', to: 'devise/sessions#destroy', as: 'signout'
       end

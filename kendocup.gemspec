@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "~> 4.1.7"
   s.add_dependency 'devise'
   s.add_dependency 'cancancan'
+  s.add_dependency 'haml-rails'
   s.add_dependency 'omniauth-twitter'
   s.add_dependency 'omniauth-facebook'
   s.add_dependency 'omniauth-github'
@@ -31,7 +32,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'factory_girl_rails'
   s.add_development_dependency 'rspec-activemodel-mocks'
-
   s.add_development_dependency 'shoulda-matchers'
   s.add_development_dependency 'faker'
+  s.add_development_dependency 'timecop'
 end

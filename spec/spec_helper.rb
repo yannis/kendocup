@@ -7,6 +7,7 @@ require 'shoulda/matchers'
 require 'factory_girl_rails'
 require 'rspec/active_model/mocks'
 require 'faker'
+require 'timecop'
 Rails.backtrace_cleaner.remove_silencers!
 # Load support files
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
@@ -33,6 +34,23 @@ RSpec.configure do |config|
   # The different available types are documented in the features, such as in
   # https://relishapp.com/rspec/rspec-rails/docs
   config.infer_spec_type_from_file_location!
+
+
+  def should_be_asked_to_sign_in
+    it {response.should redirect_to(new_user_session_path)}
+    it {flash[:alert].should =~ /Vous devez vous connecter ou vous inscrire pour continuer/}
+  end
+
+  def should_not_be_authorized
+    it {expect(response.status).to eq 401}
+    it {expect(flash[:alert]).to match /You are not authorized to access this page/ }
+  end
+
+  def deadline_passed
+    it {response.should redirect_to root_path(locale: I18n.locale)}
+    it {flash[:alert].should eq I18n.t("kenshis.deadline_passed", email: 'info@kendo-geneve.ch')}
+  end
+
 end
 
 # Checks for pending migrations before tests are run.
