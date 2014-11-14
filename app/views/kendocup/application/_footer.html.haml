@@ -1,5 +1,7 @@
 %footer#footer
   %p
+    = link_to 'admin', admin_root_path
+  %p
     = t 'layout.footer.cright'
     = link_to "Shung Do Kwan Budo", 'http://www.sdkbudo.ch/'
     – Copyright &copy;
@@ -17,6 +19,3 @@
     = link_to "<i class='icon-facebook-sign'></i>".html_safe, "https://www.facebook.com/kendogeneve", id: 'facebook_icon'
     –
     = link_to "<i class='icon-flickr'></i>".html_safe, "https://www.flickr.com/photos/8469782@N03", id: 'flickr_icon'
-    - if user_signed_in? && current_user.admin?
-      –
-      = link_to "admin", "/admin"

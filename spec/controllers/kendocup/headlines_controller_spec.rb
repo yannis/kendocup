@@ -21,11 +21,11 @@ module Kendocup
             get :index, cup_id: cup.to_param
           end
 
-          it {response.should be_success}
-          it {assigns(:headlines).should_not be_nil}
-          it {response.should render_template(:index)}
+          it {expect(response).to be_success}
+          it {expect(assigns(:headlines)).to_not be_nil}
+          it {expect(response).to render_template(:index)}
           it {expect(assigns(:headlines)).to eq [headline1, headline2, headline3]}
-          it {flash.should be_empty}
+          it {expect(flash).to be_empty}
         end
 
         describe "when GET to :show for headline1.id," do
@@ -33,10 +33,10 @@ module Kendocup
             get :show, id: headline1.to_param
           end
 
-          it {response.should be_success}
-          it {assigns(:headline).should == headline1}
-          it {response.should render_template(:show)}
-          it {flash.should be_empty}
+          it {expect(response).to be_success}
+          it {expect(assigns(:headline)).to eq headline1}
+          it {expect(response).to render_template(:show)}
+          it {expect(flash).to be_empty}
         end
       end
 
@@ -49,11 +49,11 @@ module Kendocup
             get :index, cup_id: cup.to_param
           end
 
-          it{ basic_user.should be_valid_verbose}
-          it {assigns(:headlines).should_not be_nil}
-          it {response.should render_template(:index)}
-          it {assigns(:headlines).should =~ [headline1, headline2, headline3]}
-          it {flash.should be_empty}
+          it {expect(basic_user).to be_valid_verbose}
+          it {expect(assigns(:headlines)).to_not be_nil}
+          it {expect(response).to render_template(:index)}
+          it {expect(assigns(:headlines)).to match_array [headline1, headline2, headline3]}
+          it {expect(flash).to be_empty}
         end
 
         describe "when GET to :show for headline1.id," do
@@ -61,10 +61,10 @@ module Kendocup
             get :show, id: headline1.to_param
           end
 
-          it {response.should be_success}
-          it {assigns(:headline).should == headline1}
-          it {response.should render_template(:show)}
-          it {flash.should be_empty}
+          it {expect(response).to be_success}
+          it {expect(assigns(:headline)).to eq headline1}
+          it {expect(response).to render_template(:show)}
+          it {expect(flash).to be_empty}
         end
       end
     end

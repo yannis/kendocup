@@ -1,4 +1,3 @@
-# encoding: utf-8
 require 'spec_helper'
 module Kendocup
   RSpec.describe KenshisController, type: :controller do

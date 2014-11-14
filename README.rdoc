@@ -1,3 +1,7 @@
 = Kendocup
 
-This project rocks and uses MIT-LICENSE.
+A Rails Engine for organizing Kendo tournaments.
+
+It uses
+* Activeadmin
+* Figaro

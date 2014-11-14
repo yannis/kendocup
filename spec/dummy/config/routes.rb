@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
 
-  mount Kendocup::Engine => "/kendocup"
+  mount Kendocup::Engine => "/cups"
 end

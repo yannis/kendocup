@@ -41,6 +41,6 @@ Kendocup::Engine.routes.draw do
     get '/', to: redirect("#{Date.current.year}/#{I18n.locale}")
   end
 
-  # ActiveAdmin.routes(self)
+  ActiveAdmin.routes(self)
 
 end
