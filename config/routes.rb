@@ -2,10 +2,7 @@ Kendocup::Engine.routes.draw do
   # devise_for :users, class_name: "Kendocup::User", module: :devise
   # resources :cups
 
-  devise_for :users, class_name: "Kendocup::User", module: :devise, controllers: {
-      registrations: "users/registrations",
-      omniauth_callbacks: "users/omniauth_callbacks"
-    }
+  devise_for :users, class_name: "Kendocup::User", module: :devise
 
   scope "(:year)", year: /2014|2015/ do |year|
     scope "(:locale)", locale: /fr|en/ do |locale|

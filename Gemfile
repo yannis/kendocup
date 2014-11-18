@@ -13,9 +13,7 @@ gemspec
 # To use debugger
 # gem 'debugger'
 
-
-# gem 'activeadmin', github: 'activeadmin'
-gem 'activeadmin', :git => "git://github.com/activeadmin/activeadmin.git"
-gem 'polyamorous', github: 'activerecord-hackery/polyamorous'
-gem 'ransack',     github: 'activerecord-hackery/ransack'
-gem 'formtastic',  github: 'justinfrench/formtastic'
+gem 'activeadmin', github: "activeadmin/activeadmin"
+# gem 'polyamorous', github: 'activerecord-hackery/polyamorous'
+# gem 'ransack',     github: 'activerecord-hackery/ransack'
+# gem 'formtastic'

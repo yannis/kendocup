@@ -12,7 +12,8 @@ Rails.backtrace_cleaner.remove_silencers!
 # Load support files
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
 
-
+# Faker::Config.locale = 'fr'
+I18n.reload!
 
 # ActiveRecord::Migration.maintain_test_schema! if defined?(ActiveRecord::Migration)
 
@@ -23,7 +24,6 @@ RSpec.configure do |config|
   config.order = "random"
   config.run_all_when_everything_filtered = true
   config.filter_run :focus
-
 
   config.before(:each) { @routes = Kendocup::Engine.routes }
 
