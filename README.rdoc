@@ -1,7 +1,0 @@
-= Kendocup
-
-A Rails Engine for organizing Kendo tournaments.
-
-It uses
-* Activeadmin
-* Figaro

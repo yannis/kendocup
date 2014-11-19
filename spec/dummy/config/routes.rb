@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
 
-  mount Kendocup::Engine => "/cups"
+
+  scope ":locale", locale: /fr|en/ do |locale|
+    mount Kendocup::Engine => "/kendocups", as: "kendocup"
+  end
+
+  ActiveAdmin.routes(self)
 end

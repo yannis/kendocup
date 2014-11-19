@@ -3,7 +3,7 @@ ActiveAdmin.register Kendocup::Product do
 
   index do
     column :name_en do |product|
-      link_to product.name, [:admin, product]
+      link_to product.name, [:admin, :kendocup, product]
     end
     column :cup
     column :event

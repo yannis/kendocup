@@ -18,7 +18,7 @@ ActiveAdmin.register Kendocup::Kenshi do
       "#{kenshi.user.full_name} (#{kenshi.user.email})"
     end
     actions do |kenshi|
-      link_to "PDF", pdf_admin_kenshi_path(kenshi)
+      link_to "PDF", pdf_admin_kendocup_kenshi_path(kenshi)
     end
   end
 
@@ -86,11 +86,11 @@ ActiveAdmin.register Kendocup::Kenshi do
   end
 
   action_item only: :show do
-    link_to "PDF", pdf_admin_kenshi_path(kenshi)
+    link_to "PDF", pdf_admin_kendocup_kenshi_path(kenshi)
   end
 
   action_item only: :index do
-    link_to("PDF", pdfs_admin_kenshis_path)
+    link_to("PDF", pdfs_admin_kendocup_kenshis_path)
   end
 
   member_action :pdf do

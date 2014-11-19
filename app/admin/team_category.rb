@@ -61,7 +61,7 @@ ActiveAdmin.register Kendocup::TeamCategory do
 
   end
   action_item only: :show do
-    link_to "PDF", pdf_admin_team_category_path(team_category)
+    link_to "PDF", pdf_admin_team_kendocup_category_path(team_category)
   end
 
   # collection_action :pdfs do
@@ -84,6 +84,6 @@ ActiveAdmin.register Kendocup::TeamCategory do
                           page_size: 'A4'
   end
   action_item do
-    link_to("Match sheet", team_match_sheet_admin_team_categories_path)
+    link_to("Match sheet", team_match_sheet_admin_kendocup_team_categories_path)
   end
 end
