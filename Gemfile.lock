@@ -29,8 +29,8 @@ PATH
       omniauth-twitter
       prawn
       prawn-table
-      rails (~> 4.1.7)
-      sass-rails (~> 4.0.4)
+      rails (~> 4.1)
+      sass-rails (~> 4.0)
 
 GEM
   remote: https://rubygems.org/

@@ -16,8 +16,8 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
 
-  s.add_dependency "rails", "~> 4.1.7"
-  s.add_dependency "sass-rails", "~> 4.0.4"
+  s.add_dependency "rails", "~> 4.1"
+  s.add_dependency "sass-rails", "~> 4.0"
   s.add_dependency 'devise'
   s.add_dependency 'cancancan'
   s.add_dependency 'haml-rails'
