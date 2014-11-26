@@ -29,9 +29,9 @@ fr:
       details: "Détails"
   activerecord:
     models:
-      user: utilisateur
+      kendocup/user: utilisateur
     attributes:
-      user:
+      kendocup/user:
         email: "Email"
         first_name: "Prénom"
         last_name: 'Nom'

@@ -36,7 +36,7 @@ module Kendocup
           it "change Purchase.count by -1" do
             (purchase_count - Purchase.count).should eql 1
           end
-          it {should set_the_flash.to('Extra détruit avec succès')}
+          it {should set_the_flash.to('Extra successfully removed')}
           it {response.should redirect_to(user_path(user))}
         end
 

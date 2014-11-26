@@ -1,4 +1,4 @@
-ActiveAdmin.register Kendocup::Headline do
+ActiveAdmin.register Kendocup::Headline, as: "Headline" do
 
 
   permit_params :title_en, :title_fr, :content_fr, :content_en, :shown, :cup_id

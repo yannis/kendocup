@@ -1,4 +1,4 @@
-ActiveAdmin.register Kendocup::Cup do
+ActiveAdmin.register Kendocup::Cup, as: "Cup" do
 
   permit_params :year, :start_on, :end_on, :deadline, :adult_fees_chf, :adult_fees_eur, :junior_fees_chf, :junior_fees_eur
 
@@ -127,7 +127,7 @@ ActiveAdmin.register Kendocup::Cup do
 
   end
 
-  action_item only: :show do
+  action_item :kenshi_list, only: :show do
     link_to('Kenshis list', params.merge(action: :download_kenshi_list))
   end
 

@@ -1,4 +1,4 @@
-ActiveAdmin.register Kendocup::Club do
+ActiveAdmin.register Kendocup::Club, as: "Club" do
 
   permit_params :name
 end

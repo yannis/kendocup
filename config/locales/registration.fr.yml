@@ -1,7 +1,7 @@
 fr:
   activerecord:
     attributes:
-      registration:
+      kendocup/registration:
         first_name: "Prénom"
         last_name: 'Nom'
         dob: 'Date de naissance'
@@ -10,7 +10,7 @@ fr:
         male: Homme
     errors:
       models:
-        registration:
+        kendocup/registration:
           attributes:
             dob:
               blank: 'requise pour les juniors'

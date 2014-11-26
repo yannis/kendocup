@@ -1,4 +1,4 @@
-ActiveAdmin.register Kendocup::IndividualCategory do
+ActiveAdmin.register Kendocup::IndividualCategory, as: "IndividualCategory" do
 
   permit_params :name, :pool_size, :out_of_pool, :min_age, :max_age, :description_en, :description_fr, :cup_id
 
@@ -94,7 +94,7 @@ ActiveAdmin.register Kendocup::IndividualCategory do
     flash[:notice] = "Pool smartly reset"
     redirect_to action: 'show'
   end
-  action_item only: :show do
+  action_item :smart_pool_reset, only: :show do
     link_to "Smart pool reset", reset_smart_pools_admin_kendocup_individual_category_path(individual_category), confirm: "Are you sure?"
   end
 
@@ -108,7 +108,7 @@ ActiveAdmin.register Kendocup::IndividualCategory do
                           page_size: 'A4'
 
   end
-  action_item only: :show do
+  action_item :pdf, only: :show do
     link_to "PDF", pdf_admin_kendocup_individual_category_path(individual_category)
   end
 
@@ -121,7 +121,7 @@ ActiveAdmin.register Kendocup::IndividualCategory do
                           disposition: "inline",
                           page_size: 'A4'
   end
-  action_item only: :show do
+  action_item :pdf_recap, only: :show do
     link_to "PDF Recap", pdf_recap_admin_kendocup_individual_category_path(individual_category)
   end
 
@@ -143,7 +143,7 @@ ActiveAdmin.register Kendocup::IndividualCategory do
                           page_size: 'A4'
   end
 
-  action_item only: :show do
+  action_item :match_sheet, only: :show do
     [link_to("Pool match sheet", pool_sheets_admin_kendocup_individual_category_path(individual_category)),
         link_to("Match sheets", sheet_admin_kendocup_individual_category_path(individual_category))].join(" ").html_safe
   end
@@ -163,7 +163,7 @@ ActiveAdmin.register Kendocup::IndividualCategory do
     send_data csv, type: 'text/csv; charset=utf-8; header=present', disposition: "attachment; filename=individual_category_#{@individual_category.name.parameterize}_kenshis_list_#{Time.current.to_s(:flat)}.csv"
   end
 
-  action_item only: :show do
+  action_item :kenshi_list, only: :show do
     link_to('Kenshis list', params.merge(action: :download_kenshi_list))
   end
 end

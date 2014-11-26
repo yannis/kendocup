@@ -38,7 +38,7 @@ RSpec.configure do |config|
 
   def should_be_asked_to_sign_in
     it {response.should redirect_to(new_user_session_path)}
-    it {flash[:alert].should =~ /Vous devez vous connecter ou vous inscrire pour continuer/}
+    it {flash[:alert].should =~ /You need to sign in or sign up before continuing/}
   end
 
   def should_not_be_authorized

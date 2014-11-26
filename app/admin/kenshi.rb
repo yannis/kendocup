@@ -1,4 +1,4 @@
-ActiveAdmin.register Kendocup::Kenshi do
+ActiveAdmin.register Kendocup::Kenshi, as: "Kenshi" do
 
   permit_params :id, :user, :cup_id, :last_name, :first_name, :female, :email, :dob, :email, :grade, :club_id, :user_id, purchases_attributes: [:_destroy, :product_id, :id], participations_attributes: [:id, :category_individual, :category_team, :_destroy]
 
@@ -85,11 +85,11 @@ ActiveAdmin.register Kendocup::Kenshi do
     f.actions
   end
 
-  action_item only: :show do
+  action_item :pdf_show, only: :show do
     link_to "PDF", pdf_admin_kendocup_kenshi_path(kenshi)
   end
 
-  action_item only: :index do
+  action_item :pdf_index, only: :index do
     link_to("PDF", pdfs_admin_kendocup_kenshis_path)
   end
 

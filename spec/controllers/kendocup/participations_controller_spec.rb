@@ -36,7 +36,7 @@ module Kendocup
           it "change Participation.count by -1" do
             (participation_count - Participation.count).should eql 1
           end
-          it {should set_the_flash.to('Participation détruite avec succès')}
+          it {should set_the_flash.to('Participation successfully destroyed')}
           it {response.should redirect_to(user_path(user))}
         end
 

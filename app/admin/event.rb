@@ -1,4 +1,4 @@
-ActiveAdmin.register Kendocup::Event do
+ActiveAdmin.register Kendocup::Event, as: "Event" do
 
   permit_params :cup, :name_en, :name_fr, :start_on, :duration
 

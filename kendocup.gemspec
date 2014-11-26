@@ -25,6 +25,8 @@ Gem::Specification.new do |s|
   s.add_dependency 'omniauth-facebook'
   s.add_dependency 'omniauth-github'
   s.add_dependency 'omniauth-google'
+  s.add_dependency 'prawn'
+  s.add_dependency 'prawn-table'
 
   s.test_files = Dir["spec/**/*"]
 

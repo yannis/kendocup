@@ -1,4 +1,4 @@
-ActiveAdmin.register Kendocup::User do
+ActiveAdmin.register Kendocup::User, as: "User" do
 
   permit_params :first_name, :last_name, :email, :club, :dob
 
@@ -62,7 +62,7 @@ ActiveAdmin.register Kendocup::User do
     f.actions
   end
 
-  action_item only: :show do
+  action_item :receipt, only: :show do
     link_to "Receipt", receipt_admin_user_path(user)
   end
 

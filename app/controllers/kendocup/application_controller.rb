@@ -32,7 +32,7 @@ module Kendocup
         notice = notice
         alert = alert
       end
-      default_locale = 'fr'
+      default_locale = 'en'
       begin
         request_language = request.env['HTTP_ACCEPT_LANGUAGE'].split('-')[0]
         request_language = (request_language.nil? || !['en', 'fr'].include?(request_language[/[^,;]+/])) ? nil : request_language[/[^,;]+/]

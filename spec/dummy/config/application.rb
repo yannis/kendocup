@@ -7,6 +7,8 @@ require "action_mailer/railtie"
 require "action_view/railtie"
 require "sprockets/railtie"
 require "activeadmin"
+require "prawn"
+require "prawn/table"
 # require "rails/test_unit/railtie"
 
 Bundler.require(*Rails.groups)

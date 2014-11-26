@@ -125,7 +125,7 @@ module Kendocup
           it {assigns(:kenshi).should be_an_instance_of Kenshi}
           it {assigns(:kenshi).should be_valid_verbose}
           it {response.should redirect_to(user_path(basic_user)) }
-          it {flash[:notice].should =~ /Kenshi inscrit avec succès/}
+          it {flash[:notice].should =~ /Kenshi successfully registered/}
           it {assigns(:kenshi).user.should eql basic_user}
         end
 
@@ -160,7 +160,7 @@ module Kendocup
 
           it {assigns(:kenshi).should eql basic_user_kenshi}
           it {response.should redirect_to(user_path(basic_user_kenshi.user))}
-          it {flash[:notice].should =~ /Inscription modifiée avec succès/}
+          it {flash[:notice].should =~ /Registration successfully updated/}
           it {basic_user_kenshi.reload.last_name.should eql 'alaNma2'}
         end
 
@@ -192,7 +192,7 @@ module Kendocup
           it "change Kenshi.count by -1" do
             (@kenshi_count - Kenshi.count).should eql 1
           end
-          it {should set_the_flash.to('Kenshi détruit avec succès')}
+          it {should set_the_flash.to('Kenshi successfully destroyed')}
           it {response.should redirect_to(user_path(basic_user))}
         end
 

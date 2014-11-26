@@ -1,4 +1,4 @@
-ActiveAdmin.register Kendocup::Team do
+ActiveAdmin.register Kendocup::Team, as: "Team" do
 
   permit_params :name, :cup, :team_category_id
 
@@ -79,7 +79,7 @@ ActiveAdmin.register Kendocup::Team do
                           page_size: 'A4'
 
   end
-  action_item only: :show do
+  action_item :pdf, only: :show do
     link_to "PDF", pdf_admin_team_path(team)
   end
 end

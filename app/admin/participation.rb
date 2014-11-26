@@ -1,4 +1,4 @@
-ActiveAdmin.register Kendocup::Participation do
+ActiveAdmin.register Kendocup::Participation, as: "Participation" do
 
   permit_params :category_id, :category_type, :team_id, :pool_number, :pool_position, :ronin
 

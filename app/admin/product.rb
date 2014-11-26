@@ -1,4 +1,4 @@
-ActiveAdmin.register Kendocup::Product do
+ActiveAdmin.register Kendocup::Product, as: "Product" do
   permit_params :name_en, :name_fr, :description_en, :description_fr, :cup_id, :event_id, :fee_chf, :fee_eu
 
   index do
@@ -64,7 +64,7 @@ ActiveAdmin.register Kendocup::Product do
     send_data csv, type: 'text/csv; charset=utf-8; header=present', disposition: "attachment; filename=product_#{@product.name.parameterize}_kenshis_list_#{Time.current.to_s(:flat)}.csv"
   end
 
-  action_item only: :show do
+  action_item :kenshi_list, only: :show do
     link_to('Kenshis list', params.merge(action: :download_kenshi_list))
   end
 end

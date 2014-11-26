@@ -1,4 +1,4 @@
-ActiveAdmin.register Kendocup::TeamCategory do
+ActiveAdmin.register Kendocup::TeamCategory, as: "TeamCategory" do
 
   permit_params :name, :pool_size, :out_of_pool, :min_age, :max_age, :description_en, :description_fr, :cup_id
 
@@ -60,7 +60,7 @@ ActiveAdmin.register Kendocup::TeamCategory do
                           page_size: 'A4'
 
   end
-  action_item only: :show do
+  action_item :pdf, only: :show do
     link_to "PDF", pdf_admin_team_kendocup_category_path(team_category)
   end
 
@@ -77,13 +77,13 @@ ActiveAdmin.register Kendocup::TeamCategory do
   # end
 
   collection_action :team_match_sheet do
-    pdf = TeamCategoryMatchSheetPdf.new
+    pdf = Kendocup::TeamCategoryMatchSheetPdf.new
     send_data pdf.render, filename: "team_categories",
                           type: "application/pdf",
                           disposition: "inline",
                           page_size: 'A4'
   end
-  action_item do
-    link_to("Match sheet", team_match_sheet_admin_kendocup_team_categories_path)
+  action_item :match_sheet do
+    link_to "Match sheet", team_match_sheet_admin_team_categories_path
   end
 end
