@@ -1,4 +1,3 @@
-require 'activeadmin'
 require 'haml'
 require 'devise'
 require "kendocup/engine"
