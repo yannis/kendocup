@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 module Kendocup
-  RSpec.describe Pool, :type => :model do
+  RSpec.describe Pool, type: :model do
 
     let(:individual_category) {create :kendocup_individual_category}
     let(:participation1) {create :kendocup_participation, category: individual_category, kenshi: create(:kendocup_kenshi, grade: "kyu", cup: individual_category.cup)}

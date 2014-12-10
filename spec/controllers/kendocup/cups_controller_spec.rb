@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 module Kendocup
-  RSpec.describe CupsController, :type => :controller do
+  RSpec.describe CupsController, type:  :controller do
 
     routes { Kendocup::Engine.routes }
 

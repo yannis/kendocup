@@ -5,7 +5,7 @@ require "kendocup/engine"
 module Kendocup
 
   def self.table_name_prefix
-    'kendocup_'
+    ''
   end
 end
 

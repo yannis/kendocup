@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 module Kendocup
-  RSpec.describe Team, :type => :model do
+  RSpec.describe Team, type: :model do
     it { should have_many :participations }
     it { should have_many :kenshis }
     it { should validate_presence_of(:name) }

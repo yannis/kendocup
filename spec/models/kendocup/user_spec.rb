@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 module Kendocup
-  RSpec.describe User, :type => :model do
+  RSpec.describe User, type: :model do
     it { should belong_to :club }
     it { should have_many(:kenshis).dependent(:destroy) }
 

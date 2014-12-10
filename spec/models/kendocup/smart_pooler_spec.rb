@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 module Kendocup
-  RSpec.describe SmartPooler, :type => :model do
+  RSpec.describe SmartPooler, type: :model do
 
     let!(:cup) {create :kendocup_cup}
     let!(:individual_category) {create :kendocup_individual_category, name: 'open', pool_size: 3, out_of_pool: 2, cup: cup}

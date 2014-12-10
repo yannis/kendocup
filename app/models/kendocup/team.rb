@@ -14,31 +14,31 @@ module Kendocup
 
     def self.empty
       includes(:participations).
-      where(kendocup_participations: {team_id: nil})
+      where(participations: {team_id: nil})
     end
 
     def self.incomplete
       joins(:participations).
-      group('kendocup_teams.id').
-      having('COUNT(kendocup_participations.id) < 5')
+      group('teams.id').
+      having('COUNT(participations.id) < 5')
     end
 
     def self.complete
       joins(:participations).
-      group('kendocup_teams.id').
-      having('COUNT(kendocup_participations.id) >= 5')
+      group('teams.id').
+      having('COUNT(participations.id) >= 5')
     end
 
     def self.valid
       joins(:participations).
-      group('kendocup_teams.id').
-      having('COUNT(kendocup_participations.id) >= 3')
+      group('teams.id').
+      having('COUNT(participations.id) >= 3')
     end
 
     def self.invalid
       joins(:participations).
-      group('kendocup_teams.id').
-      having('COUNT(kendocup_participations.id) < 3')
+      group('teams.id').
+      having('COUNT(participations.id) < 3')
     end
 
     def self.tree

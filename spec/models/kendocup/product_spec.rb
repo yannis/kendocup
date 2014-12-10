@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 module Kendocup
-  RSpec.describe Product, :type => :model do
+  RSpec.describe Product, type: :model do
 
     it {should have_many(:purchases).dependent(:destroy)}
     it {should have_many(:kenshis).through(:purchases)}

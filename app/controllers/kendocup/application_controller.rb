@@ -21,10 +21,10 @@ module Kendocup
     end
 
     def default_url_options
-      {
-        locale: I18n.locale,
-        year: Date.current.year
-       }
+      default_url_options = {}
+      default_url_options[:locale] = I18n.locale if params[:locale].blank?
+      # default_url_options[:year] = Date.current.year if params[:year].blank?
+      return default_url_options
     end
 
     def set_locale

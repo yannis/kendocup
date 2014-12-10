@@ -23,11 +23,11 @@ Kendocup::Engine.routes.draw do
     end
   end
 
-  get 'auth/:provider/callback', to: 'sessions#create'
-  get 'auth/failure', to: redirect('/')
-  devise_scope :user do
-    get 'signout', to: 'devise/sessions#destroy', as: 'signout'
-  end
+  # get 'auth/:provider/callback', to: 'sessions#create'
+  # get 'auth/failure', to: redirect('/')
+  # devise_scope :user do
+  #   get 'signout', to: 'devise/sessions#destroy', as: 'signout'
+  # end
 
   resource :mailing_list, :only => [:new, :destroy]
   root to: "cups#show"

@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 module Kendocup
-  RSpec.describe Cup, :type => :model do
+  RSpec.describe Cup, type: :model do
     it {should have_many(:individual_categories).dependent(:destroy)}
     it {should have_many(:team_categories).dependent(:destroy)}
     it {should have_many(:events).dependent :destroy}

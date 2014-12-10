@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141009093718) do
+ActiveRecord::Schema.define(version: 20141126210940) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,13 +31,13 @@ ActiveRecord::Schema.define(version: 20141009093718) do
   add_index "active_admin_comments", ["namespace"], name: "index_active_admin_comments_on_namespace", using: :btree
   add_index "active_admin_comments", ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id", using: :btree
 
-  create_table "kendocup_clubs", force: true do |t|
+  create_table "clubs", force: true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "kendocup_cups", force: true do |t|
+  create_table "cups", force: true do |t|
     t.date     "start_on"
     t.date     "end_on"
     t.datetime "deadline"
@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(version: 20141009093718) do
     t.integer  "adult_fees_eur"
   end
 
-  create_table "kendocup_events", force: true do |t|
+  create_table "events", force: true do |t|
     t.integer  "cup_id"
     t.string   "name_en"
     t.string   "name_fr"
@@ -59,9 +59,9 @@ ActiveRecord::Schema.define(version: 20141009093718) do
     t.datetime "updated_at"
   end
 
-  add_index "kendocup_events", ["cup_id"], name: "index_kendocup_events_on_cup_id", using: :btree
+  add_index "events", ["cup_id"], name: "index_events_on_cup_id", using: :btree
 
-  create_table "kendocup_fights", force: true do |t|
+  create_table "fights", force: true do |t|
     t.integer  "individual_category_id"
     t.integer  "team_category_id"
     t.integer  "winner_id"
@@ -76,16 +76,16 @@ ActiveRecord::Schema.define(version: 20141009093718) do
     t.datetime "updated_at"
   end
 
-  add_index "kendocup_fights", ["fighter_1_id"], name: "index_kendocup_fights_on_fighter_1_id", using: :btree
-  add_index "kendocup_fights", ["fighter_2_id"], name: "index_kendocup_fights_on_fighter_2_id", using: :btree
-  add_index "kendocup_fights", ["individual_category_id"], name: "index_kendocup_fights_on_individual_category_id", using: :btree
-  add_index "kendocup_fights", ["number"], name: "index_kendocup_fights_on_number", using: :btree
-  add_index "kendocup_fights", ["parent_fight_1_id"], name: "index_kendocup_fights_on_parent_fight_1_id", using: :btree
-  add_index "kendocup_fights", ["parent_fight_2_id"], name: "index_kendocup_fights_on_parent_fight_2_id", using: :btree
-  add_index "kendocup_fights", ["team_category_id"], name: "index_kendocup_fights_on_team_category_id", using: :btree
-  add_index "kendocup_fights", ["winner_id"], name: "index_kendocup_fights_on_winner_id", using: :btree
+  add_index "fights", ["fighter_1_id"], name: "index_fights_on_fighter_1_id", using: :btree
+  add_index "fights", ["fighter_2_id"], name: "index_fights_on_fighter_2_id", using: :btree
+  add_index "fights", ["individual_category_id"], name: "index_fights_on_individual_category_id", using: :btree
+  add_index "fights", ["number"], name: "index_fights_on_number", using: :btree
+  add_index "fights", ["parent_fight_1_id"], name: "index_fights_on_parent_fight_1_id", using: :btree
+  add_index "fights", ["parent_fight_2_id"], name: "index_fights_on_parent_fight_2_id", using: :btree
+  add_index "fights", ["team_category_id"], name: "index_fights_on_team_category_id", using: :btree
+  add_index "fights", ["winner_id"], name: "index_fights_on_winner_id", using: :btree
 
-  create_table "kendocup_headlines", force: true do |t|
+  create_table "headlines", force: true do |t|
     t.string   "title_fr"
     t.string   "title_en"
     t.text     "content_fr"
@@ -96,9 +96,9 @@ ActiveRecord::Schema.define(version: 20141009093718) do
     t.datetime "updated_at"
   end
 
-  add_index "kendocup_headlines", ["cup_id"], name: "index_kendocup_headlines_on_cup_id", using: :btree
+  add_index "headlines", ["cup_id"], name: "index_headlines_on_cup_id", using: :btree
 
-  create_table "kendocup_individual_categories", force: true do |t|
+  create_table "individual_categories", force: true do |t|
     t.string   "name"
     t.integer  "pool_size"
     t.integer  "out_of_pool"
@@ -111,9 +111,9 @@ ActiveRecord::Schema.define(version: 20141009093718) do
     t.datetime "updated_at"
   end
 
-  add_index "kendocup_individual_categories", ["cup_id"], name: "index_kendocup_individual_categories_on_cup_id", using: :btree
+  add_index "individual_categories", ["cup_id"], name: "index_individual_categories_on_cup_id", using: :btree
 
-  create_table "kendocup_kenshis", force: true do |t|
+  create_table "kenshis", force: true do |t|
     t.string   "first_name"
     t.string   "last_name"
     t.boolean  "female"
@@ -127,13 +127,13 @@ ActiveRecord::Schema.define(version: 20141009093718) do
     t.datetime "updated_at"
   end
 
-  add_index "kendocup_kenshis", ["club_id"], name: "index_kendocup_kenshis_on_club_id", using: :btree
-  add_index "kendocup_kenshis", ["cup_id"], name: "index_kendocup_kenshis_on_cup_id", using: :btree
-  add_index "kendocup_kenshis", ["grade"], name: "index_kendocup_kenshis_on_grade", using: :btree
-  add_index "kendocup_kenshis", ["last_name"], name: "index_kendocup_kenshis_on_last_name", using: :btree
-  add_index "kendocup_kenshis", ["user_id"], name: "index_kendocup_kenshis_on_user_id", using: :btree
+  add_index "kenshis", ["club_id"], name: "index_kenshis_on_club_id", using: :btree
+  add_index "kenshis", ["cup_id"], name: "index_kenshis_on_cup_id", using: :btree
+  add_index "kenshis", ["grade"], name: "index_kenshis_on_grade", using: :btree
+  add_index "kenshis", ["last_name"], name: "index_kenshis_on_last_name", using: :btree
+  add_index "kenshis", ["user_id"], name: "index_kenshis_on_user_id", using: :btree
 
-  create_table "kendocup_participations", force: true do |t|
+  create_table "participations", force: true do |t|
     t.integer  "category_id"
     t.string   "category_type"
     t.integer  "team_id"
@@ -145,12 +145,12 @@ ActiveRecord::Schema.define(version: 20141009093718) do
     t.datetime "updated_at"
   end
 
-  add_index "kendocup_participations", ["category_id", "category_type"], name: "index_kendocup_participations_on_category_id_and_category_type", using: :btree
-  add_index "kendocup_participations", ["kenshi_id"], name: "index_kendocup_participations_on_kenshi_id", using: :btree
-  add_index "kendocup_participations", ["pool_number"], name: "index_kendocup_participations_on_pool_number", using: :btree
-  add_index "kendocup_participations", ["team_id"], name: "index_kendocup_participations_on_team_id", using: :btree
+  add_index "participations", ["category_id", "category_type"], name: "index_participations_on_category_id_and_category_type", using: :btree
+  add_index "participations", ["kenshi_id"], name: "index_participations_on_kenshi_id", using: :btree
+  add_index "participations", ["pool_number"], name: "index_participations_on_pool_number", using: :btree
+  add_index "participations", ["team_id"], name: "index_participations_on_team_id", using: :btree
 
-  create_table "kendocup_products", force: true do |t|
+  create_table "products", force: true do |t|
     t.string   "name_en"
     t.string   "name_fr"
     t.text     "description_en"
@@ -163,17 +163,17 @@ ActiveRecord::Schema.define(version: 20141009093718) do
     t.datetime "updated_at"
   end
 
-  create_table "kendocup_purchases", force: true do |t|
+  create_table "purchases", force: true do |t|
     t.integer  "kenshi_id"
     t.integer  "product_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "kendocup_purchases", ["kenshi_id"], name: "index_kendocup_purchases_on_kenshi_id", using: :btree
-  add_index "kendocup_purchases", ["product_id"], name: "index_kendocup_purchases_on_product_id", using: :btree
+  add_index "purchases", ["kenshi_id"], name: "index_purchases_on_kenshi_id", using: :btree
+  add_index "purchases", ["product_id"], name: "index_purchases_on_product_id", using: :btree
 
-  create_table "kendocup_results", force: true do |t|
+  create_table "results", force: true do |t|
     t.string   "name"
     t.string   "category_type"
     t.integer  "category_id"
@@ -182,9 +182,9 @@ ActiveRecord::Schema.define(version: 20141009093718) do
     t.datetime "updated_at"
   end
 
-  add_index "kendocup_results", ["kenshi_id"], name: "index_kendocup_results_on_kenshi_id", using: :btree
+  add_index "results", ["kenshi_id"], name: "index_results_on_kenshi_id", using: :btree
 
-  create_table "kendocup_team_categories", force: true do |t|
+  create_table "team_categories", force: true do |t|
     t.string   "name"
     t.integer  "pool_size"
     t.integer  "out_of_pool"
@@ -197,18 +197,18 @@ ActiveRecord::Schema.define(version: 20141009093718) do
     t.datetime "updated_at"
   end
 
-  add_index "kendocup_team_categories", ["cup_id"], name: "index_kendocup_team_categories_on_cup_id", using: :btree
+  add_index "team_categories", ["cup_id"], name: "index_team_categories_on_cup_id", using: :btree
 
-  create_table "kendocup_teams", force: true do |t|
+  create_table "teams", force: true do |t|
     t.string   "name"
     t.integer  "team_category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "kendocup_teams", ["team_category_id"], name: "index_kendocup_teams_on_team_category_id", using: :btree
+  add_index "teams", ["team_category_id"], name: "index_teams_on_team_category_id", using: :btree
 
-  create_table "kendocup_users", force: true do |t|
+  create_table "users", force: true do |t|
     t.string   "email",                  default: "",    null: false
     t.string   "encrypted_password",     default: "",    null: false
     t.string   "reset_password_token"
@@ -235,7 +235,7 @@ ActiveRecord::Schema.define(version: 20141009093718) do
     t.string   "uid"
   end
 
-  add_index "kendocup_users", ["email"], name: "index_kendocup_users_on_email", unique: true, using: :btree
-  add_index "kendocup_users", ["reset_password_token"], name: "index_kendocup_users_on_reset_password_token", unique: true, using: :btree
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
 end

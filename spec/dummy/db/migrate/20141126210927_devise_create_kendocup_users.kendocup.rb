@@ -1,3 +1,4 @@
+# This migration comes from kendocup (originally 20140321201103)
 class DeviseCreateKendocupUsers < ActiveRecord::Migration
   def change
     create_table :users do |t|

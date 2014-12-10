@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Yannis Jaquet"]
   s.email       = ["yannisjaquet@mac.com"]
   s.homepage    = "http://github.com/yannis/kendocup"
-  s.summary     = "Kendo tournament functionality"
-  s.description = "Kendo tournament functionality"
+  s.summary     = "Kendo tournament rails engine"
+  s.description = "Kendo tournament rails engine"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]

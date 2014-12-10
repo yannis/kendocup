@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 module Kendocup
-  RSpec.describe Headline, :type => :model do
+  RSpec.describe Headline, type: :model do
 
     it {should belong_to :cup}
 

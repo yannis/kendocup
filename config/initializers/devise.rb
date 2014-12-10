@@ -1,20 +1,16 @@
-require "omniauth-facebook"
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
-
-  config.parent_controller = 'Kendocup::ApplicationController'
-
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
-  config.secret_key = ENV['SECRET_KEY_BASE']
+  # config.secret_key = '6ececa37f357d847839e981d22db8bef3dc6d0f0c305b441165d0edb72742d60307abcd21540f03e74c9f55c85fd8286ae0329bc856c1588bdebd72a86319b99'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = ENV['GMAIL_USERNAME']
+  config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
@@ -65,7 +61,7 @@ Devise.setup do |config|
   # :database      = Support basic authentication with authentication key + password
   # config.http_authenticatable = false
 
-  # If http headers should be returned for AJAX requests. True by default.
+  # If 401 status code should be returned for AJAX requests. True by default.
   # config.http_authenticatable_on_xhr = true
 
   # The realm used in Http Basic Authentication. 'Application' by default.
@@ -82,9 +78,6 @@ Devise.setup do |config|
   # may want to disable generating routes to Devise's sessions controller by
   # passing skip: :sessions to `devise_for` in your config/routes.rb
   config.skip_session_storage = [:http_auth]
-
-
-  config.router_name = :kendocup
 
   # By default, Devise cleans up the CSRF token on authentication to
   # avoid CSRF token fixation attacks. This means that, when using AJAX
@@ -104,7 +97,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = 'f6f3088e9e13462bbd7ff2f4e95be0c1d0dfdbfb373c9b532aabfae001a261c10a521c16396f647d41192e73767529c0506ca370c07ef6ec7eecc02dc577a66c'
+  # config.pepper = 'b60700a10585324e1708a6f02672e22c6b258d3d7fa093057635a7f024a2473428ba774b34d36e2213729eef4ea3ca00e9a76cab2e7c1a052e48608abaff09b1'
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -134,6 +127,9 @@ Devise.setup do |config|
   # ==> Configuration for :rememberable
   # The time the user will be remembered without asking for credentials again.
   # config.remember_for = 2.weeks
+
+  # Invalidates all the remember me tokens when the user signs out.
+  config.expire_all_remember_me_on_sign_out = true
 
   # If true, extends the user's remember period when remembered via cookie.
   # config.extend_remember_period = false
@@ -183,7 +179,7 @@ Devise.setup do |config|
   # config.unlock_in = 1.hour
 
   # Warn on the last attempt before the account is locked.
-  # config.last_attempt_warning = false
+  # config.last_attempt_warning = true
 
   # ==> Configuration for :recoverable
   #
@@ -237,8 +233,6 @@ Devise.setup do |config|
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
-  config.omniauth :facebook, ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_SECRET'], scope: 'email'
-  # config.omniauth :twitter, Env['twitter_api_key'], Env['twitter_api_secret']
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
@@ -254,10 +248,11 @@ Devise.setup do |config|
   # is mountable, there are some extra configurations to be taken into account.
   # The following options are available, assuming the engine is mounted as:
   #
-  #     mount MyEngine, at: '/my_engine'
+  #     mount my_engine, at: '/my_engine'
   #
   # The router that invoked `devise_for`, in the example above, would be:
   # config.router_name = :my_engine
+  config.router_name = :k
   #
   # When using omniauth, Devise cannot automatically set Omniauth path,
   # so you need to do it manually. For the users scope, it would be:

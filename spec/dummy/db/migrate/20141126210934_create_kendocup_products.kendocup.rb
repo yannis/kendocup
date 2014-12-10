@@ -1,3 +1,4 @@
+# This migration comes from kendocup (originally 20140524043825)
 class CreateKendocupProducts < ActiveRecord::Migration
   def change
     create_table :products do |t|

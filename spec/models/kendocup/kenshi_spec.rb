@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 module Kendocup
-  RSpec.describe Kenshi, :type => :model do
+  RSpec.describe Kenshi, type: :model do
     it {should belong_to :cup}
     it {should belong_to :user}
     it {should belong_to :club}

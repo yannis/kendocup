@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 module Kendocup
-  RSpec.describe Tree, :type => :model do
+  RSpec.describe Tree, type: :model do
 
     context "A open category with 24 kenshis" do
       let(:cup) {create :kendocup_cup, start_on: Date.parse("2016-09-28")}

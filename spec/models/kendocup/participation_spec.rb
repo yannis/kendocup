@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 module Kendocup
-  RSpec.describe Participation, :type => :model do
+  RSpec.describe Participation, type: :model do
     it {should belong_to :category}
     it {should belong_to :kenshi}
     it {should belong_to :team}

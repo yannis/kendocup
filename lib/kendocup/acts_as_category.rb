@@ -32,7 +32,7 @@ module Kendocup
       def pools
         pools = []
         if pool_size > 1
-          grouped_participations = self.participations.where("kendocup_participations.pool_number IS NOT NULL").group_by{|p| p.pool_number}
+          grouped_participations = self.participations.where("participations.pool_number IS NOT NULL").group_by{|p| p.pool_number}
           grouped_participations.each do |i, participations|
             pools << Pool.new(participations: participations, number: i)
           end

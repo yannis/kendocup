@@ -1,3 +1,4 @@
+# This migration comes from kendocup (originally 20140322134236)
 class CreateKendocupFights < ActiveRecord::Migration
   def change
     create_table :fights do |t|

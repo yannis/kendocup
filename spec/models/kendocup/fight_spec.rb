@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 module Kendocup
-  RSpec.describe Fight, :type => :model do
+  RSpec.describe Fight, type: :model do
     it {should belong_to :individual_category}
     it {should belong_to :winner}
     it {should belong_to :fighter_1}
