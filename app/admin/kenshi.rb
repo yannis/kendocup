@@ -2,6 +2,12 @@ ActiveAdmin.register Kendocup::Kenshi, as: "Kenshi" do
 
   permit_params :id, :user, :cup_id, :last_name, :first_name, :female, :email, :dob, :email, :grade, :club_id, :user_id, purchases_attributes: [:_destroy, :product_id, :id], participations_attributes: [:id, :category_individual, :category_team, :_destroy]
 
+  filter :cup
+  filter :first_name
+  filter :last_name
+  filter :email
+  filter :grade
+
   index do
     column :cup
     column :last_name
@@ -18,7 +24,7 @@ ActiveAdmin.register Kendocup::Kenshi, as: "Kenshi" do
       "#{kenshi.user.full_name} (#{kenshi.user.email})"
     end
     actions do |kenshi|
-      link_to "PDF", pdf_admin_kendocup_kenshi_path(kenshi)
+      link_to "PDF", pdf_admin_kenshi_path(kenshi)
     end
   end
 
@@ -86,16 +92,16 @@ ActiveAdmin.register Kendocup::Kenshi, as: "Kenshi" do
   end
 
   action_item :pdf_show, only: :show do
-    link_to "PDF", pdf_admin_kendocup_kenshi_path(kenshi)
+    link_to "PDF", pdf_admin_kenshi_path(kenshi)
   end
 
   action_item :pdf_index, only: :index do
-    link_to("PDF", pdfs_admin_kendocup_kenshis_path)
+    link_to("PDF", pdfs_admin_kenshis_path)
   end
 
   member_action :pdf do
-    @kenshi = Kenshi.find params[:id]
-    pdf = KenshiPdf.new(@kenshi)
+    @kenshi = Kendocup::Kenshi.find params[:id]
+    pdf = Kendocup::KenshiPdf.new(@kenshi)
     send_data pdf.render, filename: @kenshi.full_name.parameterize('_'),
                           type: "application/pdf",
                           disposition: "inline",
@@ -114,8 +120,8 @@ ActiveAdmin.register Kendocup::Kenshi, as: "Kenshi" do
   # end
 
   collection_action :pdfs do
-    @kenshis = Kenshi.order(:last_name)
-    pdf = KenshisPdf.new(@kenshis)
+    @kenshis = Kendocup::Kenshi.order(:last_name)
+    pdf = Kendocup::KenshisPdf.new(@kenshis)
     send_data pdf.render, filename: "kenshis",
                           type: "application/pdf",
                           disposition: "inline",

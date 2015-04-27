@@ -1,7 +1,7 @@
 module Kendocup
   class TeamCategoryMatchSheetPdf < Prawn::Document
 
-    def initialize
+    def initialize(team_category)
 
       super(page_layout: :portrait)
 
@@ -16,15 +16,15 @@ module Kendocup
       end
       text "Combat n°   ", align: :center
 
-      # bounding_box [bounds.right-75, bounds.top+20], :width => 300 do
-      #   logo = "#{Rails.root}/app/assets/images/logo/logo-75.jpg"
-      #   image logo, :at => [0,0], :width => 60
-      # end
+      bounding_box [bounds.right-75, bounds.top+20], :width => 300 do
+        logo = "#{Kendocup::Engine.root}/lib/assets/images/logo-75.jpg"
+        image logo, :at => [0,0], :width => 60
+      end
 
       bounding_box [bounds.right-280, bounds.top+20], :width => 200 do
         font_size 24
         fill_color "3399CC"
-        text "Coupe Kasahara 2013", align: :right
+        text "Coupe Kasahara #{team_category.cup.year}", align: :right
       end
 
       font_size 12

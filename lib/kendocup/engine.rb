@@ -2,6 +2,11 @@ module Kendocup
   class Engine < ::Rails::Engine
     isolate_namespace Kendocup
 
+
+    config.autoload_paths += %W( ../lib )
+
+    # config.autoload_paths << File.expand_path("../lib/some/path", __FILE__)
+
     initializer :kendocup do |app|
       ActiveAdmin.application.load_paths << File.join(config.root, 'lib/kendocup/admin')
     end

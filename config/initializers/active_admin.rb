@@ -82,7 +82,7 @@ ActiveAdmin.setup do |config|
   #
   # Default:
   # config.logout_link_path = "kendocup.destroy_user_session_path".to_sym
-  config.logout_link_path = "/#{I18n.locale}/users/sign_out"
+  config.logout_link_path = "/k/users/sign_out"
 
   # This setting changes the http method used when rendering the
   # link. For example :get, :delete, :put, etc..
@@ -96,8 +96,8 @@ ActiveAdmin.setup do |config|
   # roots for each namespace.
   #
   # Default:
-  config.root_to = 'dashboard#index'
-  # config.root_to = 'cups#show'
+  # config.root_to = 'dashboard#index'
+  config.root_to = 'cups#index'
 
   # == Admin Comments
   #

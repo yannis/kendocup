@@ -2,7 +2,7 @@ module Kendocup
   class User < ActiveRecord::Base
     # Include default devise modules. Others available are:
     # :confirmable, :lockable, :timeoutable and :omniauthable
-    devise :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable, :validatable, :confirmable, :omniauthable
+    devise :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable, :validatable, :confirmable, :omniauthable, :omniauth_providers => [:facebook]
 
     belongs_to :club
     has_many :kenshis, dependent: :destroy
@@ -20,7 +20,7 @@ module Kendocup
     after_save :register_to_mailing_list
 
     def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
-      user = User.where(provider: auth.provider, uid: auth.uid).first
+      user = Kendocup::User.where(provider: "", uid: auth.uid).first
       unless user
         birthday = auth.extra.raw_info.birthday.present? ? Date.strptime(auth.extra.raw_info.birthday, '%m/%d/%Y') : nil
         user = User.new(first_name:auth.extra.raw_info.first_name, last_name:auth.extra.raw_info.last_name, female:(auth.extra.raw_info.gender=='female'), dob:birthday, provider:auth.provider, uid:auth.uid, email:auth.info.email, password:Devise.friendly_token[0,20])

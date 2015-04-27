@@ -17,6 +17,14 @@ module Kendocup
 
     before_validation :set_deadline
 
+    def self.past
+      where("cups.start_on < ?", Date.current)
+    end
+
+    def self.future
+      where("cups.start_on >= ?", Date.current)
+    end
+
     def to_param
       year
     end
@@ -27,6 +35,10 @@ module Kendocup
 
     def year
       start_on.year
+    end
+
+    def past?
+      start_on < Date.current
     end
 
     def junior_fees(currency)

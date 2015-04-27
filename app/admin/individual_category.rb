@@ -2,9 +2,13 @@ ActiveAdmin.register Kendocup::IndividualCategory, as: "IndividualCategory" do
 
   permit_params :name, :pool_size, :out_of_pool, :min_age, :max_age, :description_en, :description_fr, :cup_id
 
+  filter :cup
+  filter :name
+
   index do
+    column :cup
     column :name do |category|
-      link_to category.name, admin_kendocup_individual_category_path(category)
+      link_to category.name, [:admin, category]
     end
     column :description
     column :pool_size
@@ -16,17 +20,18 @@ ActiveAdmin.register Kendocup::IndividualCategory, as: "IndividualCategory" do
     end
     actions do |category|
       [
-        link_to( "Smart reset", reset_smart_pools_admin_kendocup_individual_category_path(category), confirm: "Are you sure?"),
-        link_to( "PDF", pdf_admin_kendocup_individual_category_path(category)),
-        link_to("PDF recap", pdf_recap_admin_kendocup_individual_category_path(category)),
-        link_to("Match sheet", sheet_admin_kendocup_individual_category_path(category)),
-        link_to("Pool match sheets", pool_sheets_admin_kendocup_individual_category_path(category))
+        link_to( "Smart reset", reset_smart_pools_admin_individual_category_path(category), confirm: "Are you sure?"),
+        link_to( "PDF", pdf_admin_individual_category_path(category)),
+        link_to("PDF recap", pdf_recap_admin_individual_category_path(category)),
+        link_to("Match sheet", sheet_admin_individual_category_path(category)),
+        link_to("Pool match sheets", pool_sheets_admin_individual_category_path(category))
       ].join(" ").html_safe
     end
   end
 
   show do |category|
     attributes_table do
+      row :cup
       row :name
       row :description
       row :pool_size
@@ -89,19 +94,19 @@ ActiveAdmin.register Kendocup::IndividualCategory, as: "IndividualCategory" do
   end
 
   member_action :reset_smart_pools do
-    @category = IndividualCategory.find params[:id]
+    @category = Kendocup::IndividualCategory.find params[:id]
     @category.set_smart_pools
     flash[:notice] = "Pool smartly reset"
     redirect_to action: 'show'
   end
   action_item :smart_pool_reset, only: :show do
-    link_to "Smart pool reset", reset_smart_pools_admin_kendocup_individual_category_path(individual_category), confirm: "Are you sure?"
+    link_to "Smart pool reset", reset_smart_pools_admin_individual_category_path(individual_category), confirm: "Are you sure?"
   end
 
 
   member_action :pdf do
-    @category = IndividualCategory.find params[:id]
-    pdf = IndividualCategoryPdf.new(@category)
+    @category = Kendocup::IndividualCategory.find params[:id]
+    pdf = Kendocup::IndividualCategoryPdf.new(@category)
     send_data pdf.render, filename: @category.name.parameterize('_'),
                           type: "application/pdf",
                           disposition: "inline",
@@ -109,25 +114,25 @@ ActiveAdmin.register Kendocup::IndividualCategory, as: "IndividualCategory" do
 
   end
   action_item :pdf, only: :show do
-    link_to "PDF", pdf_admin_kendocup_individual_category_path(individual_category)
+    link_to "PDF", pdf_admin_individual_category_path(individual_category)
   end
 
 
   member_action :pdf_recap do
-    @category = IndividualCategory.find params[:id]
-    pdf = IndividualCategoryPdfRecap.new(@category)
+    @category = Kendocup::IndividualCategory.find params[:id]
+    pdf = Kendocup::IndividualCategoryPdfRecap.new(@category)
     send_data pdf.render, filename: @category.name.parameterize('_'),
                           type: "application/pdf",
                           disposition: "inline",
                           page_size: 'A4'
   end
   action_item :pdf_recap, only: :show do
-    link_to "PDF Recap", pdf_recap_admin_kendocup_individual_category_path(individual_category)
+    link_to "PDF Recap", pdf_recap_admin_individual_category_path(individual_category)
   end
 
   member_action :pool_sheets do
-    @category = IndividualCategory.find params[:id]
-    pdf = IndividualCategoryPoolMatchesPdf.new(@category)
+    @category = Kendocup::IndividualCategory.find params[:id]
+    pdf = Kendocup::IndividualCategoryPoolMatchesPdf.new(@category)
     send_data pdf.render, filename: @category.name.parameterize('_'),
                           type: "application/pdf",
                           disposition: "inline",
@@ -135,8 +140,8 @@ ActiveAdmin.register Kendocup::IndividualCategory, as: "IndividualCategory" do
   end
 
   member_action :sheet do
-    @category = IndividualCategory.find params[:id]
-    pdf = IndividualCategoryMatchSheetPdf.new(@category)
+    @category = Kendocup::IndividualCategory.find params[:id]
+    pdf = Kendocup::IndividualCategoryMatchSheetPdf.new(@category)
     send_data pdf.render, filename: @category.name.parameterize('_'),
                           type: "application/pdf",
                           disposition: "inline",
@@ -144,12 +149,12 @@ ActiveAdmin.register Kendocup::IndividualCategory, as: "IndividualCategory" do
   end
 
   action_item :match_sheet, only: :show do
-    [link_to("Pool match sheet", pool_sheets_admin_kendocup_individual_category_path(individual_category)),
-        link_to("Match sheets", sheet_admin_kendocup_individual_category_path(individual_category))].join(" ").html_safe
+    [link_to("Pool match sheet", pool_sheets_admin_individual_category_path(individual_category)),
+        link_to("Match sheets", sheet_admin_individual_category_path(individual_category))].join(" ").html_safe
   end
 
   member_action :download_kenshi_list, method: :get do
-    @individual_category = IndividualCategory.find params[:id]
+    @individual_category = Kendocup::IndividualCategory.find params[:id]
     kenshis = @individual_category.kenshis
     csv = CSV.generate do |csv|
       header = ["Last name", "First name", "Club", "Dob", "Grade"]

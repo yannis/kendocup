@@ -75,12 +75,17 @@ module Kendocup
     end
 
     def set_cup
+      Rails.logger.debug "CUP ID: #{params[:id]}"
       unless @cup.present?
-          year = params[:year] ? params[:year] : Date.current.year
-          @cup = Cup.where("EXTRACT(YEAR FROM start_on) = ?", year).first
-          unless @cup.present?
-            raise "Cup is missing!!!"
-          end
+        future_cups = Cup.future.order("cups.start_on ASC")
+        past_cups = Cup.past.order("cups.start_on DESC")
+        if future_cups.present?
+          @cup = future_cups.first
+        elsif past_cups.present?
+          @cup = past_cups.first
+        else
+          raise "Cup is missing!!!"
+        end
       end
     end
 

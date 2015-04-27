@@ -1,8 +1,22 @@
 Kendocup::Engine.routes.draw do
-  # devise_for :users, class_name: "Kendocup::User", module: :devise
-  # resources :cups
 
-  devise_for :users, class_name: "Kendocup::User", module: :devise
+  devise_scope :user do
+    providers = Regexp.union(Devise.omniauth_providers.map(&:to_s))
+    match 'users/auth/:provider',
+      constraints: { provider: providers },
+      to: 'omniauth_callbacks#passthru',
+      as: :omniauth_authorize,
+      via: [:get, :post]
+
+    match 'users/auth/:action/callback',
+      constraints: { action: providers },
+      to: 'omniauth_callbacks',
+      as: :omniauth_callback,
+      via: [:get, :post]
+  end
+  devise_for  :users, class_name: 'Kendocup::User', module: :devise, except: [:omniauth_callbacks]
+
+
 
   resources :cups, only: [:index, :show]
   resources :headlines, only: [:index, :show]
@@ -22,12 +36,6 @@ Kendocup::Engine.routes.draw do
       end
     end
   end
-
-  # get 'auth/:provider/callback', to: 'sessions#create'
-  # get 'auth/failure', to: redirect('/')
-  # devise_scope :user do
-  #   get 'signout', to: 'devise/sessions#destroy', as: 'signout'
-  # end
 
   resource :mailing_list, :only => [:new, :destroy]
   root to: "cups#show"

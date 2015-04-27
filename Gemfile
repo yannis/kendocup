@@ -14,6 +14,12 @@ gemspec
 # gem 'debugger'
 
 gem 'activeadmin', github: "activeadmin/activeadmin"
+gem 'figaro'
+gem "byebug"
+
+group :development do
+  gem 'seed_dump'
+end
 # gem 'polyamorous', github: 'activerecord-hackery/polyamorous'
 # gem 'ransack',     github: 'activerecord-hackery/ransack'
 # gem 'formtastic'

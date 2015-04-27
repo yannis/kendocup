@@ -1,4 +1,4 @@
-class Users::RegistrationsController < Devise::RegistrationsController
+class Kendocup::RegistrationsController < Devise::RegistrationsController
 
   def new
     super

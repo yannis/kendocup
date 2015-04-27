@@ -2,19 +2,17 @@ ActiveAdmin.register Kendocup::Event, as: "Event" do
 
   permit_params :cup, :name_en, :name_fr, :start_on, :duration
 
-  # index do
-  #   column :year
-  #   column :start_on
-  #   column :end_on
-  #   column :deadline
-  #   column :adult_fees_chf
-  #   column :adult_fees_eur
-  #   column :junior_fees_chf
-  #   column :junior_fees_eur
-  #   actions
-  # end
+  index do
+    column :cup
+    column :name_en
+    column :name_fr
+    column :start_on
+    column :duration
+    actions
+  end
 
   filter :name_fr
+  filter :cup
 
   form do |f|
     f.inputs "Details" do

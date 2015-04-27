@@ -3,7 +3,7 @@ ActiveAdmin.register Kendocup::Product, as: "Product" do
 
   index do
     column :name_en do |product|
-      link_to product.name, [:admin, :kendocup, product]
+      link_to product.name, [:admin, product]
     end
     column :cup
     column :event
@@ -47,6 +47,17 @@ ActiveAdmin.register Kendocup::Product, as: "Product" do
         end
       end
     end
+  end
+
+  form do |f|
+    f.inputs "Details" do
+      f.input :team_category
+      f.input :name_en
+      f.input :name_fr
+      f.input :start_on, as: :string, input_html: {class: "hasDatetimePicker"}
+      f.input :duration
+    end
+    f.actions
   end
 
   member_action :download_kenshi_list, method: :get do

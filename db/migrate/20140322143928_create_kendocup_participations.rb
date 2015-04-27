@@ -7,6 +7,7 @@ class CreateKendocupParticipations < ActiveRecord::Migration
       t.integer :pool_number
       t.integer :pool_position
       t.boolean :ronin
+      t.integer :rank, index: true
 
       t.timestamps
     end

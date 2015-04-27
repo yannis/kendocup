@@ -9,6 +9,7 @@ ActiveAdmin.register Kendocup::Participation, as: "Participation" do
     column :pool_number
     column :pool_position
     column :ronin
+    column :rank
     actions
   end
 
@@ -23,7 +24,7 @@ ActiveAdmin.register Kendocup::Participation, as: "Participation" do
       f.input :pool_number
       f.input :pool_position
       f.input :ronin
-
+      f.input :rank
     end
 
     f.actions

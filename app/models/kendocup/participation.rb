@@ -10,7 +10,7 @@ module Kendocup
     before_validation :assign_category
 
     validates :kenshi, presence: true
-    validates :category, presence: true
+    # validates :category, presence: true
 
     validates_presence_of :pool_position, if: lambda{|p| p.pool_number.present?}
     validates_uniqueness_of :kenshi_id, scope: [:category_type, :category_id], if: lambda{|p| p.ronin.blank?}, allow_nil: true
@@ -22,12 +22,13 @@ module Kendocup
 
       # if kenshi && category
       age = kenshi.age_at_cup
-
-      if category.min_age && age < category.min_age
-        record.errors.add(attr, :too_young, name: category.name)
-      end
-      if category.max_age && age > category.max_age
-        record.errors.add(attr, :too_old, name: category.name)
+      if category.present?
+        if category.min_age && age < category.min_age
+          record.errors.add(attr, :too_young, name: category.name)
+        end
+        if category.max_age && age > category.max_age
+          record.errors.add(attr, :too_old, name: category.name)
+        end
       end
     end
 

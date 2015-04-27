@@ -5,9 +5,12 @@ ActiveAdmin.register Kendocup::Team, as: "Team" do
   index do
     column :name
     column :cup do |team|
-      link_to(team.team_category.cup.year, team.team_category.cup) if team.team_category
+      if team.team_category.present?
+        link_to(team.team_category.cup.year, admin_cup_path(team.team_category.cup.id))
+      end
     end
     column :team_category
+    column :rank
     column :members do |team|
       team.kenshis.map{|k| link_to( k.full_name, [:admin, k])}.join(', ').html_safe
     end
@@ -35,10 +38,15 @@ ActiveAdmin.register Kendocup::Team, as: "Team" do
 
   filter :name
   filter :team_category
+  filter :rank
 
   show do |team|
     attributes_table do
       row :name
+      row :team_category do |c|
+        "#{c.team_category.name} (#{c.team_category.cup.year})"
+      end
+      row :rank
     end
     if team.kenshis.present?
       panel "Kenshis" do
@@ -70,9 +78,18 @@ ActiveAdmin.register Kendocup::Team, as: "Team" do
     end
   end
 
+  form do |f|
+    f.semantic_errors # shows errors on :base
+    f.inputs "Details" do
+      f.input :team_category, collection: Kendocup::TeamCategory.all.map{|tc| ["#{tc.name} (#{tc.cup.to_s})", tc.id]}
+      f.input :name
+    end
+    f.actions
+  end
+
   member_action :pdf do
-    @team = Team.find params[:id]
-    pdf = TeamPdf.new(@team)
+    @team = Kendocup::Team.find params[:id]
+    pdf = Kendocup::TeamPdf.new(@team)
     send_data pdf.render, filename: @team.name.parameterize('_'),
                           type: "application/pdf",
                           disposition: "inline",

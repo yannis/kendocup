@@ -1,6 +1,6 @@
 ActiveAdmin.register Kendocup::User, as: "User" do
 
-  permit_params :first_name, :last_name, :email, :club, :dob
+  permit_params :first_name, :last_name, :email, :club, :dob, :club_id, :password, :password_confirmation
 
   index do
     column :first_name
@@ -56,8 +56,8 @@ ActiveAdmin.register Kendocup::User, as: "User" do
       f.input :email
       f.input :club
       f.input :dob, as: :datepicker
-      f.input :password
-      f.input :password_confirmation
+      # f.input :password
+      # f.input :password_confirmation
     end
     f.actions
   end
@@ -67,8 +67,8 @@ ActiveAdmin.register Kendocup::User, as: "User" do
   end
 
   member_action :receipt do
-    @user = User.find params[:id]
-    pdf = UserReceipt.new(@user)
+    @user = Kendocup::User.find params[:id]
+    pdf = Kendocup::UserReceipt.new(@user)
     send_data pdf.render, filename: @user.full_name.parameterize('_')+"_receipt",
                           type: "application/pdf",
                           disposition: "inline",
