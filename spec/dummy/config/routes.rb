@@ -2,10 +2,8 @@ Rails.application.routes.draw do
 
   scope "(:locale)", locale: /fr|en/ do |locale|
     mount Kendocup::Engine => "/"
-    root to: redirect("/#{I18n.locale}/k/cups")
+    root to: redirect("/#{I18n.locale}/cups")
   end
-
-
 
   ActiveAdmin.routes(self)
 

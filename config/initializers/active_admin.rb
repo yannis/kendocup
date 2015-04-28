@@ -1,7 +1,7 @@
 ActiveAdmin.setup do |config|
 
   config.load_paths.delete_at(0)
-  config.load_paths << "#{Kendocup::Engine.root}/app/admin"
+  config.load_paths << "#{Kendocup::Engine.root}/app/admin/"
 
   # == Site Title
   #
@@ -58,7 +58,7 @@ ActiveAdmin.setup do |config|
   #
   # This setting changes the method which Active Admin calls
   # within the controller.
-  config.authentication_method = :authenticate_user!
+  config.authentication_method = :authenticate_admin_user!
 
 
   # == Current User
@@ -82,13 +82,13 @@ ActiveAdmin.setup do |config|
   #
   # Default:
   # config.logout_link_path = "kendocup.destroy_user_session_path".to_sym
-  config.logout_link_path = "/k/users/sign_out"
+  config.logout_link_path = "/users/sign_out"
 
   # This setting changes the http method used when rendering the
   # link. For example :get, :delete, :put, etc..
   #
   # Default:
-  config.logout_link_method = :delete
+  config.logout_link_method = :get
 
   # == Root
   #
@@ -129,7 +129,7 @@ ActiveAdmin.setup do |config|
   # You can add before, after and around filters to all of your
   # Active Admin resources and pages from here.
   #
-  # config.before_filter :do_something_awesome
+  # config.before_filter :authenticate_admin_user
 
 
   # == Register Stylesheets & Javascripts

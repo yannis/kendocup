@@ -6,6 +6,14 @@ module Kendocup
     load_and_authorize_resource class: Kendocup::User,  param_method: :my_sanitizer
     respond_to :html
 
+    controller do
+
+      def authenticate_admin_user!
+        Rails.logger.debug "authenticate_admin_user called"
+        redirect_to root_url unless current_user.try(:admin?)
+      end
+    end
+
     def index
       respond_with @users
     end

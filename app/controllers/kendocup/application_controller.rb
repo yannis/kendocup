@@ -75,7 +75,6 @@ module Kendocup
     end
 
     def set_cup
-      Rails.logger.debug "CUP ID: #{params[:id]}"
       unless @cup.present?
         future_cups = Cup.future.order("cups.start_on ASC")
         past_cups = Cup.past.order("cups.start_on DESC")

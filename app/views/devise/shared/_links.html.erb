@@ -19,11 +19,3 @@
 <% end -%>
 
 <%= link_to "Sign in with Facebook", "/users/auth/facebook" %>
-
-# <%= link_to "Sign in with Facebook", omniauth_authorize_path(resource_name, :facebook) %>
-
-<%- if devise_mapping.omniauthable? %>
-  <%- resource_class.omniauth_providers.each do |provider| %>
-    <%= link_to "Sign in with #{provider.to_s.titleize}", omniauth_authorize_path(resource_name, provider) %><br />
-  <% end -%>
-<% end -%>

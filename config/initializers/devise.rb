@@ -228,7 +228,7 @@ Devise.setup do |config|
   # config.navigational_formats = ['*/*', :html]
 
   # The default HTTP method used to sign out a resource. Default is :delete.
-  config.sign_out_via = :delete
+  config.sign_out_via = :get
 
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
@@ -254,7 +254,7 @@ Devise.setup do |config|
   #     mount my_engine, at: '/my_engine'
   #
   # The router that invoked `devise_for`, in the example above, would be:
-  # config.router_name = :my_engine
+  config.router_name = :kendocup
   # config.router_name = :k
   #
   # When using omniauth, Devise cannot automatically set Omniauth path,

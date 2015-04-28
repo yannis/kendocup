@@ -1,5 +1,5 @@
 %tr
-  %td= Kenshi.human_attribute_name kenshi.female ? :ms : :mr
+  %td= Kendocup::Kenshi.human_attribute_name kenshi.female ? :ms : :mr
   %td= kenshi.full_name
   - if current_user_admin_or_owner?(kenshi)
     %td= kenshi.email
