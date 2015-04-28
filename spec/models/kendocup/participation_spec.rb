@@ -2,13 +2,13 @@ require 'spec_helper'
 
 module Kendocup
   RSpec.describe Participation, type: :model do
-    it {should belong_to :category}
-    it {should belong_to :kenshi}
-    it {should belong_to :team}
+    it {is_expected.to belong_to :category}
+    it {is_expected.to belong_to :kenshi}
+    it {is_expected.to belong_to :team}
 
-    it {should respond_to :pool_number}
-    it {should respond_to :pool_position}
-    it {should respond_to :ronin}
+    it {is_expected.to respond_to :pool_number}
+    it {is_expected.to respond_to :pool_position}
+    it {is_expected.to respond_to :ronin}
 
     # it {should validate_presence_of :kenshi_id}
   end
@@ -16,7 +16,7 @@ module Kendocup
   describe "A participation" do
     context "without team_id an individual_category_id" do
       context "when an individual_category_id is set" do
-        let(:participation) {build :kendocup_participation, category: mock_model(IndividualCategory)}
+        let(:participation) {build :kendocup_participation, category: create(:kendocup_individual_category)}
         it {expect(participation).to be_valid_verbose }
       end
     end
