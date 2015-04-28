@@ -192,7 +192,7 @@ module Kendocup
           it "change Kenshi.count by -1" do
             (@kenshi_count - Kenshi.count).should eql 1
           end
-          it {should set_the_flash.to('Kenshi successfully destroyed')}
+          it {should set_flash.to('Kenshi successfully destroyed')}
           it {response.should redirect_to(user_path(basic_user))}
         end
 

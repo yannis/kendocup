@@ -10,7 +10,7 @@ Kendocup::Engine.routes.draw do
 
     match 'users/auth/:action/callback',
       constraints: { action: providers },
-      to: 'omniauth_callbacks',
+      controller: :omniauth_callbacks,
       as: :omniauth_callback,
       via: [:get, :post]
   end
