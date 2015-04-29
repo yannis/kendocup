@@ -2,6 +2,12 @@ ActiveAdmin.register Kendocup::Event, as: "Event" do
 
   permit_params :cup, :name_en, :name_fr, :start_on, :duration
 
+  controller do
+    def authenticate_admin_user!
+      redirect_to root_url unless current_user.try(:admin?)
+    end
+  end
+
   index do
     column :cup
     column :name_en

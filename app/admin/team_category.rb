@@ -2,6 +2,12 @@ ActiveAdmin.register Kendocup::TeamCategory, as: "TeamCategory" do
 
   permit_params :name, :pool_size, :out_of_pool, :min_age, :max_age, :description_en, :description_fr, :cup_id
 
+  controller do
+    def authenticate_admin_user!
+      redirect_to root_url unless current_user.try(:admin?)
+    end
+  end
+
   index do
     column :name
     column :teams_count, sortable: false do |team_category|

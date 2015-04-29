@@ -3,6 +3,12 @@ ActiveAdmin.register Kendocup::Headline, as: "Headline" do
 
   permit_params :title_en, :title_fr, :content_fr, :content_en, :shown, :cup_id
 
+  controller do
+    def authenticate_admin_user!
+      redirect_to root_url unless current_user.try(:admin?)
+    end
+  end
+
   index do
     column :cup
     column :title_en

@@ -1,6 +1,12 @@
 ActiveAdmin.register Kendocup::Product, as: "Product" do
   permit_params :name_en, :name_fr, :description_en, :description_fr, :cup_id, :event_id, :fee_chf, :fee_eu
 
+  controller do
+    def authenticate_admin_user!
+      redirect_to root_url unless current_user.try(:admin?)
+    end
+  end
+
   index do
     column :name_en do |product|
       link_to product.name, [:admin, product]

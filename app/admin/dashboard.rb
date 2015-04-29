@@ -1,5 +1,11 @@
 ActiveAdmin.register_page "Dashboard" do
 
+  controller do
+    def authenticate_admin_user!
+      redirect_to root_url unless current_user.try(:admin?)
+    end
+  end
+
   # menu priority: 1, label: proc{ I18n.t("active_admin.dashboard") }
 
   # content title: proc{ I18n.t("active_admin.dashboard") } do

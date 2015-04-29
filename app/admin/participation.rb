@@ -2,6 +2,12 @@ ActiveAdmin.register Kendocup::Participation, as: "Participation" do
 
   permit_params :category_id, :category_type, :team_id, :pool_number, :pool_position, :ronin
 
+  controller do
+    def authenticate_admin_user!
+      redirect_to root_url unless current_user.try(:admin?)
+    end
+  end
+
   index do
     column :kenshi
     column :category
