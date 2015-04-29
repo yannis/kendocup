@@ -13,8 +13,6 @@ gemspec
 # To use debugger
 # gem 'debugger'
 
-gem 'activeadmin', github: "activeadmin/activeadmin"
-gem 'figaro'
 gem "byebug"
 
 group :development do

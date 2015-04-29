@@ -10,6 +10,8 @@ require "prawn"
 require "prawn/table"
 require "omniauth"
 require "omniauth-facebook"
+require "activeadmin"
+require "figaro"
 # require "rails/test_unit/railtie"
 
 Bundler.require(*Rails.groups)

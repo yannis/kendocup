@@ -32,7 +32,7 @@ config/secrets.yml
 config/database.yml
 /config/application.yml
 /spec/dummy/config/application.yml
-db/seeds.rb
+db/my_seeds.rb
 db/seed_files/*
 
 .env
