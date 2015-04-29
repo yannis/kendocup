@@ -18,11 +18,11 @@ In your Gemfile:
 
 and ```bundle``
 
-In your application routes.rb
+In your routes.rb
 
 ```
 scope ":locale", locale: /fr|en/ do |locale|
-  mount Kendocup::Engine => "/""
+  mount Kendocup::Engine => "/"
   root to: redirect("/#{I18n.locale}/cups")
 end
 
@@ -48,6 +48,9 @@ and right before closing ```class Application < Rails::Application``` add
 
 You will change this settings once your email settings are available.
 
+In db/seeds.rb add
+
+    Kendocup::Engine.load_seed
 
 ### Copy a few files
 
@@ -65,13 +68,11 @@ and migrate
 
 fill db with seed data
 
-    Kendocup::Engine.load_seed
-
     bin/rake db:seed
 
 ### Sign in
 
-try to sign in by opening ```/users/sign_in```
+Restart your rails server and try to sign in by opening ```/en/users/sign_in```
 
 - email:    admin@kendocup.com
 - password: adminuser
