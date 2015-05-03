@@ -135,7 +135,7 @@ module Kendocup
 
     def poster_name
       poster_name = [last_name]
-      poster_name << first_name.split(/[\s|-]/).map{|s| s.first+'.'}.join if Kenshi.where(last_name: last_name).count > 1
+      poster_name << first_name.split(/[\s|-]/).map{|s| s.first+'.'}.join if Kendocup::Kenshi.where(last_name: last_name).count > 1
       poster_name.join(' ').mb_chars.normalize(:kd).gsub(/[^\x00-\x7F]/n,'').upcase.to_s
     end
 
