@@ -1,14 +1,14 @@
 require 'poster_size'
 module Kendocup
   class TeamPdf < Prawn::Document
-    include PosterSize
+    include Kendocup::PosterSize
     def initialize(team)
       super(page_layout: :portrait)
       @team = team
       font_families.update(
         "Inconsolata" => {
-            :normal => "#{Kendocup::Engine.root}/lib/assets/fonts/Inconsolata.ttf"
-          }
+          normal: "#{Kendocup::Engine.root}/lib/assets/fonts/Inconsolata.ttf"
+        }
       )
       font "Inconsolata"
 

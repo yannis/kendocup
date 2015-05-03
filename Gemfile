@@ -13,11 +13,9 @@ gemspec
 # To use debugger
 # gem 'debugger'
 
-gem "byebug"
+# gem "byebug"
 
 group :development do
   gem 'seed_dump'
 end
-# gem 'polyamorous', github: 'activerecord-hackery/polyamorous'
-# gem 'ransack',     github: 'activerecord-hackery/ransack'
-# gem 'formtastic'
+

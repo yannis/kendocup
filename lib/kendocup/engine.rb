@@ -2,7 +2,6 @@ module Kendocup
   class Engine < ::Rails::Engine
     isolate_namespace Kendocup
 
-
     config.autoload_paths += %W( ../lib )
 
     # config.autoload_paths << File.expand_path("../lib/some/path", __FILE__)

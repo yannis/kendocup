@@ -1,7 +1,7 @@
 require 'poster_size'
 module Kendocup
   class KenshiPdf < Prawn::Document
-    include PosterSize
+    include Kendocup::PosterSize
     def initialize(kenshi)
       super(page_layout: :landscape)
       @kenshi = kenshi

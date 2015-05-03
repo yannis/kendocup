@@ -1,0 +1,15 @@
+= form_for Kendocup::User.new, as: :user, url: "/#{I18n.locale}/users/sign_in", role: 'form' do |f|
+  .form-group
+    = f.email_field :email, autofocus: true, class: "form-control", placeholder: t("devise.sessions.email")
+  .form-group
+    = f.password_field :password, autocomplete: "off", class: "form-control", placeholder: t("devise.sessions.password")
+  .checkbox
+    %label
+      = f.check_box :remember_me
+      = t("devise.sessions.remember")
+  = f.submit t("devise.sessions.title"), class: "btn btn-success"
+
+= link_to "Sign up", "/#{I18n.locale}/users/sign_up"#new_user_registration_path
+= link_to "Forgot your password?", "/#{I18n.locale}/users/password/new"# new_user_password_path
+= link_to "Didn't receive confirmation instructions?", "/#{I18n.locale}/users/confirmation/new"# new_user_confirmation_path
+= link_to "Sign in with Facebook", "/users/auth/facebook"

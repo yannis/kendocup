@@ -1,7 +1,7 @@
 require 'poster_size'
 module Kendocup
   class TeamsPdf < Prawn::Document
-    include PosterSize
+    include Kendocup::PosterSize
     def initialize(teams)
       super(page_layout: :portrait)
       @teams = teams

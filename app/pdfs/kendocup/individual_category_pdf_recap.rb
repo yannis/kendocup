@@ -1,7 +1,7 @@
 require 'poster_size'
 module Kendocup
   class IndividualCategoryPdfRecap < Prawn::Document
-    include PosterSize
+    include Kendocup::PosterSize
 
     def initialize(individual_category)
 

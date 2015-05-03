@@ -4,7 +4,7 @@ module Kendocup
     protect_from_forgery with: :exception
 
     before_filter :configure_permitted_parameters, if: :devise_controller?
-    before_filter :set_locale, :set_cup
+    before_filter :set_cup
     before_filter :store_location_if_html, :only => [:index, :show]
 
     rescue_from CanCan::AccessDenied do |exception|
@@ -20,33 +20,6 @@ module Kendocup
       @current_ability ||= KendocupAbility.new(current_user)
     end
 
-    def default_url_options
-      default_url_options = {}
-      default_url_options[:locale] = I18n.locale if params[:locale].blank?
-      # default_url_options[:year] = Date.current.year if params[:year].blank?
-      return default_url_options
-    end
-
-    def set_locale
-      if flash
-        notice = notice
-        alert = alert
-      end
-      default_locale = 'en'
-      begin
-        request_language = request.env['HTTP_ACCEPT_LANGUAGE'].split('-')[0]
-        request_language = (request_language.nil? || !['en', 'fr'].include?(request_language[/[^,;]+/])) ? nil : request_language[/[^,;]+/]
-        params_locale = params[:locale] if params[:locale] == 'en' or params[:locale] == 'fr'
-
-        @locale = params_locale || session[:locale] || request_language || default_locale
-        I18n.locale = session[:locale] = @locale
-
-        @inverse_locale = (@locale == 'en' ? 'fr' : 'en')
-
-      rescue
-        I18n.locale = session[:locale] = default_locale
-      end
-    end
 
     # restrict access to admin module for non-admin users
     def authenticate_admin_user!
@@ -94,14 +67,6 @@ module Kendocup
         redirect_back_or_default root_path, alert:  t('kenshis.deadline_passed', email: 'info@kendo-geneve.ch')
         return
       end
-    end
-
-    def store_location_if_html
-      store_location if ['text/html', 'application/javascript', 'text/javascript'].include?(request.format) && !['application/json'].include?(request.format)
-    end
-
-    def store_location
-      session[:return_to] = request.fullpath
     end
   end
 end
