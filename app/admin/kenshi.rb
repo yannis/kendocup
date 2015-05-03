@@ -78,7 +78,7 @@ ActiveAdmin.register Kendocup::Kenshi, as: "Kenshi" do
       f.input :last_name
       f.input :email
       f.input :dob, as: :datepicker
-      f.input :grade, collection: Kenshi::GRADES
+      f.input :grade, collection: Kendocup::Kenshi::GRADES
     end
     f.inputs "Participations" do
       f.has_many :participations do |j|
