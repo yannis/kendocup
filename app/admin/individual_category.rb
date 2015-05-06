@@ -12,7 +12,9 @@ ActiveAdmin.register Kendocup::IndividualCategory, as: "IndividualCategory" do
   filter :name
 
   index do
-    column :cup
+    column :cup do |category|
+      link_to category.cup.name, [:admin, cup]
+    end
     column :name do |category|
       link_to category.name, [:admin, category]
     end

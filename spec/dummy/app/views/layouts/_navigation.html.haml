@@ -36,7 +36,7 @@
               %li
                 = link_to "Settings", user_path(current_user)
               %li
-                = link_to t('subnav.signedin.signout'), signout_path
+                = link_to t('subnav.signedin.signout'), "/#{I18n.locale}/users/sign_out"
         - else
           %li.dropdown.nav-signin
             = link_to "/#{I18n.locale}/users/sign_in", data: {toggle: 'dropdown',  target: "#"}, class: "dropdown-toggle" do

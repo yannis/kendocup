@@ -5,7 +5,7 @@
   = f.input :last_name, label: t('activerecord.attributes.kenshi.last_name')
   = f.input :dob, label: t('activerecord.attributes.kenshi.dob'), placeholder: t('layout.form.date_placeholder'), as: :date_picker
   = f.input :club_name, label: 'Club', as: :select2, input_html: {data: {options: Club.all.map{|c| {id: c.name, text: c.name}}}}, required: true
-  = f.input :grade, as: :select, collection: Kenshi::GRADES, prompt: "Please select"
+  = f.input :grade, as: :select, collection: Kendocup::Kenshi::GRADES, prompt: "Please select"
   = field_set_tag t("kenshis.form.categories") do
     - @cup.team_categories.all.each do |c|
       - participation = f.object.participations.detect{|p| p.category == c}
