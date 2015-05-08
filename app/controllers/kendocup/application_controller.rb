@@ -4,7 +4,7 @@ module Kendocup
     protect_from_forgery with: :exception
 
     before_filter :configure_permitted_parameters, if: :devise_controller?
-    before_filter :set_cup
+    before_filter :set_current_cup
     before_filter :store_location_if_html, :only => [:index, :show]
 
     rescue_from CanCan::AccessDenied do |exception|
@@ -47,14 +47,14 @@ module Kendocup
       user_signed_in? && current_user.admin?
     end
 
-    def set_cup
-      unless @cup.present?
+    def set_current_cup
+      unless @current_cup.present?
         future_cups = Cup.future.order("cups.start_on ASC")
         past_cups = Cup.past.order("cups.start_on DESC")
         if future_cups.present?
-          @cup = future_cups.first
+          @current_cup = future_cups.first
         elsif past_cups.present?
-          @cup = past_cups.first
+          @current_cup = past_cups.first
         else
           raise "Cup is missing!!!"
         end
@@ -62,8 +62,8 @@ module Kendocup
     end
 
     def check_deadline
-      set_cup
-      if !current_user.admin? && Time.current > @cup.deadline
+      set_current_cup
+      if !current_user.admin? && Time.current > @current_cup.deadline
         redirect_back_or_default root_path, alert:  t('kenshis.deadline_passed', email: 'info@kendo-geneve.ch')
         return
       end

@@ -13,7 +13,7 @@ ActiveAdmin.register Kendocup::IndividualCategory, as: "IndividualCategory" do
 
   index do
     column :cup do |category|
-      link_to category.cup.name, [:admin, cup]
+      link_to category.cup.year, [:admin, cup]
     end
     column :name do |category|
       link_to category.name, [:admin, category]

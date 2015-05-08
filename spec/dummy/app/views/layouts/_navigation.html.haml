@@ -13,7 +13,7 @@
         %li
           = link_to t("navigation.home.text"), root_path, title: t("navigation.home.title").html_safe,  data: {toggle: "tooltip", placement: "bottom"}, class: "bs-tooltip"
         %li
-          = link_to t("navigation.kenshis.text", kenshis: @cup.kenshis.count), kenshis_path, title: t("navigation.kenshis.title").html_safe,  data: {toggle: "tooltip", placement: "bottom"}, class: "bs-tooltip"
+          = link_to t("navigation.kenshis.text", kenshis: @current_cup.kenshis.count), kenshis_path, title: t("navigation.kenshis.title").html_safe,  data: {toggle: "tooltip", placement: "bottom"}, class: "bs-tooltip"
         %li
           = link_to t("navigation.teams.text"), teams_path, title: t("navigation.teams.title").html_safe,  data: {toggle: "tooltip", placement: "bottom"}, class: "bs-tooltip"
         %li

@@ -30,7 +30,7 @@ class KenshisController < ApplicationController
       format.csv {
         filename = Time.now.to_s(:datetime).gsub(/[^0-9a-z]/, '')+'_'+@title.gsub(/[^0-9a-zA-Z]/, "_").gsub('__', "_") + ".csv"
         send_data(
-          Kenshi.to_csv(@kenshis),
+          Kendocup::Kenshi.to_csv(@kenshis),
           type: 'text/csv; charset=utf-8; header=present',
           filename: filename
         )
@@ -55,11 +55,11 @@ class KenshisController < ApplicationController
         redirect_to kenshi_path(existing_kenshis.first, locale: I18n.locale), notice: t("kenshis.self.exist")
         return
       else
-        @kenshi = Kenshi.from(current_user)
+        @kenshi = Kendocup::Kenshi.from(current_user)
         @title = t('kenshis.new.yourself')
       end
     elsif params[:id]
-      origin_kenshi = Kenshi.find(params[:id])
+      origin_kenshi = Kendocup::Kenshi.find(params[:id])
       @kenshi = origin_kenshi.dup
       @kenshi.first_name = @kenshi.last_name = @kenshi.email = @kenshi.dob = nil
       @title = t("kenshis.new.duplicate", full_name: origin_kenshi.full_name)
@@ -116,11 +116,11 @@ class KenshisController < ApplicationController
           redirect_to kenshi_path(existing_kenshis.first, locale: I18n.locale), notice: t("kenshis.self.exist")
           return
         else
-          @kenshi = Kenshi.from(current_user)
+          @kenshi = Kendocup::Kenshi.from(current_user)
           @title = t('kenshis.new.yourself')
         end
       elsif params[:id]
-        origin_kenshi = Kenshi.find(params[:id])
+        origin_kenshi = Kendocup::Kenshi.find(params[:id])
         @kenshi = origin_kenshi.dup
         @kenshi.first_name = @kenshi.last_name = @kenshi.email = @kenshi.dob = nil
         @title = t("kenshis.new.duplicate", full_name: origin_kenshi.full_name)
@@ -206,11 +206,11 @@ class KenshisController < ApplicationController
 
   private
     def set_user
-      @user = User.find params[:user_id] if params[:user_id]
+      @user = Kendocup::User.find params[:user_id] if params[:user_id]
     end
 
     def set_variables
-      @teams = Team.incomplete.order(:name)+Team.complete.order(:name)
+      @teams = Kendocup::Team.incomplete.order(:name)+Team.complete.order(:name)
       # @team_name = params[:kenshi][:team_name] if params[:kenshi] && params[:kenshi][:team_name]
     end
 

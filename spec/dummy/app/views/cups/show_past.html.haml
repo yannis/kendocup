@@ -9,16 +9,16 @@
   .row#deadline
     .col-xs-12.col-md-12.alert.alert-warning
       - if Time.current > @cup.deadline
-        =raw t("kendocup.cups.show.deadline_passed", deadline: I18n.l(@cup.deadline, format: :long))
+        =raw t("cups.show.deadline_passed", deadline: I18n.l(@cup.deadline, format: :long))
       - else
-        =raw t("kendocup.cups.show.deadline", deadline: I18n.l(@cup.deadline, format: :long))
+        =raw t("cups.show.deadline", deadline: I18n.l(@cup.deadline, format: :long))
 
   .row#over
     .col-xs-12.col-md-12.alert.alert-warning
-      =raw t("kendocup.cups.show.over")
+      =raw t("cups.show.over")
   .row#results
     .col-xs-12.col-md-12
-      %h2= t 'kendocup.cups.show.results.title'
+      %h2= t 'cups.show.results.title'
     .col-xs-12.col-md-6
       %h3 Team
       %p
@@ -115,7 +115,7 @@
   .row
     .panel.panel-info
       .panel-heading
-        =raw t("kendocup.cups.show.other_links")
+        =raw t("cups.show.other_links")
       %ul.list-group
         %li.list-group-item
           = link_to "Stéphane Cazalet (Scaz) Flickr album", "https://www.flickr.com/photos/scazalet/sets/72157648154694195/"
