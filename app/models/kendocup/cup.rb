@@ -3,6 +3,7 @@ module Kendocup
     has_many :kenshis, inverse_of: :cup, dependent: :destroy
     has_many :individual_categories, inverse_of: :cup, dependent: :destroy
     has_many :team_categories, inverse_of: :cup, dependent: :destroy
+    has_many :teams, through: :team_categories
     has_many :events, inverse_of: :cup, dependent: :destroy
     has_many :headlines, inverse_of: :cup, dependent: :destroy
     has_many :products, inverse_of: :cup, dependent: :destroy

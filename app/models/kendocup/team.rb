@@ -12,6 +12,8 @@ module Kendocup
     validates_uniqueness_of :name, scope: :team_category_id
     validate :number_of_participations
 
+    delegate :cup, to: :team_category
+
     def self.empty
       includes(:participations).
       where(participations: {team_id: nil})

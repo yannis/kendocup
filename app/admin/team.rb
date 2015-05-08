@@ -10,11 +10,7 @@ ActiveAdmin.register Kendocup::Team, as: "Team" do
 
   index do
     column :name
-    column :cup do |team|
-      if team.team_category.present?
-        link_to(team.team_category.cup.year, admin_cup_path(team.team_category.cup.id))
-      end
-    end
+    column :cup
     column :team_category
     column :rank
     column :members do |team|
@@ -43,6 +39,7 @@ ActiveAdmin.register Kendocup::Team, as: "Team" do
   end
 
   filter :name
+  filter :cup
   filter :team_category
   filter :rank
 
