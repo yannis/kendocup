@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150429202547) do
+ActiveRecord::Schema.define(version: 20150508205125) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,6 +47,7 @@ ActiveRecord::Schema.define(version: 20150429202547) do
     t.integer  "junior_fees_eur"
     t.integer  "adult_fees_chf"
     t.integer  "adult_fees_eur"
+    t.integer  "year"
   end
 
   create_table "events", force: :cascade do |t|

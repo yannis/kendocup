@@ -15,7 +15,7 @@ module Kendocup
     validates_presence_of :junior_fees_eur
     validates_uniqueness_of :start_on
 
-    before_validation :set_deadline
+    before_validation :set_deadline, :set_year
 
     def self.past
       where("cups.start_on < ?", Date.current)
@@ -25,16 +25,8 @@ module Kendocup
       where("cups.start_on >= ?", Date.current)
     end
 
-    def to_param
-      year
-    end
-
     def to_s
       year.to_s
-    end
-
-    def year
-      start_on.year
     end
 
     def past?
@@ -53,6 +45,12 @@ module Kendocup
 
     def set_deadline
       self.deadline = (self.start_on.to_time-7.days) if self.start_on.present? && self.deadline.blank?
+    end
+
+    def set_year
+      if self.year.blank?
+        self.year = self.start_on.try(:year)
+      end
     end
   end
 end
