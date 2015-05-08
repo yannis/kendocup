@@ -25,6 +25,10 @@ module Kendocup
       where("cups.start_on >= ?", Date.current)
     end
 
+    def to_param
+      year
+    end
+
     def to_s
       year.to_s
     end
