@@ -35,6 +35,7 @@ module Kendocup
     delegate :full_name, to: 'kenshi', allow_nil: true
     delegate :grade, to: 'kenshi', allow_nil: true
     delegate :club, to: 'kenshi', allow_nil: true
+    delegate :cup, to: 'kenshi', allow_nil: true
 
     def self.no_pool
       self.where(pool_number: nil)

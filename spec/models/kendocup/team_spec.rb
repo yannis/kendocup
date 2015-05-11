@@ -16,6 +16,8 @@ module Kendocup
       it {expect(team.name_and_category).to eql "SDK (team_cat)"}
       it {expect(team.name_and_category).to eql "SDK (team_cat)"}
       it {expect(team.poster_name).to eql "SDK"}
+      it {expect(team.cup).to eql team_category.cup}
+      it {expect(team_category.cup.teams).to match_array [team]}
       it {expect(Team.empty.to_a).to include(team)}
       it {expect(Team.empty.to_a).to eq [team]}
 

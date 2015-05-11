@@ -1,6 +1,7 @@
 module Kendocup
   class Cup < ActiveRecord::Base
     has_many :kenshis, inverse_of: :cup, dependent: :destroy
+    has_many :participations, through: :kenshis
     has_many :individual_categories, inverse_of: :cup, dependent: :destroy
     has_many :team_categories, inverse_of: :cup, dependent: :destroy
     has_many :teams, through: :team_categories

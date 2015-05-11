@@ -12,6 +12,7 @@ module Kendocup
     it {should respond_to(:end_on)}
     it {should respond_to(:deadline)}
     it {should respond_to(:year)}
+    it {should respond_to(:participations)}
 
     it {should validate_presence_of :start_on}
     it {should validate_presence_of :deadline}

@@ -27,8 +27,9 @@ module Kendocup
       let(:team_category) {create :kendocup_team_category, cup: cup}
       let!(:participation) {create :kendocup_participation, category: team_category, ronin: true, kenshi: kenshi}
 
-      it {expect(participation).to be_valid_verbose }
-      it {expect(Participation.ronins.to_a).to eql [participation] }
+      it { expect(participation).to be_valid_verbose }
+      it { expect(Participation.ronins.to_a).to eql [participation] }
+      it { expect(participation.cup).to eql cup }
     end
 
     context "for a kenshi" do
