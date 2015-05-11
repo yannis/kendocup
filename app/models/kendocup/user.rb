@@ -59,8 +59,8 @@ module Kendocup
       female? ? '♀' : '♂'
     end
 
-    def fees(currency)
-      kenshis.map{|k| k.fees(currency)}.inject{|sum,x| sum + x}
+    def fees(currency, cup)
+      kenshis.for_cup(cup).map{|k| k.fees(currency)}.inject{|sum,x| sum + x}
     end
 
     private

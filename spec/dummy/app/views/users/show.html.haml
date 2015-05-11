@@ -27,7 +27,7 @@
           %th
             %h4 Fees due
           %th
-            = "#{@user.fees(:chf)} CHF / #{@user.fees(:eur)} €"
+            = "#{@user.fees(:chf, @current_cup)} CHF / #{@user.fees(:eur, @current_cup)} €"
     = user_admin_links @user
 
   .col-xs-12.col-md-6

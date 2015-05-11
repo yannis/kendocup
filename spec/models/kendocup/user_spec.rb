@@ -53,12 +53,12 @@ module Kendocup
 
     describe "a user with kenshis" do
       let(:user) {create :kendocup_user}
-      let!(:kenshi1) {create :kendocup_kenshi, user_id: user.id, cup: cup}
-      let!(:kenshi2) {create :kendocup_kenshi, user_id: user.id, cup: cup}
-      let!(:kenshi3) {create :kendocup_kenshi, user_id: user.id, cup: cup}
+      let!(:kenshi1) {create :kendocup_kenshi, user: user, cup: cup}
+      let!(:kenshi2) {create :kendocup_kenshi, user: user, cup: cup}
+      let!(:kenshi3) {create :kendocup_kenshi, user: user, cup: cup}
 
-      # it {expect(kenshi1.bill(:chf)).to eq 55}
-      # it {expect(user.bill(:chf)).to eq 117}
+      it {expect(kenshi1.fees(:chf)).to eq 0}
+      it {expect(user.fees(:chf, cup)).to eq 0}
     end
 
     context "when admin" do
