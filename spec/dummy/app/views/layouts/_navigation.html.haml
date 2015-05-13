@@ -22,7 +22,7 @@
         - if user_signed_in?
           = link_to "<span class='glyphicon glyphicon-plus'></span> #{t("navigation.register.text")}".html_safe, user_path(current_user.id, locale: I18n.locale), title: t("navigation.register.title").html_safe,  data: {toggle: "tooltip", placement: "bottom"}, class: "bs-tooltip btn btn-info navbar-btn"
         - else
-          = link_to "<span class='glyphicon glyphicon-plus'></span> #{t("navigation.register.text")}".html_safe, "/#{I18n.locale}/users/sign_in", title: t("navigation.register.title").html_safe,  data: {toggle: "tooltip", placement: "bottom"}, class: "bs-tooltip btn btn-info navbar-btn"
+          = link_to "<span class='glyphicon glyphicon-plus'></span> #{t("navigation.register.text")}".html_safe, signin_path, title: t("navigation.register.title").html_safe,  data: {toggle: "tooltip", placement: "bottom"}, class: "bs-tooltip btn btn-info navbar-btn"
       %ul.nav.navbar-nav.navbar-right
         %li#lang
           = link_to (@inverse_locale == 'fr' ? 'français' : 'english'), {locale: @inverse_locale}
@@ -36,12 +36,13 @@
               %li
                 = link_to "Settings", user_path(current_user)
               %li
-                = link_to t('subnav.signedin.signout'), "/#{I18n.locale}/users/sign_out"
+                = link_to t('subnav.signedin.signout'), signout_path
         - else
           %li.dropdown.nav-signin
             = link_to "/#{I18n.locale}/users/sign_in", data: {toggle: 'dropdown',  target: "#"}, class: "dropdown-toggle" do
               Sign in
               %b.caret
             .dropdown-menu
-              = render "devise/sessions/form"
+              = render partial: "devise/sessions/form", locals: {resource: Kendocup::User.new, resource_name: :user}
+
     = render "layouts/registrations"

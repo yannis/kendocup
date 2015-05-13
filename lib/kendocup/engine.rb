@@ -3,9 +3,9 @@ module Kendocup
     isolate_namespace Kendocup
 
 
-    config.to_prepare do
-      Devise::SessionsController.layout "application"
-    end
+    # config.to_prepare do
+    #   Devise::SessionsController.layout "application"
+    # end
 
     config.autoload_paths += %W( ../lib )
 

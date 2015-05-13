@@ -1,6 +1,5 @@
-# Rails.application.routes.draw do
-Kendocup::Engine.routes.draw do
-
+# Kendocup::Engine.routes.draw do
+Rails.application.routes.draw do
   devise_scope :user do
     providers = Regexp.union(Devise.omniauth_providers.map(&:to_s))
     match 'users/auth/:provider',
@@ -11,13 +10,12 @@ Kendocup::Engine.routes.draw do
 
     match 'users/auth/:action/callback',
       constraints: { action: providers },
-      controller: :omniauth_callbacks,
+      controller: 'kendocup/omniauth_callbacks',
       as: :omniauth_callback,
       via: [:get, :post]
 
     get 'signout', to: 'devise/sessions#destroy', as: 'signout'
+    get 'signin', to: 'devise/sessions#new', as: 'signin'
   end
-  devise_for  :users, class_name: 'Kendocup::User', module: :devise, except: [:omniauth_callbacks]
-
-
+  devise_for :users, class_name: 'Kendocup::User', module: :devise, except: [:omniauth_callbacks]
 end
