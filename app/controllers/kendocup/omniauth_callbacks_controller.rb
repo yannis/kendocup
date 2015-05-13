@@ -12,7 +12,7 @@ class Kendocup::OmniauthCallbacksController < Devise::OmniauthCallbacksControlle
     else
       set_flash_message(:notice, :failure, kind: "Facebook", reason: @user.errors.full_messages.first) if is_navigational_format?
       session["devise.facebook_data"] = request.env["omniauth.auth"]
-      redirect_to new_user_registration_url(locale: I18n.locale)
+      redirect_to signup_url(locale: I18n.locale)
     end
   end
 end

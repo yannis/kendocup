@@ -44,5 +44,6 @@
               %b.caret
             .dropdown-menu
               = render partial: "devise/sessions/form", locals: {resource: Kendocup::User.new, resource_name: :user}
+              = render partial: "devise/shared/links", locals: {resource: Kendocup::User.new, resource_name: :user}
 
     = render "layouts/registrations"

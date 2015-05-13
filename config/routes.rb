@@ -16,6 +16,7 @@ Rails.application.routes.draw do
 
     get 'signout', to: 'devise/sessions#destroy', as: 'signout'
     get 'signin', to: 'devise/sessions#new', as: 'signin'
+    get 'signup', to: 'devise/registrations#new', as: 'signup'
   end
   devise_for :users, class_name: 'Kendocup::User', module: :devise, except: [:omniauth_callbacks]
 end
