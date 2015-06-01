@@ -38,3 +38,4 @@ db/seed_files/*
 .env
 
 db/migrate/20141009093718_create_kendocup_results.rb.zip
+spec/dummy/vendor/bundle
