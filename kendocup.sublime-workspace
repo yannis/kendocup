@@ -4,8 +4,16 @@
 		"selected_items":
 		[
 			[
+				"part",
+				"participations"
+			],
+			[
+				"mat",
+				"match_array"
+			],
+			[
 				"tea",
-				"team_categories"
+				"team_category"
 			],
 			[
 				"curr",
@@ -38,10 +46,6 @@
 			[
 				"K",
 				"Kendocup"
-			],
-			[
-				"part",
-				"participation1"
 			],
 			[
 				"cate",
@@ -510,10 +514,6 @@
 			[
 				"categ",
 				"category"
-			],
-			[
-				"aut",
-				"autorisations"
 			]
 		]
 	},
@@ -531,7 +531,7 @@
 			"file": "spec/models/kendocup/cup_spec.rb",
 			"settings":
 			{
-				"buffer_size": 1684,
+				"buffer_size": 1728,
 				"line_ending": "Unix"
 			}
 		},
@@ -611,7 +611,7 @@
 			"file": "app/views/kendocup/kenshis/show.html.haml",
 			"settings":
 			{
-				"buffer_size": 2295,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -619,7 +619,7 @@
 			"file": "app/helpers/kendocup/participations_helper.rb",
 			"settings":
 			{
-				"buffer_size": 595,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -627,7 +627,7 @@
 			"file": "app/views/kendocup/kenshis/index.html.haml",
 			"settings":
 			{
-				"buffer_size": 249,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -635,7 +635,7 @@
 			"file": "app/views/kendocup/kenshis/_kenshi_row.html.haml",
 			"settings":
 			{
-				"buffer_size": 583,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -643,7 +643,7 @@
 			"file": "app/views/kendocup/kenshis/_kenshi.html.haml",
 			"settings":
 			{
-				"buffer_size": 2045,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -651,7 +651,7 @@
 			"file": "app/views/kendocup/kenshis/_table_head.html.haml",
 			"settings":
 			{
-				"buffer_size": 453,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -659,7 +659,7 @@
 			"file": "app/helpers/kendocup/kenshis_helper.rb",
 			"settings":
 			{
-				"buffer_size": 962,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -667,7 +667,7 @@
 			"file": "app/helpers/kendocup/teams_helper.rb",
 			"settings":
 			{
-				"buffer_size": 492,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -675,7 +675,7 @@
 			"file": "app/views/devise/shared/_links.html.erb",
 			"settings":
 			{
-				"buffer_size": 959,
+				"buffer_size": 1052,
 				"line_ending": "Unix"
 			}
 		},
@@ -683,7 +683,7 @@
 			"file": "app/models/kendocup/user.rb",
 			"settings":
 			{
-				"buffer_size": 3482,
+				"buffer_size": 3500,
 				"line_ending": "Unix"
 			}
 		},
@@ -883,7 +883,7 @@
 			"file": "app/views/kendocup/application/_footer.html.haml",
 			"settings":
 			{
-				"buffer_size": 785,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -899,7 +899,7 @@
 			"file": "spec/models/kendocup/participation_spec.rb",
 			"settings":
 			{
-				"buffer_size": 2324,
+				"buffer_size": 2376,
 				"line_ending": "Unix"
 			}
 		},
@@ -955,7 +955,7 @@
 			"file": "app/controllers/kendocup/headlines_controller.rb",
 			"settings":
 			{
-				"buffer_size": 344,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -971,7 +971,7 @@
 			"file": "spec/controllers/kendocup/kenshis_controller_spec.rb",
 			"settings":
 			{
-				"buffer_size": 8772,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -979,7 +979,7 @@
 			"file": "config/locales/devise.en.yml",
 			"settings":
 			{
-				"buffer_size": 4025,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -995,7 +995,7 @@
 			"file": "app/views/kendocup/cups/index.html.haml",
 			"settings":
 			{
-				"buffer_size": 54,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -1013,7 +1013,7 @@
 			"file": "app/views/kendocup/layouts/application.html.haml",
 			"settings":
 			{
-				"buffer_size": 2798,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -1021,7 +1021,7 @@
 			"file": "spec/dummy/app/views/layouts/application.html.erb",
 			"settings":
 			{
-				"buffer_size": 295,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -1029,7 +1029,7 @@
 			"file": "app/views/kendocup/cups/show.html.haml",
 			"settings":
 			{
-				"buffer_size": 6818,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -1037,7 +1037,7 @@
 			"file": "app/views/kendocup/cups/show_past.html.haml",
 			"settings":
 			{
-				"buffer_size": 7207,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -1171,7 +1171,7 @@
 			"file": "spec/models/kendocup/user_spec.rb",
 			"settings":
 			{
-				"buffer_size": 2730,
+				"buffer_size": 2710,
 				"line_ending": "Unix"
 			}
 		},
@@ -1179,7 +1179,7 @@
 			"file": "spec/controllers/kendocup/cups_controller_spec.rb",
 			"settings":
 			{
-				"buffer_size": 851,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -1195,15 +1195,18 @@
 			"file": "config/locales/users.fr.yml",
 			"settings":
 			{
-				"buffer_size": 1377,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
 		{
+			"contents": "require 'spec_helper'\n\nmodule Kendocup\n  RSpec.describe Team, type: :model do\n    it { should have_many :participations }\n    it { should have_many :kenshis }\n    it { should validate_presence_of(:name) }\n    it { should validate_uniqueness_of(:name).scoped_to(:team_category_id) }\n\n    describe \"a empty team\" do\n      let(:team_category){create :kendocup_team_category, name: \"team_cat\"}\n      let!(:team){ create :kendocup_team, name: \"SDK\", team_category: team_category, participations: [] }\n      it {expect(team.participations.count).to eq 0}\n      it {expect(team).to be_valid_verbose}\n      it {expect(team.name_and_status).to eql \"SDK\"}\n      it {expect(team.name_and_category).to eql \"SDK (team_cat)\"}\n      it {expect(team.poster_name).to eql \"SDK\"}\n      it {expect(team.cup).to eql team_category.cup}\n      it {expect(team_category.cup.teams).to match_array [team]}\n      it {expect(Team.empty.to_a).to include(team)}\n      it {expect(Team.empty.to_a).to eq [team]}\n\n      context \"with 1 participation\" do\n        let!(:team_participation) {create :kendocup_participation, team_id: team.id}\n        before {team.reload}\n        it {expect(team).to be_valid_verbose}\n        it {expect(team_participation.team).to eq team}\n        it {expect(Team.incomplete.all).to include(team)}\n        it {expect(Team.incomplete).to eq [team]}\n        it {expect(team.participations.count).to eq 1}\n        it {expect(Team.empty.to_a).to_not include(team)}\n      end\n\n      # it \"is included in Team.incomplete if it has less than 5 participations\" do\n      #   team.reload.should be_valid_verbose\n      #   Team.incomplete.should include(team.reload)\n      # end\n    #   it \"is valid if it has 5 participations\" do\n    #     team.stub!(:participations).and_return [mock_model(Participation),mock_model(Participation),mock_model(Participation),mock_model(Participation),mock_model(Participation)]\n    #     team.should be_valid_verbose\n    #   end\n    #   it \"is complete if it has 5 participations\" do\n    #     team.stub!(:participations).and_return [mock_model(Participation),mock_model(Participation),mock_model(Participation),mock_model(Participation),mock_model(Participation)]\n    #     team.should be_complete\n    #   end\n    #   it \"is complete if it has 6 participations\" do\n    #     team.stub!(:participations).and_return [mock_model(Participation),mock_model(Participation),mock_model(Participation),mock_model(Participation),mock_model(Participation),mock_model(Participation)]\n    #     team.should be_complete\n    #   end\n    #   it \"is incomplete if it has < 5 participations\" do\n    #     team.stub!(:participations).and_return [mock_model(Participation),mock_model(Participation),mock_model(Participation),mock_model(Participation)]\n    #     team.should_not be_complete\n    #   end\n    #   it \"is not valid if it has more than 6 participations\" do\n    #     team.stub!(:participations).and_return [mock_model(Participation),mock_model(Participation),mock_model(Participation),mock_model(Participation),mock_model(Participation),mock_model(Participation), mock_model(Participation)]\n    #     team.should_not be_valid_verbose\n    #     team.errors[:participations].should include \"Une équipe ne peut rassembler plus de 6 combattants (seulement 5 se battront).\"\n    #   end\n    end\n  end\nend\n",
 			"file": "spec/models/kendocup/team_spec.rb",
+			"file_size": 3377,
+			"file_write_time": 1431376299000000,
 			"settings":
 			{
-				"buffer_size": 3258,
+				"buffer_size": 3310,
 				"line_ending": "Unix"
 			}
 		},
@@ -1211,7 +1214,7 @@
 			"file": "spec/routing/kendocup/cups_routing_spec.rb",
 			"settings":
 			{
-				"buffer_size": 393,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -1219,7 +1222,7 @@
 			"file": "config/locales/participations.fr.yml",
 			"settings":
 			{
-				"buffer_size": 594,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -1227,7 +1230,7 @@
 			"file": "config/locales/kenshis.fr.yml",
 			"settings":
 			{
-				"buffer_size": 3270,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -1235,7 +1238,7 @@
 			"file": "config/locales/registration.fr.yml",
 			"settings":
 			{
-				"buffer_size": 3122,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -1243,7 +1246,7 @@
 			"file": "config/locales/registration.en.yml",
 			"settings":
 			{
-				"buffer_size": 2846,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -1251,7 +1254,7 @@
 			"file": "config/locales/teams.en.yml",
 			"settings":
 			{
-				"buffer_size": 567,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -1259,7 +1262,7 @@
 			"file": "config/locales/teams.fr.yml",
 			"settings":
 			{
-				"buffer_size": 615,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -1267,7 +1270,7 @@
 			"file": "config/locales/users.en.yml",
 			"settings":
 			{
-				"buffer_size": 1248,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -1291,7 +1294,7 @@
 			"file": "config/locales/kenshis.en.yml",
 			"settings":
 			{
-				"buffer_size": 3032,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -1315,7 +1318,7 @@
 			"file": "spec/controllers/kendocup/purchases_controller_spec.rb",
 			"settings":
 			{
-				"buffer_size": 1753,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -1323,7 +1326,7 @@
 			"file": "spec/controllers/kendocup/participations_controller_spec.rb",
 			"settings":
 			{
-				"buffer_size": 1865,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -1526,7 +1529,7 @@
 			"file": "config/locales/cups.en.yml",
 			"settings":
 			{
-				"buffer_size": 3716,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -1550,7 +1553,7 @@
 			"file": "spec/dummy/db/migrate/20141126210936_create_active_admin_comments.kendocup.rb",
 			"settings":
 			{
-				"buffer_size": 655,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -1606,7 +1609,7 @@
 			"file": "app/models/kendocup/participation.rb",
 			"settings":
 			{
-				"buffer_size": 3885,
+				"buffer_size": 3934,
 				"line_ending": "Unix"
 			}
 		},
@@ -1654,7 +1657,7 @@
 			"file": "app/controllers/kendocup/users_controller.rb",
 			"settings":
 			{
-				"buffer_size": 2300,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -1670,7 +1673,7 @@
 			"file": "app/controllers/kendocup/registrations_controller.rb",
 			"settings":
 			{
-				"buffer_size": 2163,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -1678,7 +1681,7 @@
 			"file": "app/views/kendocup/application/_flashes.html.haml",
 			"settings":
 			{
-				"buffer_size": 129,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -1686,7 +1689,7 @@
 			"file": "app/helpers/kendocup/application_helper.rb",
 			"settings":
 			{
-				"buffer_size": 298,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -1694,7 +1697,7 @@
 			"file": "app/views/kendocup/teams/_table_head.html.haml",
 			"settings":
 			{
-				"buffer_size": 89,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -1702,7 +1705,7 @@
 			"file": "app/views/kendocup/teams/show.html.haml",
 			"settings":
 			{
-				"buffer_size": 364,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -1723,14 +1726,6 @@
 			}
 		},
 		{
-			"file": "app/views/kendocup/devise/registrations/_form.html.haml",
-			"settings":
-			{
-				"buffer_size": 1249,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "spec/dummy/config/environment.rb",
 			"settings":
 			{
@@ -1742,7 +1737,7 @@
 			"file": "config/locales/devise.fr.yml",
 			"settings":
 			{
-				"buffer_size": 4834,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -1750,7 +1745,7 @@
 			"file": "config/locales/cups.fr.yml",
 			"settings":
 			{
-				"buffer_size": 3789,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -1777,7 +1772,7 @@
 			"file": "spec/dummy/app/views/users/show.html.haml",
 			"settings":
 			{
-				"buffer_size": 1754,
+				"buffer_size": 1782,
 				"line_ending": "Unix"
 			}
 		},
@@ -1806,13 +1801,53 @@
 			}
 		},
 		{
-			"contents": "Searching 351 files for \"::GRADE\" (case sensitive)\n\n/Users/yannis/railsapps/kendocup/app/admin/kenshi.rb:\n   79        f.input :email\n   80        f.input :dob, as: :datepicker\n   81:       f.input :grade, collection: Kendocup::Kenshi::GRADES\n   82      end\n   83      f.inputs \"Participations\" do\n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/kenshis/_form.html.haml:\n    6    = f.input :dob, label: t('activerecord.attributes.kenshi.dob'), placeholder: t('layout.form.date_placeholder'), as: :date_picker\n    7    = f.input :club_name, label: 'Club', as: :select2, input_html: {data: {options: Club.all.map{|c| {id: c.name, text: c.name}}}}, required: true\n    8:   = f.input :grade, as: :select, collection: Kendocup::Kenshi::GRADES, prompt: \"Please select\"\n    9    = field_set_tag t(\"kenshis.form.categories\") do\n   10      - @cup.team_categories.all.each do |c|\n\n/Users/yannis/railsapps/kendocup/spec/models/kendocup/kenshi_spec.rb:\n   28      it {should validate_uniqueness_of(:last_name).scoped_to(:first_name)}\n   29  \n   30:     it { should validate_inclusion_of(:grade).in_array Kenshi::GRADES }\n   31      # it { should ensure_inclusion_of(:female).in_array [true, false] }\n   32  \n\n3 matches across 3 files\n\n\nSearching 345 files for \"ronins = Participation.ronins.map\" (case sensitive)\n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/controllers/teams_controller.rb:\n    4  \n    5    def index\n    6:     @ronins = Participation.ronins.map(&:kenshi)\n    7      @teams = @teams.order(:name)\n    8      respond_with @teams\n\n1 match in 1 file\n\n\nSearching 346 files for \"set_cuo\" (case sensitive)\n\n0 matches across 0 files\n\n\nSearching 346 files for \"link_to \"Permalink\", cup_headline_path(@cup\" (case sensitive)\n\n0 matches across 0 files\n\n\nSearching 346 files for \"cup_headline_path(@cup\" (case sensitive)\n\n0 matches across 0 files\n",
+			"contents": "Searching 351 files for \"::GRADE\" (case sensitive)\n\n/Users/yannis/railsapps/kendocup/app/admin/kenshi.rb:\n   79        f.input :email\n   80        f.input :dob, as: :datepicker\n   81:       f.input :grade, collection: Kendocup::Kenshi::GRADES\n   82      end\n   83      f.inputs \"Participations\" do\n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/kenshis/_form.html.haml:\n    6    = f.input :dob, label: t('activerecord.attributes.kenshi.dob'), placeholder: t('layout.form.date_placeholder'), as: :date_picker\n    7    = f.input :club_name, label: 'Club', as: :select2, input_html: {data: {options: Club.all.map{|c| {id: c.name, text: c.name}}}}, required: true\n    8:   = f.input :grade, as: :select, collection: Kendocup::Kenshi::GRADES, prompt: \"Please select\"\n    9    = field_set_tag t(\"kenshis.form.categories\") do\n   10      - @cup.team_categories.all.each do |c|\n\n/Users/yannis/railsapps/kendocup/spec/models/kendocup/kenshi_spec.rb:\n   28      it {should validate_uniqueness_of(:last_name).scoped_to(:first_name)}\n   29  \n   30:     it { should validate_inclusion_of(:grade).in_array Kenshi::GRADES }\n   31      # it { should ensure_inclusion_of(:female).in_array [true, false] }\n   32  \n\n3 matches across 3 files\n\n\nSearching 345 files for \"ronins = Participation.ronins.map\" (case sensitive)\n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/controllers/teams_controller.rb:\n    4  \n    5    def index\n    6:     @ronins = Participation.ronins.map(&:kenshi)\n    7      @teams = @teams.order(:name)\n    8      respond_with @teams\n\n1 match in 1 file\n\n\nSearching 346 files for \"set_cuo\" (case sensitive)\n\n0 matches across 0 files\n\n\nSearching 346 files for \"link_to \"Permalink\", cup_headline_path(@cup\" (case sensitive)\n\n0 matches across 0 files\n\n\nSearching 346 files for \"cup_headline_path(@cup\" (case sensitive)\n\n0 matches across 0 files\n\n\nSearching 346 files for \"fee\" (case sensitive)\n\n/Users/yannis/railsapps/kendocup/Gemfile.lock:\n   42        arbre (~> 1.0, >= 1.0.2)\n   43        bourbon\n   44:       coffee-rails\n   45        formtastic (~> 3.1)\n   46        formtastic_i18n\n   ..\n   83        rack-test (>= 0.5.4)\n   84        xpath (~> 2.0)\n   85:     coffee-rails (4.1.0)\n   86:       coffee-script (>= 2.2.0)\n   87        railties (>= 4.0.0, < 5.0)\n   88:     coffee-script (2.4.1)\n   89:       coffee-script-source\n   90        execjs\n   91:     coffee-script-source (1.9.1.1)\n   92      devise (3.4.1)\n   93        bcrypt (~> 3.0)\n\n/Users/yannis/railsapps/kendocup/app/admin/cup.rb:\n    1  ActiveAdmin.register Kendocup::Cup, as: \"Cup\" do\n    2  \n    3:   permit_params :year, :start_on, :end_on, :deadline, :adult_fees_chf, :adult_fees_eur, :junior_fees_chf, :junior_fees_eur\n    4  \n    5    controller do\n    .\n   24      end\n   25      f.inputs \"Fees\" do\n   26:       f.input :adult_fees_chf\n   27:       f.input :adult_fees_eur\n   28:       f.input :junior_fees_chf\n   29:       f.input :junior_fees_eur\n   30      end\n   31      f.actions\n   ..\n   38      column :end_on\n   39      column :deadline\n   40:     column :adult_fees_chf\n   41:     column :adult_fees_eur\n   42:     column :junior_fees_chf\n   43:     column :junior_fees_eur\n   44      actions\n   45    end\n   ..\n   50        row :end_on\n   51        row :deadline\n   52:       row :adult_fees_chf\n   53:       row :adult_fees_eur\n   54:       row :junior_fees_chf\n   55:       row :junior_fees_eur\n   56      end\n   57      if cup.kenshis.present?\n   ..\n  122    #     f.input :end_on, as: :string, input_html: {class: \"hasDatetimePicker\"}\n  123    #     f.input :deadline, as: :string, input_html: {class: \"hasDatetimePicker\"}\n  124:   #     f.input :adult_fees_chf\n  125:   #     f.input :adult_fees_eur\n  126:   #     f.input :junior_fees_chf\n  127:   #     f.input :junior_fees_eur\n  128    #   end\n  129    #   f.actions\n\n/Users/yannis/railsapps/kendocup/app/admin/product.rb:\n    1  ActiveAdmin.register Kendocup::Product, as: \"Product\" do\n    2:   permit_params :name_en, :name_fr, :description_en, :description_fr, :cup_id, :event_id, :fee_chf, :fee_eu\n    3  \n    4    controller do\n    .\n   15      column :event\n   16      column :description_en\n   17:     column :fee_chf\n   18:     column :fee_eu\n   19      actions\n   20    end\n   ..\n   28        row :description_en\n   29        row :description_fr\n   30:       row :fee_chf\n   31:       row :fee_eu\n   32      end\n   33  \n\n/Users/yannis/railsapps/kendocup/app/models/kendocup/cup.rb:\n   12      validates_presence_of :start_on\n   13      validates_presence_of :deadline\n   14:     validates_presence_of :adult_fees_chf\n   15:     validates_presence_of :adult_fees_eur\n   16:     validates_presence_of :junior_fees_chf\n   17:     validates_presence_of :junior_fees_eur\n   18      validates_uniqueness_of :start_on\n   19  \n   ..\n   40      end\n   41  \n   42:     def junior_fees(currency)\n   43:       currency.to_sym == :chf ? self.junior_fees_chf : self.junior_fees_eur\n   44      end\n   45  \n   46:     def adult_fees(currency)\n   47:       currency.to_sym == :chf ? self.adult_fees_chf : self.adult_fees_eur\n   48      end\n   49  \n\n/Users/yannis/railsapps/kendocup/app/models/kendocup/kenshi.rb:\n  112      end\n  113  \n  114:     def competition_fee(currency)\n  115        if participations.present?\n  116:         junior? ? self.cup.junior_fees(currency) : self.cup.adult_fees(currency)\n  117        else\n  118          0\n  ...\n  120      end\n  121  \n  122:     def products_fee(currency)\n  123:       products_fee = 0\n  124        products.each do |product|\n  125:         products_fee += (currency.to_sym == :chf ? product.fee_chf : product.fee_eu)\n  126        end\n  127:       products_fee\n  128      end\n  129  \n  130:     def fees(currency)\n  131        currency = currency.to_sym\n  132:       self.competition_fee(currency)+self.products_fee(currency)\n  133      end\n  134  \n\n/Users/yannis/railsapps/kendocup/app/models/kendocup/product.rb:\n   12      validates_uniqueness_of :name_en, scope: :cup_id\n   13      validates_uniqueness_of :name_fr, scope: :cup_id\n   14:     validates_presence_of :fee_chf\n   15:     validates_presence_of :fee_eu\n   16:     validates_numericality_of :fee_chf, allow_nil: true\n   17:     validates_numericality_of :fee_eu, allow_nil: true\n   18  \n   19      translate :name\n\n/Users/yannis/railsapps/kendocup/app/models/kendocup/user.rb:\n   60      end\n   61  \n   62:     def fees(currency, cup)\n   63:       kenshis.for_cup(cup).map{|k| k.fees(currency)}.inject{|sum,x| sum + x}\n   64      end\n   65  \n\n/Users/yannis/railsapps/kendocup/app/pdfs/kendocup/user_receipt.rb:\n   39            data << [\n   40              enrollment.last_name.titleize,\n   41:             \"#{enrollment.competition_fee(:chf)} CHF / #{enrollment.competition_fee(:eur)} €\",\n   42:              \"#{enrollment.dinner_fee(:chf)} CHF / #{enrollment.dinner_fee(:eur)} €\",\n   43:              \"#{enrollment.dormitory_fee(:chf)} CHF / #{enrollment.dormitory_fee(:eur)} €\",\n   44               \"<b>#{enrollment.bill(:chf)} CHF / #{enrollment.bill(:eur)} EUR</b>\"\n   45            ]\n\n/Users/yannis/railsapps/kendocup/config/initializers/active_admin.rb:\n  137    # We recommend using the built in Active Admin layout and loading\n  138    # up your own stylesheets / javascripts to customize the look\n  139:   # and feel.\n  140    #\n  141    # To load a stylesheet:\n\n/Users/yannis/railsapps/kendocup/config/initializers/devise.rb:\n  146    # Email regex used to validate email formats. It simply asserts that\n  147    # one (and only one) @ exists in the given string. This is mainly\n  148:   # to give user feedback and not to assert the e-mail validity.\n  149    # config.email_regexp = /\\A[^@]+@[^@]+\\z/\n  150  \n\n/Users/yannis/railsapps/kendocup/db/seeds.rb:\n   23    start_on: 2.months.from_now,\n   24    deadline: 1.months.from_now,\n   25:   junior_fees_chf: 16,\n   26:   junior_fees_eur: 14,\n   27:   adult_fees_chf: 30,\n   28:   adult_fees_eur: 25\n   29  )\n   30  p \"First cup created\"\n\n/Users/yannis/railsapps/kendocup/db/migrate/20140524043825_create_kendocup_products.rb:\n    8        t.text :description_fr\n    9  \n   10:       t.integer :fee_chf\n   11:       t.integer :fee_eu\n   12  \n   13        t.belongs_to :event\n\n/Users/yannis/railsapps/kendocup/db/migrate/20140607164756_add_fee_fields_to_kendocup_cups.rb:\n    1  class AddFeeFieldsToKendocupCups < ActiveRecord::Migration\n    2    def change\n    3:     add_column :cups, :junior_fees_chf, :integer\n    4:     add_column :cups, :junior_fees_eur, :integer\n    5:     add_column :cups, :adult_fees_chf, :integer\n    6:     add_column :cups, :adult_fees_eur, :integer\n    7    end\n    8  end\n\n/Users/yannis/railsapps/kendocup/lib/assets/fonts/Inconsolata-webfont.woff:\n  311  aeb2 c573 a8bb 8626 97dd 6804 f248 7b59\n  312  6504 9176 290d d23c d8de b96f a867 cbb9\n  313: 03fb feee dedb b74f be71 e2c4 af0f 7e7f\n  314  d3e0 438f 8cf5 ee5c 765b 5745 b86d 60b8\n  315  bbeb 3eda b8ed b964 f5f1 de89 9f2a bb7a\n  ...\n  357  cbdc 76f7 6db7 dd2d 8c0d ee78 e550 6a7d\n  358  7bc5 6a21 71fb eaae aece fb9b aa42 156b\n  359: 9a2b 7ac7 fa3b 67a4 fee6 e6fe 66cd 8f35\n  360  809f fea9 4122 35a0 2307 7404 057e 0c27\n  361  4e5c 03c8 75b1 ac8f 659c 147f 0c33 bd0c\n  ...\n  370  274a 7f3c d434 be79 55fb f8a1 2f8d dc95\n  371  9a38 3af8 b31f 6da0 27ee 5813 ebf4 391c\n  372: 5cf9 13cd 9ddc c409 2a1c fee2 37b7 6cfc\n  373  79ae bfbd efe8 bddd 8f54 04e9 d0f1 c65d\n  374  afec deff faae 554d 7775 b51d a196 7d4d\n\n/Users/yannis/railsapps/kendocup/lib/assets/fonts/Inconsolata.otf:\n  557  00ff 00d6 1ac0 ff00 d4ab 80ff ff99 9840\n  558  ff00 71ba 40ff ffa0 1fc0 1fff 0061 5cc0\n  559: ffff 7191 8015 ffff 24a9 00ff fee3 f900\n  560  05ff fff7 3640 ff00 223b 00ff fffa e200\n  561  ff00 277d c08b ff00 2c0d 008b ff00 9f6a\n  ...\n  868  8008 ffff 0401 00ff 0162 b180 ff00 eb99\n  869  40ff 010d 4180 ffff e61c 408b 05ff ffef\n  870: 1240 8bff ffee 4940 ff00 00d1 00ff ffee\n  871  dcc0 ff00 045c 8008 fffe fb5f c0ff fedb\n  872  7180 8bff 0106 5a00 058b ff00 0454 00ff\n  ...\n  957  ffff c474 00ff ffe1 cb80 ff01 3a21 c0ff\n  958  fd5b 6880 050e ff01 715d 40ff 029d b040\n  959: 15ff fee2 58c0 ffff c473 c0ff 00dd ca80\n  960  fffd 7ded c0ff ff21 5880 ffff c70a c0ff\n  961  011e 8440 060e ff00 5d34 40ff 016e c680\n  ...\n 1023  0440 ffff e680 408b ffff cd00 808b ffff\n 1024  dd8e 00ff fffd e380 ffff e665 40ff fff8\n 1025: 97c0 ffff e8ee 80ff ffee 6780 ffff c934\n 1026  00ff ffd0 b780 ffff e026 00ff ffd0 5a40\n 1027  8b08 ffff cc46 80ff ffb3 2400 ff00 282d\n ....\n 1058  1068 c0ff ffec 6480 ff00 18b9 c0ff ffe2\n 1059  7400 ff00 0034 c0ff ffd8 cb00 8bff ffdf\n 1060: bb00 08ff feec b400 ff00 46c4 00ff 0115\n 1061  0600 8b07 8bff 0023 abc0 ffff ffc4 40ff\n 1062  0025 b200 ffff efc0 00ff 0024 b980 ffff\n ....\n 1085  ffff fffe 00ff 0002 54c0 ffff fffc 0008\n 1086  ffff 1f9e c0ff 0111 9240 ff00 c073 00ff\n 1087: 00b5 3b00 ffff e61c 008b 05ff ffee 7c40\n 1088: 8bff ffed ba00 ff00 00d1 80ff ffee 4840\n 1089  ff00 045c 0008 ffff 1b4e 40ff ff2b b3c0\n 1090  8bff 0187 cd40 058b ff00 0453 c0ff 0000\n ....\n 1143  c08b ffff c8c3 408b ffff ddd8 00ff fffd\n 1144  ecc0 ffff e65b 00ff fff8 8b40 ffff e8d7\n 1145: c0ff ffee 7800 ffff c98c 00ff ffd0 e840\n 1146  ffff dfd4 c0ff ffd0 5d00 8b08 ffff bed5\n 1147  00ff ffbd be80 ff00 3c97 00ff 0081 1580\n ....\n 1221  6d80 15ff fcdc 8c00 ff00 4350 40ff 0323\n 1222  7400 070e ff01 bfe5 c0ff 011b ed40 15ff\n 1223: ffec 2680 06ff ffee 3d40 8bff ffe4 ae80\n 1224  ffff ffa4 40ff ffea 2ac0 ff00 16e7 00ff\n 1225  ffe8 9000 ff00 1895 40ff fffd 8800 ff00\n ....\n 1282  ff00 1848 80ff fffc 8280 ff00 41b4 c008\n 1283  ffff f154 40ff 0114 2900 ffff cdf2 008b\n 1284: ffff ede0 80ff feeb d700 05ff fffd 80c0\n 1285  ffff d9ed 80ff fff9 3640 ffff da25 808b\n 1286  ffff d9cb 408b ffff e87e 00ff 0002 4d80\n ....\n 1294  ffff e4cc 0008 ffff f1d4 00ff ff8e e680\n 1295  ff00 39d2 40ff fff9 1880 ff00 0eae c0ff\n 1296: 006f 6bc0 05ff 0002 7540 ffff ffee 40ff\n 1297  0002 7880 ffff fff7 40ff 0002 7c00 8bff\n 1298  0040 d140 8bff 003c e940 ff00 188a 40ff\n ....\n 1451  1ba7 80ff 0029 eb40 08ff ffd3 fcc0 ff00\n 1452  1d57 8005 ffff f130 00ff ffe4 6c80 ffff\n 1453: e342 00ff ffee a780 ffff e0ad 008b 08ff\n 1454  ffcb 7fc0 ffff d63a 80ff 002f 6f00 ff00\n 1455  3c7a c0ff 003e 2f40 ff00 2e1b 40ff 001d\n\n/Users/yannis/railsapps/kendocup/lib/fonts/Inconsolata-webfont.woff:\n  311  aeb2 c573 a8bb 8626 97dd 6804 f248 7b59\n  312  6504 9176 290d d23c d8de b96f a867 cbb9\n  313: 03fb feee dedb b74f be71 e2c4 af0f 7e7f\n  314  d3e0 438f 8cf5 ee5c 765b 5745 b86d 60b8\n  315  bbeb 3eda b8ed b964 f5f1 de89 9f2a bb7a\n  ...\n  357  cbdc 76f7 6db7 dd2d 8c0d ee78 e550 6a7d\n  358  7bc5 6a21 71fb eaae aece fb9b aa42 156b\n  359: 9a2b 7ac7 fa3b 67a4 fee6 e6fe 66cd 8f35\n  360  809f fea9 4122 35a0 2307 7404 057e 0c27\n  361  4e5c 03c8 75b1 ac8f 659c 147f 0c33 bd0c\n  ...\n  370  274a 7f3c d434 be79 55fb f8a1 2f8d dc95\n  371  9a38 3af8 b31f 6da0 27ee 5813 ebf4 391c\n  372: 5cf9 13cd 9ddc c409 2a1c fee2 37b7 6cfc\n  373  79ae bfbd efe8 bddd 8f54 04e9 d0f1 c65d\n  374  afec deff faae 554d 7775 b51d a196 7d4d\n\n/Users/yannis/railsapps/kendocup/lib/fonts/Inconsolata.otf:\n  557  00ff 00d6 1ac0 ff00 d4ab 80ff ff99 9840\n  558  ff00 71ba 40ff ffa0 1fc0 1fff 0061 5cc0\n  559: ffff 7191 8015 ffff 24a9 00ff fee3 f900\n  560  05ff fff7 3640 ff00 223b 00ff fffa e200\n  561  ff00 277d c08b ff00 2c0d 008b ff00 9f6a\n  ...\n  868  8008 ffff 0401 00ff 0162 b180 ff00 eb99\n  869  40ff 010d 4180 ffff e61c 408b 05ff ffef\n  870: 1240 8bff ffee 4940 ff00 00d1 00ff ffee\n  871  dcc0 ff00 045c 8008 fffe fb5f c0ff fedb\n  872  7180 8bff 0106 5a00 058b ff00 0454 00ff\n  ...\n  957  ffff c474 00ff ffe1 cb80 ff01 3a21 c0ff\n  958  fd5b 6880 050e ff01 715d 40ff 029d b040\n  959: 15ff fee2 58c0 ffff c473 c0ff 00dd ca80\n  960  fffd 7ded c0ff ff21 5880 ffff c70a c0ff\n  961  011e 8440 060e ff00 5d34 40ff 016e c680\n  ...\n 1023  0440 ffff e680 408b ffff cd00 808b ffff\n 1024  dd8e 00ff fffd e380 ffff e665 40ff fff8\n 1025: 97c0 ffff e8ee 80ff ffee 6780 ffff c934\n 1026  00ff ffd0 b780 ffff e026 00ff ffd0 5a40\n 1027  8b08 ffff cc46 80ff ffb3 2400 ff00 282d\n ....\n 1058  1068 c0ff ffec 6480 ff00 18b9 c0ff ffe2\n 1059  7400 ff00 0034 c0ff ffd8 cb00 8bff ffdf\n 1060: bb00 08ff feec b400 ff00 46c4 00ff 0115\n 1061  0600 8b07 8bff 0023 abc0 ffff ffc4 40ff\n 1062  0025 b200 ffff efc0 00ff 0024 b980 ffff\n ....\n 1085  ffff fffe 00ff 0002 54c0 ffff fffc 0008\n 1086  ffff 1f9e c0ff 0111 9240 ff00 c073 00ff\n 1087: 00b5 3b00 ffff e61c 008b 05ff ffee 7c40\n 1088: 8bff ffed ba00 ff00 00d1 80ff ffee 4840\n 1089  ff00 045c 0008 ffff 1b4e 40ff ff2b b3c0\n 1090  8bff 0187 cd40 058b ff00 0453 c0ff 0000\n ....\n 1143  c08b ffff c8c3 408b ffff ddd8 00ff fffd\n 1144  ecc0 ffff e65b 00ff fff8 8b40 ffff e8d7\n 1145: c0ff ffee 7800 ffff c98c 00ff ffd0 e840\n 1146  ffff dfd4 c0ff ffd0 5d00 8b08 ffff bed5\n 1147  00ff ffbd be80 ff00 3c97 00ff 0081 1580\n ....\n 1221  6d80 15ff fcdc 8c00 ff00 4350 40ff 0323\n 1222  7400 070e ff01 bfe5 c0ff 011b ed40 15ff\n 1223: ffec 2680 06ff ffee 3d40 8bff ffe4 ae80\n 1224  ffff ffa4 40ff ffea 2ac0 ff00 16e7 00ff\n 1225  ffe8 9000 ff00 1895 40ff fffd 8800 ff00\n ....\n 1282  ff00 1848 80ff fffc 8280 ff00 41b4 c008\n 1283  ffff f154 40ff 0114 2900 ffff cdf2 008b\n 1284: ffff ede0 80ff feeb d700 05ff fffd 80c0\n 1285  ffff d9ed 80ff fff9 3640 ffff da25 808b\n 1286  ffff d9cb 408b ffff e87e 00ff 0002 4d80\n ....\n 1294  ffff e4cc 0008 ffff f1d4 00ff ff8e e680\n 1295  ff00 39d2 40ff fff9 1880 ff00 0eae c0ff\n 1296: 006f 6bc0 05ff 0002 7540 ffff ffee 40ff\n 1297  0002 7880 ffff fff7 40ff 0002 7c00 8bff\n 1298  0040 d140 8bff 003c e940 ff00 188a 40ff\n ....\n 1451  1ba7 80ff 0029 eb40 08ff ffd3 fcc0 ff00\n 1452  1d57 8005 ffff f130 00ff ffe4 6c80 ffff\n 1453: e342 00ff ffee a780 ffff e0ad 008b 08ff\n 1454  ffcb 7fc0 ffff d63a 80ff 002f 6f00 ff00\n 1455  3c7a c0ff 003e 2f40 ff00 2e1b 40ff 001d\n\n/Users/yannis/railsapps/kendocup/spec/dummy/README.rdoc:\n   25  \n   26  \n   27: Please feel free to use a different markup language if you do not plan to run\n   28  <tt>rake doc:app</tt>.\n   29  \n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/cups/show.html.haml:\n   35                    = event.name\n   36  \n   37:   .row#categories_and_fees\n   38      #categories.col-xs-12.col-md-6\n   39        %h2= t '.categories.title'\n   ..\n   65                  = t(\"categories.yo\")\n   66  \n   67:     #fees.col-xs-12.col-md-6\n   68:       %h2= t '.fees.title'\n   69        %table.table\n   70          %tbody\n   71            %tr\n   72:             %th=raw t '.fees.adults.title'\n   73:             %td=raw t '.fees.adults.fee', adult_fees_chf: @cup.adult_fees_chf, adult_fees_eur: @cup.adult_fees_eur\n   74            %tr\n   75:             %th=raw t '.fees.juniors.title'\n   76:             %td=raw t '.fees.juniors.fee', junior_fees_chf: @cup.junior_fees_chf, junior_fees_eur: @cup.junior_fees_eur\n   77            - @cup.products.each do |product|\n   78              %tr\n   79                %th= product.name\n   80:               %td= \"#{product.fee_chf} CHF / #{product.fee_eu} €\"\n   81  \n   82    .row.venue\n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/kenshis/_kenshi.html.haml:\n   40              = participation_admin_links participation\n   41        %tr\n   42:         %th{colspan: 2} Total competition fees\n   43:         %td= \"#{kenshi.competition_fee(:chf)} CHF / #{kenshi.competition_fee(:eur)} €\"\n   44          %td\n   45      - if kenshi.purchases.present?\n   ..\n   50          %tr\n   51            %th{colspan: 2}= purchase.product.name\n   52:           %td= \"#{purchase.product.fee_chf} CHF / #{purchase.product.fee_eu} €\"\n   53            %td= purchase_admin_links purchase\n   54        %tr\n   55:         %th{colspan: 2} Total extra fees\n   56:         %td= \"#{kenshi.products_fee(:chf)} CHF / #{kenshi.products_fee(:eur)} €\"\n   57          %td\n   58      %tr\n   59        %th{colspan: 2}\n   60:         %h4 Total fees\n   61        %th\n   62:         = \"#{kenshi.fees(:chf)} CHF / #{kenshi.fees(:eur)} €\"\n   63        %th\n   64  \n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/kenshis/show.html.haml:\n   41                = participation_admin_links participation\n   42          %tr\n   43:           %th{colspan: 2} Total competition fees\n   44:           %td= \"#{@kenshi.competition_fee(:chf)} CHF / #{@kenshi.competition_fee(:eur)} €\"\n   45            %td\n   46        - if @kenshi.purchases.present?\n   ..\n   51            %tr\n   52              %th{colspan: 2}= purchase.product.name\n   53:             %td= \"#{purchase.product.fee_chf} CHF / #{purchase.product.fee_eu} €\"\n   54              %td= purchase_admin_links purchase\n   55          %tr\n   56:           %th{colspan: 2} Total extra fees\n   57:           %td= \"#{@kenshi.products_fee(:chf)} CHF / #{@kenshi.products_fee(:eur)} €\"\n   58            %td\n   59        %tr\n   60          %th{colspan: 2}\n   61:           %h4 Total fees\n   62          %th\n   63:           = \"#{@kenshi.fees(:chf)} CHF / #{@kenshi.fees(:eur)} €\"\n   64          %th\n   65  \n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/users/show.html.haml:\n   28              %h4 Fees due\n   29            %th\n   30:             = \"#{@user.fees(:chf, @current_cup)} CHF / #{@user.fees(:eur, @current_cup)} €\"\n   31      = user_admin_links @user\n   32  \n\n/Users/yannis/railsapps/kendocup/spec/dummy/config/locales/cups.en.yml:\n   21          title: 'Contact'\n   22          text: 'Contact us by email at'\n   23:       fees:\n   24:         title: Registration fees\n   25          adults:\n   26            title: Adults (over 16 yo)<br><em>+ Sunday lunch</em>\n   27:           fee: \"%{adult_fees_chf} CHF or %{adult_fees_eur} €\"\n   28          juniors:\n   29            title: Juniors (8 to 16 years old)<br><em>+ Sunday lunch</em>\n   30:           fee: \"%{junior_fees_chf} CHF or %{junior_fees_eur} €\"\n   31          night:\n   32            title: Night at the dormitory<br><em>+ breakfast (with own sleeping bag)</em>\n   33:           fee: \"%{dormitory_fees_chf} CHF or %{dormitory_fees_eur} €\"\n   34          dinner:\n   35            title: Saturday night dinner\n   36:           fee: \"%{dinner_fees_chf} CHF or %{dinner_fees_eur} €\"\n   37        newsletter:\n   38          register: \"Subscribe to our mailing list to get the latest new about the competition\"\n   ..\n   61        accomodation:\n   62          title: Accomodation\n   63:         dormitory: \"As every year, you can sleep for a small fee at the dormitory «des Charmettes» (you may book for it during registration).\"\n   64          hotels: \"If you prefer something more confortable you can chose from <a href='http://www.booking.com/region/ch/geneve-canton.fr.html?sid=7a2c0d77b1647e6dcf705c4dd663876d;dcid=1' target='_blank'>the many hotels</a> that Geneva and surrounding France offer.\"\n   65  \n\n/Users/yannis/railsapps/kendocup/spec/dummy/config/locales/cups.fr.yml:\n   18        program:\n   19          title: Programme\n   20:       fees:\n   21          title: Combien ça coûte?\n   22          adults:\n   23            title: Adultes (plus de 16 ans)<br><em>+ lunch du dimanche</em>\n   24:           fee: \"%{adult_fees_chf} CHF ou %{adult_fees_eur} €\"\n   25          juniors:\n   26            title: Juniors (8 à 16 ans)<br><em>+ lunch du dimanche</em>\n   27:           fee: \"%{junior_fees_chf} CHF ou %{junior_fees_eur} €\"\n   28          night:\n   29            title: Nuit au dortoir<br><em>+ petit-déjeuner (avec votre sac de couchage)</em>\n   30:           fee: \"%{dormitory_fees_chf} CHF ou %{dormitory_fees_eur} €\"\n   31          dinner:\n   32            title: Repas du samedi soir<br><em>+ une boisson comprise</em>\n   33:           fee: \"%{dinner_fees_chf} CHF ou %{dinner_fees_eur} €\"\n   34        newsletter:\n   35          register: \"Inscrivez-vous pour recevoir toutes les informations concernant la compétition\"\n\n/Users/yannis/railsapps/kendocup/spec/dummy/config/locales/users.en.yml:\n   42          male: Man\n   43          club_name: Club\n   44:         fees: \"Fees\"\n   45  \n\n/Users/yannis/railsapps/kendocup/spec/dummy/config/locales/users.fr.yml:\n   44          male: Homme\n   45          club_name: Club\n   46:         fees: \"Frais\"\n   47  \n\n/Users/yannis/railsapps/kendocup/spec/dummy/db/my_seeds.rb:\n    4  Kendocup::Club.destroy_all\n    5  Kendocup::Cup.create!([\n    6:   {id: 3, start_on: \"2015-09-27\", end_on: nil, deadline: \"2015-09-24 23:59:00\", created_at: \"2014-06-08 22:56:45\", updated_at: \"2014-09-04 08:08:40\", junior_fees_chf: 16, junior_fees_eur: 14, adult_fees_chf: 30, adult_fees_eur: 25}\n    7  ])\n    8  \n    .\n  581  # Kendocup::Product.destroy_all\n  582  Kendocup::Product.create!([\n  583:   {id: 3, name_en: \"Dinner\", name_fr: \"Dîner\", description_en: nil, description_fr: nil, fee_chf: 25, fee_eu: 20, event_id: 14, cup_id: 3, created_at: \"2014-06-08 22:56:51\", updated_at: \"2014-06-08 22:56:51\"},\n  584:   {id: 4, name_en: \"Night at the dormitory\", name_fr: \"Nuit au dortoir\", description_en: nil, description_fr: nil, fee_chf: 16, fee_eu: 14, event_id: nil, cup_id: 3, created_at: \"2014-06-08 22:56:51\", updated_at: \"2014-06-08 22:56:51\"}\n  585  ])\n  586  # Kendocup::Team.destroy_all\n\n/Users/yannis/railsapps/kendocup/spec/dummy/db/schema.rb:\n   44      t.datetime \"created_at\"\n   45      t.datetime \"updated_at\"\n   46:     t.integer  \"junior_fees_chf\"\n   47:     t.integer  \"junior_fees_eur\"\n   48:     t.integer  \"adult_fees_chf\"\n   49:     t.integer  \"adult_fees_eur\"\n   50      t.integer  \"year\"\n   51    end\n   ..\n  159      t.text     \"description_en\"\n  160      t.text     \"description_fr\"\n  161:     t.integer  \"fee_chf\"\n  162:     t.integer  \"fee_eu\"\n  163      t.integer  \"event_id\"\n  164      t.integer  \"cup_id\"\n\n/Users/yannis/railsapps/kendocup/spec/factories/kendocup_cups.rb:\n    7        start-14.days\n    8      }\n    9:     adult_fees_chf {30}\n   10:     adult_fees_eur {25}\n   11:     junior_fees_chf {16}\n   12:     junior_fees_eur {14}\n   13    end\n   14  end\n\n/Users/yannis/railsapps/kendocup/spec/factories/kendocup_products.rb:\n    5      name_en {Faker::Name.last_name}\n    6      name_fr {Faker::Name.last_name}\n    7:     fee_chf {10}\n    8:     fee_eu {8}\n    9    end\n   10  end\n\n/Users/yannis/railsapps/kendocup/spec/models/kendocup/cup_spec.rb:\n   17      it {should validate_presence_of :start_on}\n   18      it {should validate_presence_of :deadline}\n   19:     it {should validate_presence_of :adult_fees_chf}\n   20:     it {should validate_presence_of :adult_fees_eur}\n   21:     it {should validate_presence_of :junior_fees_chf}\n   22:     it {should validate_presence_of :junior_fees_eur}\n   23      it {should validate_uniqueness_of :start_on}\n   24  \n\n/Users/yannis/railsapps/kendocup/spec/models/kendocup/kenshi_spec.rb:\n   72          it {expect(kenshi.participations.map{|p| p.category.name}).to match_array [individual_category.name, team_category.name]}\n   73          it {expect(kenshi.takes_part_to? individual_category).to be true}\n   74:         it {expect(kenshi.competition_fee(:chf)).to eql 30}\n   75:         it {expect(kenshi.competition_fee(:eur)).to eql 25}\n   76          it { expect(kenshi).to be_adult}\n   77:         it {expect(kenshi.fees(:chf)).to eql 30}\n   78:         it {expect(kenshi.fees(:eur)).to eql 25}\n   79  \n   80  \n   ..\n   89  \n   90            it {expect(kenshi.products.count).to eq 1}\n   91:           it {expect(kenshi.products_fee(:chf)).to eql 10}\n   92:           it {expect(kenshi.products_fee(:eur)).to eql 8}\n   93:           it {expect(kenshi.fees(:chf)).to eql 40}\n   94:           it {expect(kenshi.fees(:eur)).to eql 33}\n   95            it {expect(kenshi.purchased?(product)).to be true}\n   96          end\n\n/Users/yannis/railsapps/kendocup/spec/models/kendocup/product_spec.rb:\n   14      it {should respond_to :description_en}\n   15      it {should respond_to :description_fr}\n   16:     it {should respond_to :fee_chf}\n   17:     it {should respond_to :fee_eu}\n   18  \n   19      it {should validate_presence_of :name_en}\n   20      it {should validate_presence_of :name_fr}\n   21      it {should validate_presence_of :cup_id}\n   22:     it {should validate_presence_of :fee_chf}\n   23:     it {should validate_presence_of :fee_eu}\n   24  \n   25      it {should validate_uniqueness_of(:name_en).scoped_to(:cup_id)}\n   26      it {should validate_uniqueness_of(:name_fr).scoped_to(:cup_id)}\n   27  \n   28:     it {should validate_numericality_of(:fee_chf)}\n   29:     it {should validate_numericality_of(:fee_eu)}\n   30    end\n   31  end\n\n/Users/yannis/railsapps/kendocup/spec/models/kendocup/user_spec.rb:\n   58        let!(:kenshi3) {create :kendocup_kenshi, user: user, cup: cup}\n   59  \n   60:       it {expect(kenshi1.fees(:chf)).to eq 55}\n   61:       it {expect(user.fees(:chf, cup)).to eq 117}\n   62      end\n   63  \n\n<untitled 3693>:\n   23    start_on: 2.months.from_now,\n   24    deadline: 1.months.from_now,\n   25:   junior_fees_chf: 16,\n   26:   junior_fees_eur: 14,\n   27:   adult_fees_chf: 30,\n   28:   adult_fees_eur: 25\n   29  )\n   30  p \"First cup created\"\n\n228 matches across 35 files\n\n\nSearching 70 files for \"resource_name\" (case sensitive)\n\n/Users/yannis/railsapps/kendocup/app/views/devise/confirmations/new.html.erb:\n    1  <h2>Resend confirmation instructions</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/passwords/edit.html.erb:\n    1  <h2>Change your password</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5    <%= f.hidden_field :reset_password_token %>\n\n/Users/yannis/railsapps/kendocup/app/views/devise/passwords/new.html.erb:\n    1  <h2>Forgot your password?</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: user_password_path, html: { method: :post }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/registrations/edit.html.erb:\n    1: <h2>Edit <%= resource_name.to_s.humanize %></h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n    .\n   35  <h3>Cancel my account</h3>\n   36  \n   37: <p>Unhappy? <%= button_to \"Cancel my account\", registration_path(resource_name), data: { confirm: \"Are you sure?\" }, method: :delete %></p>\n   38  \n   39  <%= link_to \"Back\", :back %>\n\n/Users/yannis/railsapps/kendocup/app/views/devise/registrations/new.html.erb:\n    1  <h2>Sign up</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/sessions/_form.html.erb:\n    1  \n    2: <%= form_for(resource, as: resource_name, url: user_session_path) do |f| %>\n    3    <div class=\"field\">\n    4      <%= f.label :email %><br />\n\n/Users/yannis/railsapps/kendocup/app/views/devise/shared/_links.html.erb:\n    1  <%- if controller_name != 'sessions' %>\n    2:   <%= link_to \"Log in\", new_session_path(resource_name) %><br />\n    3  <% end -%>\n    4  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/unlocks/new.html.erb:\n    1  <h2>Resend unlock instructions</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/layouts/_navigation.html.haml:\n   44                %b.caret\n   45              .dropdown-menu\n   46:               = render partial: \"devise/sessions/form\", locals: {resource: Kendocup::User.new, resource_name: :user}\n   47  \n   48      = render \"layouts/registrations\"\n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/users/edit.html.haml:\n    1: = render \"devise/registrations/form\", resource: @user, resource_name: 'user'\n    2  \n\n/Users/yannis/railsapps/kendocup/app/views/kendocup/devise/registrations/_form.html.haml:\n    1: = simple_form_for resource, as: resource_name, url: registration_path(resource_name), html: { class: 'form-horizontal' }, wrapper: :horizontal_form, wrapper_mappings: {check_boxes: :horizontal_radio_and_checkboxes, radio_buttons: :horizontal_radio_and_checkboxes, file: :horizontal_file_input, boolean: :horizontal_boolean}  do |f|\n    2    = devise_error_messages!\n    3    = f.input :first_name, autofocus: true\n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/devise/sessions/_form.html.erb:\n    1: <%= form_for(resource, as: resource_name, url: user_session_path) do |f| %>\n    2    <div class=\"field\">\n    3      <%= f.label :email %><br />\n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/devise/sessions/new.html.erb:\n    3  \n    4  \n    5: <%= render partial: \"devise/sessions/form\", locals: {resource: Kendocup::User.new, resource_name: :user} %>\n    6  <%= render \"devise/shared/links\" %>\n    7  \n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/devise/shared/_links.html.erb:\n    1  <%- if controller_name != 'sessions' %>\n    2:   <%= link_to \"Log in\", new_session_path(resource_name) %><br />\n    3  <% end -%>\n    4  \n\n22 matches across 14 files\n\n\nSearching 70 files for \"resource_name\" (case sensitive)\n\n/Users/yannis/railsapps/kendocup/app/views/devise/confirmations/new.html.erb:\n    1  <h2>Resend confirmation instructions</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: user_confirmation_path, html: { method: :post }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/passwords/edit.html.erb:\n    1  <h2>Change your password</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5    <%= f.hidden_field :reset_password_token %>\n\n/Users/yannis/railsapps/kendocup/app/views/devise/passwords/new.html.erb:\n    1  <h2>Forgot your password?</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: user_password_path, html: { method: :post }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/registrations/edit.html.erb:\n    1: <h2>Edit <%= resource_name.to_s.humanize %></h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n    .\n   35  <h3>Cancel my account</h3>\n   36  \n   37: <p>Unhappy? <%= button_to \"Cancel my account\", registration_path(resource_name), data: { confirm: \"Are you sure?\" }, method: :delete %></p>\n   38  \n   39  <%= link_to \"Back\", :back %>\n\n/Users/yannis/railsapps/kendocup/app/views/devise/registrations/new.html.erb:\n    1  <h2>Sign up</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/sessions/_form.html.erb:\n    1  \n    2: <%= form_for(resource, as: resource_name, url: user_session_path) do |f| %>\n    3    <div class=\"field\">\n    4      <%= f.label :email %><br />\n\n/Users/yannis/railsapps/kendocup/app/views/devise/shared/_links.html.erb:\n    1  <%- if controller_name != 'sessions' %>\n    2:   <%= link_to \"Log in\", new_session_path(resource_name) %><br />\n    3  <% end -%>\n    4  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/unlocks/new.html.erb:\n    1  <h2>Resend unlock instructions</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/layouts/_navigation.html.haml:\n   44                %b.caret\n   45              .dropdown-menu\n   46:               = render partial: \"devise/sessions/form\", locals: {resource: Kendocup::User.new, resource_name: :user}\n   47  \n   48      = render \"layouts/registrations\"\n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/users/edit.html.haml:\n    1: = render \"devise/registrations/form\", resource: @user, resource_name: 'user'\n    2  \n\n/Users/yannis/railsapps/kendocup/app/views/kendocup/devise/registrations/_form.html.haml:\n    1: = simple_form_for resource, as: resource_name, url: registration_path(resource_name), html: { class: 'form-horizontal' }, wrapper: :horizontal_form, wrapper_mappings: {check_boxes: :horizontal_radio_and_checkboxes, radio_buttons: :horizontal_radio_and_checkboxes, file: :horizontal_file_input, boolean: :horizontal_boolean}  do |f|\n    2    = devise_error_messages!\n    3    = f.input :first_name, autofocus: true\n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/devise/sessions/_form.html.erb:\n    1: <%= form_for(resource, as: resource_name, url: user_session_path) do |f| %>\n    2    <div class=\"field\">\n    3      <%= f.label :email %><br />\n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/devise/sessions/new.html.erb:\n    3  \n    4  \n    5: <%= render partial: \"devise/sessions/form\", locals: {resource: Kendocup::User.new, resource_name: :user} %>\n    6  <%= render \"devise/shared/links\" %>\n    7  \n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/devise/shared/_links.html.erb:\n    1  <%- if controller_name != 'sessions' %>\n    2:   <%= link_to \"Log in\", new_session_path(resource_name) %><br />\n    3  <% end -%>\n    4  \n\n21 matches across 14 files\n\n\nSearching 70 files for \"resource_name\" (case sensitive)\n\n/Users/yannis/railsapps/kendocup/app/views/devise/confirmations/new.html.erb:\n    1  <h2>Resend confirmation instructions</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: user_confirmation_path, html: { method: :post }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/passwords/edit.html.erb:\n    1  <h2>Change your password</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: user_password_path, html: { method: :put }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5    <%= f.hidden_field :reset_password_token %>\n\n/Users/yannis/railsapps/kendocup/app/views/devise/passwords/new.html.erb:\n    1  <h2>Forgot your password?</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: user_password_path, html: { method: :post }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/registrations/edit.html.erb:\n    1: <h2>Edit <%= resource_name.to_s.humanize %></h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n    .\n   35  <h3>Cancel my account</h3>\n   36  \n   37: <p>Unhappy? <%= button_to \"Cancel my account\", registration_path(resource_name), data: { confirm: \"Are you sure?\" }, method: :delete %></p>\n   38  \n   39  <%= link_to \"Back\", :back %>\n\n/Users/yannis/railsapps/kendocup/app/views/devise/registrations/new.html.erb:\n    1  <h2>Sign up</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/sessions/_form.html.erb:\n    1  \n    2: <%= form_for(resource, as: resource_name, url: user_session_path) do |f| %>\n    3    <div class=\"field\">\n    4      <%= f.label :email %><br />\n\n/Users/yannis/railsapps/kendocup/app/views/devise/shared/_links.html.erb:\n    1  <%- if controller_name != 'sessions' %>\n    2:   <%= link_to \"Log in\", new_session_path(resource_name) %><br />\n    3  <% end -%>\n    4  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/unlocks/new.html.erb:\n    1  <h2>Resend unlock instructions</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/layouts/_navigation.html.haml:\n   44                %b.caret\n   45              .dropdown-menu\n   46:               = render partial: \"devise/sessions/form\", locals: {resource: Kendocup::User.new, resource_name: :user}\n   47  \n   48      = render \"layouts/registrations\"\n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/users/edit.html.haml:\n    1: = render \"devise/registrations/form\", resource: @user, resource_name: 'user'\n    2  \n\n/Users/yannis/railsapps/kendocup/app/views/kendocup/devise/registrations/_form.html.haml:\n    1: = simple_form_for resource, as: resource_name, url: registration_path(resource_name), html: { class: 'form-horizontal' }, wrapper: :horizontal_form, wrapper_mappings: {check_boxes: :horizontal_radio_and_checkboxes, radio_buttons: :horizontal_radio_and_checkboxes, file: :horizontal_file_input, boolean: :horizontal_boolean}  do |f|\n    2    = devise_error_messages!\n    3    = f.input :first_name, autofocus: true\n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/devise/sessions/_form.html.erb:\n    1: <%= form_for(resource, as: resource_name, url: user_session_path) do |f| %>\n    2    <div class=\"field\">\n    3      <%= f.label :email %><br />\n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/devise/sessions/new.html.erb:\n    3  \n    4  \n    5: <%= render partial: \"devise/sessions/form\", locals: {resource: Kendocup::User.new, resource_name: :user} %>\n    6  <%= render \"devise/shared/links\" %>\n    7  \n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/devise/shared/_links.html.erb:\n    1  <%- if controller_name != 'sessions' %>\n    2:   <%= link_to \"Log in\", new_session_path(resource_name) %><br />\n    3  <% end -%>\n    4  \n\n20 matches across 14 files\n\n\nSearching 70 files for \"resource_name\" (case sensitive)\n\n/Users/yannis/railsapps/kendocup/app/views/devise/confirmations/new.html.erb:\n    1  <h2>Resend confirmation instructions</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: user_confirmation_path, html: { method: :post }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/passwords/edit.html.erb:\n    1  <h2>Change your password</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: user_password_path, html: { method: :put }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5    <%= f.hidden_field :reset_password_token %>\n\n/Users/yannis/railsapps/kendocup/app/views/devise/passwords/new.html.erb:\n    1  <h2>Forgot your password?</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: user_password_path, html: { method: :post }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/registrations/edit.html.erb:\n    1: <h2>Edit <%= resource_name.to_s.humanize %></h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: user_registration_path, html: { method: :put }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n    .\n   35  <h3>Cancel my account</h3>\n   36  \n   37: <p>Unhappy? <%= button_to \"Cancel my account\", registration_path(resource_name), data: { confirm: \"Are you sure?\" }, method: :delete %></p>\n   38  \n   39  <%= link_to \"Back\", :back %>\n\n/Users/yannis/railsapps/kendocup/app/views/devise/registrations/new.html.erb:\n    1  <h2>Sign up</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/sessions/_form.html.erb:\n    1  \n    2: <%= form_for(resource, as: resource_name, url: user_session_path) do |f| %>\n    3    <div class=\"field\">\n    4      <%= f.label :email %><br />\n\n/Users/yannis/railsapps/kendocup/app/views/devise/shared/_links.html.erb:\n    1  <%- if controller_name != 'sessions' %>\n    2:   <%= link_to \"Log in\", new_session_path(resource_name) %><br />\n    3  <% end -%>\n    4  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/unlocks/new.html.erb:\n    1  <h2>Resend unlock instructions</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/layouts/_navigation.html.haml:\n   44                %b.caret\n   45              .dropdown-menu\n   46:               = render partial: \"devise/sessions/form\", locals: {resource: Kendocup::User.new, resource_name: :user}\n   47  \n   48      = render \"layouts/registrations\"\n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/users/edit.html.haml:\n    1: = render \"devise/registrations/form\", resource: @user, resource_name: 'user'\n    2  \n\n/Users/yannis/railsapps/kendocup/app/views/kendocup/devise/registrations/_form.html.haml:\n    1: = simple_form_for resource, as: resource_name, url: registration_path(resource_name), html: { class: 'form-horizontal' }, wrapper: :horizontal_form, wrapper_mappings: {check_boxes: :horizontal_radio_and_checkboxes, radio_buttons: :horizontal_radio_and_checkboxes, file: :horizontal_file_input, boolean: :horizontal_boolean}  do |f|\n    2    = devise_error_messages!\n    3    = f.input :first_name, autofocus: true\n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/devise/sessions/_form.html.erb:\n    1: <%= form_for(resource, as: resource_name, url: user_session_path) do |f| %>\n    2    <div class=\"field\">\n    3      <%= f.label :email %><br />\n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/devise/sessions/new.html.erb:\n    3  \n    4  \n    5: <%= render partial: \"devise/sessions/form\", locals: {resource: Kendocup::User.new, resource_name: :user} %>\n    6  <%= render \"devise/shared/links\" %>\n    7  \n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/devise/shared/_links.html.erb:\n    1  <%- if controller_name != 'sessions' %>\n    2:   <%= link_to \"Log in\", new_session_path(resource_name) %><br />\n    3  <% end -%>\n    4  \n\n19 matches across 14 files\n\n\nSearching 70 files for \"resource_name\" (case sensitive)\n\n/Users/yannis/railsapps/kendocup/app/views/devise/confirmations/new.html.erb:\n    1  <h2>Resend confirmation instructions</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: user_confirmation_path, html: { method: :post }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/passwords/edit.html.erb:\n    1  <h2>Change your password</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: user_password_path, html: { method: :put }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5    <%= f.hidden_field :reset_password_token %>\n\n/Users/yannis/railsapps/kendocup/app/views/devise/passwords/new.html.erb:\n    1  <h2>Forgot your password?</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: user_password_path, html: { method: :post }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/registrations/edit.html.erb:\n    1: <h2>Edit <%= resource_name.to_s.humanize %></h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: user_registration_path, html: { method: :put }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/registrations/new.html.erb:\n    1  <h2>Sign up</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/sessions/_form.html.erb:\n    1  \n    2: <%= form_for(resource, as: resource_name, url: user_session_path) do |f| %>\n    3    <div class=\"field\">\n    4      <%= f.label :email %><br />\n\n/Users/yannis/railsapps/kendocup/app/views/devise/shared/_links.html.erb:\n    1  <%- if controller_name != 'sessions' %>\n    2:   <%= link_to \"Log in\", new_session_path(resource_name) %><br />\n    3  <% end -%>\n    4  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/unlocks/new.html.erb:\n    1  <h2>Resend unlock instructions</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/layouts/_navigation.html.haml:\n   44                %b.caret\n   45              .dropdown-menu\n   46:               = render partial: \"devise/sessions/form\", locals: {resource: Kendocup::User.new, resource_name: :user}\n   47  \n   48      = render \"layouts/registrations\"\n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/users/edit.html.haml:\n    1: = render \"devise/registrations/form\", resource: @user, resource_name: 'user'\n    2  \n\n/Users/yannis/railsapps/kendocup/app/views/kendocup/devise/registrations/_form.html.haml:\n    1: = simple_form_for resource, as: resource_name, url: registration_path(resource_name), html: { class: 'form-horizontal' }, wrapper: :horizontal_form, wrapper_mappings: {check_boxes: :horizontal_radio_and_checkboxes, radio_buttons: :horizontal_radio_and_checkboxes, file: :horizontal_file_input, boolean: :horizontal_boolean}  do |f|\n    2    = devise_error_messages!\n    3    = f.input :first_name, autofocus: true\n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/devise/sessions/_form.html.erb:\n    1: <%= form_for(resource, as: resource_name, url: user_session_path) do |f| %>\n    2    <div class=\"field\">\n    3      <%= f.label :email %><br />\n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/devise/sessions/new.html.erb:\n    3  \n    4  \n    5: <%= render partial: \"devise/sessions/form\", locals: {resource: Kendocup::User.new, resource_name: :user} %>\n    6  <%= render \"devise/shared/links\" %>\n    7  \n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/devise/shared/_links.html.erb:\n    1  <%- if controller_name != 'sessions' %>\n    2:   <%= link_to \"Log in\", new_session_path(resource_name) %><br />\n    3  <% end -%>\n    4  \n\n18 matches across 14 files\n\n\nSearching 68 files for \"resource_name\" (case sensitive)\n\n/Users/yannis/railsapps/kendocup/app/views/devise/confirmations/new.html.erb:\n    1  <h2>Resend confirmation instructions</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: user_confirmation_path, html: { method: :post }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/passwords/edit.html.erb:\n    1  <h2>Change your password</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: user_password_path, html: { method: :put }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5    <%= f.hidden_field :reset_password_token %>\n\n/Users/yannis/railsapps/kendocup/app/views/devise/passwords/new.html.erb:\n    1  <h2>Forgot your password?</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: user_password_path, html: { method: :post }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/registrations/edit.html.erb:\n    1: <h2>Edit <%= resource_name.to_s.humanize %></h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: user_registration_path, html: { method: :put }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/registrations/new.html.erb:\n    1  <h2>Sign up</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/sessions/_form.html.erb:\n    1  \n    2: <%= form_for(resource, as: resource_name, url: user_session_path) do |f| %>\n    3    <div class=\"field\">\n    4      <%= f.label :email %><br />\n\n/Users/yannis/railsapps/kendocup/app/views/devise/shared/_links.html.erb:\n    1  <%- if controller_name != 'sessions' %>\n    2:   <%= link_to \"Log in\", new_session_path(resource_name) %><br />\n    3  <% end -%>\n    4  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/unlocks/new.html.erb:\n    1  <h2>Resend unlock instructions</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: user_unlock_path, html: { method: :post }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/layouts/_navigation.html.haml:\n   44                %b.caret\n   45              .dropdown-menu\n   46:               = render partial: \"devise/sessions/form\", locals: {resource: Kendocup::User.new, resource_name: :user}\n   47  \n   48      = render \"layouts/registrations\"\n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/users/edit.html.haml:\n    1: = render \"devise/registrations/form\", resource: @user, resource_name: 'user'\n    2  \n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/devise/sessions/_form.html.erb:\n    1: <%= form_for(resource, as: resource_name, url: user_session_path) do |f| %>\n    2    <div class=\"field\">\n    3      <%= f.label :email %><br />\n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/devise/sessions/new.html.erb:\n    3  \n    4  \n    5: <%= render partial: \"devise/sessions/form\", locals: {resource: Kendocup::User.new, resource_name: :user} %>\n    6  <%= render \"devise/shared/links\" %>\n    7  \n\n14 matches across 12 files\n\n\nSearching 68 files for \"resource_name\" (case sensitive)\n\n/Users/yannis/railsapps/kendocup/app/views/devise/confirmations/new.html.erb:\n    1  <h2>Resend confirmation instructions</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: user_confirmation_path, html: { method: :post }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/passwords/edit.html.erb:\n    1  <h2>Change your password</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: user_password_path, html: { method: :put }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5    <%= f.hidden_field :reset_password_token %>\n\n/Users/yannis/railsapps/kendocup/app/views/devise/passwords/new.html.erb:\n    1  <h2>Forgot your password?</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: user_password_path, html: { method: :post }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/registrations/edit.html.erb:\n    1: <h2>Edit <%= resource_name.to_s.humanize %></h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: user_registration_path, html: { method: :put }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/registrations/new.html.erb:\n    1  <h2>Sign up</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: user_registration_path) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/sessions/_form.html.erb:\n    1  \n    2: <%= form_for(resource, as: resource_name, url: user_session_path) do |f| %>\n    3    <div class=\"field\">\n    4      <%= f.label :email %><br />\n\n/Users/yannis/railsapps/kendocup/app/views/devise/shared/_links.html.erb:\n    1  <%- if controller_name != 'sessions' %>\n    2:   <%= link_to \"Log in\", new_session_path(resource_name) %><br />\n    3  <% end -%>\n    4  \n\n/Users/yannis/railsapps/kendocup/app/views/devise/unlocks/new.html.erb:\n    1  <h2>Resend unlock instructions</h2>\n    2  \n    3: <%= form_for(resource, as: resource_name, url: user_unlock_path, html: { method: :post }) do |f| %>\n    4    <%= devise_error_messages! %>\n    5  \n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/layouts/_navigation.html.haml:\n   44                %b.caret\n   45              .dropdown-menu\n   46:               = render partial: \"devise/sessions/form\", locals: {resource: Kendocup::User.new, resource_name: :user}\n   47  \n   48      = render \"layouts/registrations\"\n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/users/edit.html.haml:\n    1: = render \"devise/registrations/form\", resource: @user, resource_name: 'user'\n    2  \n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/devise/sessions/_form.html.erb:\n    1: <%= form_for(resource, as: resource_name, url: user_session_path) do |f| %>\n    2    <div class=\"field\">\n    3      <%= f.label :email %><br />\n\n/Users/yannis/railsapps/kendocup/spec/dummy/app/views/devise/sessions/new.html.erb:\n    3  \n    4  \n    5: <%= render partial: \"devise/sessions/form\", locals: {resource: Kendocup::User.new, resource_name: :user} %>\n    6  <%= render \"devise/shared/links\" %>\n    7  \n\n13 matches across 12 files\n\n\nSearching 68 files for \"new_user_session_path\" (case sensitive)\n\n0 matches across 0 files\n\n\nSearching 68 files for \"new_user_session\" (case sensitive)\n\n0 matches across 0 files\n\n\nSearching 68 files for \"new_session\" (case sensitive)\n\n/Users/yannis/railsapps/kendocup/app/views/devise/shared/_links.html.erb:\n    1  <%- if controller_name != 'sessions' %>\n    2:   <%= link_to \"Log in\", new_session_path(resource_name) %><br />\n    3  <% end -%>\n    4  \n\n1 match in 1 file\n\n\nSearching 68 files for \"sign_up\" (case sensitive)\n\n0 matches across 0 files\n\n\nSearching 68 files for \"new_user_registration\" (case sensitive)\n\n0 matches across 0 files\n\n\nSearching 340 files for \"new_user_registration\" (case sensitive)\n\n0 matches across 0 files\n",
 			"settings":
 			{
-				"buffer_size": 1851,
+				"buffer_size": 55310,
 				"line_ending": "Unix",
 				"name": "Find Results",
 				"scratch": true
+			}
+		},
+		{
+			"file": "app/views/devise/registrations/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 739,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/devise/unlocks/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 412,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/devise/registrations/edit.html.erb",
+			"settings":
+			{
+				"buffer_size": 1270,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/devise/passwords/edit.html.erb",
+			"settings":
+			{
+				"buffer_size": 667,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/devise/confirmations/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 430,
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -1827,7 +1862,7 @@
 			"file": "spec/dummy/app/views/layouts/_navigation.html.haml",
 			"settings":
 			{
-				"buffer_size": 2928,
+				"buffer_size": 3076,
 				"line_ending": "Unix"
 			}
 		},
@@ -1851,7 +1886,7 @@
 			"file": "lib/kendocup/engine.rb",
 			"settings":
 			{
-				"buffer_size": 901,
+				"buffer_size": 907,
 				"line_ending": "Unix"
 			}
 		},
@@ -1859,7 +1894,7 @@
 			"file": "app/models/kendocup/cup.rb",
 			"settings":
 			{
-				"buffer_size": 1582,
+				"buffer_size": 1630,
 				"line_ending": "Unix"
 			}
 		},
@@ -1894,14 +1929,130 @@
 				"buffer_size": 3813,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "spec/dummy/app/controllers/registrations_controller.rb",
+			"settings":
+			{
+				"buffer_size": 2153,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/dummy/config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 849,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 816,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/dummy/db/seeds2.rb",
+			"settings":
+			{
+				"buffer_size": 29,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/dummy/app/views/devise/sessions/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 163,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/dummy/app/views/devise/sessions/_form.html.erb",
+			"settings":
+			{
+				"buffer_size": 549,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/dummy/app/helpers/application_helper.rb",
+			"settings":
+			{
+				"buffer_size": 1926,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/initializers/devise.rb",
+			"settings":
+			{
+				"buffer_size": 13028,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "db/seeds.rb",
+			"settings":
+			{
+				"buffer_size": 847,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/dummy/app/controllers/application_controller.rb",
+			"settings":
+			{
+				"buffer_size": 1461,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/dummy/config/locales/devise.en.yml",
+			"settings":
+			{
+				"buffer_size": 4146,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/kendocup/omniauth_callbacks_controller.rb",
+			"settings":
+			{
+				"buffer_size": 929,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/devise/passwords/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 418,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/devise/sessions/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 91,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 247.0,
 		"selected_items":
 		[
+			[
+				"rails",
+				"Set Syntax: Ruby on Rails"
+			],
 			[
 				"sass",
 				"Set Syntax: SASS"
@@ -1917,10 +2068,6 @@
 			[
 				"ruby",
 				"Set Syntax: Ruby"
-			],
-			[
-				"rails",
-				"Set Syntax: Ruby on Rails"
 			],
 			[
 				"erb",
@@ -2084,6 +2231,10 @@
 	},
 	"file_history":
 	[
+		"/Users/yannis/railsapps/kendocup/app/views/kendocup/devise/registrations/_form.html.haml",
+		"/Users/yannis/railsapps/kendocup/spec/dummy/app/views/devise/shared/_links.html.erb",
+		"/Users/yannis/railsapps/kendocup/app/views/kendocup/devise/sessions/new.html.haml",
+		"/Users/yannis/railsapps/kendocup/spec/dummy/db/seeds.rb",
 		"/Users/yannis/railsapps/kendocup/spec/dummy/app/assets/stylesheets/application.sass",
 		"/Users/yannis/railsapps/kendocup/db/migrate/20150508205125_add_year_to_cup.rb",
 		"/Users/yannis/railsapps/kendocup/app/views/kendocup/application/_navigation.html.haml",
@@ -2105,7 +2256,6 @@
 		"/Users/yannis/railsapps/kendocup/spec/dummy/app/views/devise/registrations/_form.html.haml",
 		"/Users/yannis/railsapps/kendocup/db/migrate/20140419152111_create_kendocup_teams.rb",
 		"/Users/yannis/railsapps/kendocup/db/migrate/20140322143928_create_kendocup_participations.rb",
-		"/Users/yannis/railsapps/kendocup/spec/dummy/db/seeds.rb",
 		"/Users/yannis/railsapps/kendocup/spec/controllers/kendocup/headlines_controller_spec.rb",
 		"/Users/yannis/railsapps/kendocup/Gemfile",
 		"/Users/yannis/railsapps/kendocup/kendocup.gemspec",
@@ -2208,10 +2358,7 @@
 		"/Users/yannis/railsapps/kendocup/spec/factories/kendocup_headlines.rb",
 		"/Users/yannis/railsapps/kendocup/spec/factories/kendocup_kenshis.rb",
 		"/Users/yannis/railsapps/kendocup/spec/factories/kendocup_cups.rb",
-		"/Users/yannis/railsapps/kendocup/spec/controllers/kendocup/cups_controller_spec.rb",
-		"/Users/yannis/railsapps/kendocup/spec/rails_helper.rb",
-		"/Users/yannis/railsapps/kendocup/spec/views/kendocup/cups/show.html.erb_spec.rb",
-		"/Users/yannis/railsapps/kendocup/spec/views/kendocup/cups/new.html.erb_spec.rb"
+		"/Users/yannis/railsapps/kendocup/spec/controllers/kendocup/cups_controller_spec.rb"
 	],
 	"find":
 	{
@@ -2222,6 +2369,8 @@
 		"height": 99.0,
 		"where_history":
 		[
+			"",
+			"app/views/",
 			"",
 			"db/migrate/",
 			"",
@@ -2347,8 +2496,6 @@
 			"feature/",
 			"spec/",
 			"app/",
-			"",
-			"app/",
 			""
 		]
 	},
@@ -2357,6 +2504,15 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"new_user_registration",
+			"sign_up",
+			"new_session",
+			"new_user_session",
+			"new_user_session_path",
+			"resource_name",
+			"phoenix",
+			"fee",
+			"user_id: user.id",
 			"cup_headline_path(@cup",
 			"link_to \"Permalink\", cup_headline_path(@cup",
 			"set_cuo",
@@ -2475,16 +2631,7 @@
 			"google|",
 			"Engine.routes",
 			"find_for_facebook_oauth",
-			"provider",
-			"omniauth_callbacks",
-			"engine",
-			"mount",
-			"omniauth_authorize_path",
-			"callback",
-			"facebook/callback",
-			"auth/facebook/callback",
-			"users/auth/facebook/callback",
-			"kendocup/"
+			"provider"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -2768,15 +2915,15 @@
 					"file": "spec/models/kendocup/cup_spec.rb",
 					"settings":
 					{
-						"buffer_size": 1684,
+						"buffer_size": 1728,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								888,
-								888
+								620,
+								620
 							]
 						],
 						"settings":
@@ -3703,8 +3850,8 @@
 						"selection":
 						[
 							[
-								1146,
-								1146
+								3209,
+								3212
 							]
 						],
 						"settings":
@@ -3818,7 +3965,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1599.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -3884,31 +4031,15 @@
 					"file": "app/views/kendocup/kenshis/show.html.haml",
 					"settings":
 					{
-						"buffer_size": 2295,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								338,
-								338
-							],
-							[
-								479,
-								479
-							],
-							[
-								596,
-								596
-							],
-							[
-								734,
-								734
-							],
-							[
-								851,
-								851
+								0,
+								0
 							]
 						],
 						"settings":
@@ -3928,15 +4059,15 @@
 					"file": "app/helpers/kendocup/participations_helper.rb",
 					"settings":
 					{
-						"buffer_size": 595,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								15,
-								15
+								0,
+								0
 							]
 						],
 						"settings":
@@ -3956,15 +4087,15 @@
 					"file": "app/views/kendocup/kenshis/index.html.haml",
 					"settings":
 					{
-						"buffer_size": 249,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								138,
-								138
+								0,
+								0
 							]
 						],
 						"settings":
@@ -3982,15 +4113,15 @@
 					"file": "app/views/kendocup/kenshis/_kenshi_row.html.haml",
 					"settings":
 					{
-						"buffer_size": 583,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								106,
-								133
+								0,
+								0
 							]
 						],
 						"settings":
@@ -4010,31 +4141,15 @@
 					"file": "app/views/kendocup/kenshis/_kenshi.html.haml",
 					"settings":
 					{
-						"buffer_size": 2045,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								315,
-								315
-							],
-							[
-								443,
-								443
-							],
-							[
-								547,
-								547
-							],
-							[
-								672,
-								672
-							],
-							[
-								776,
-								776
+								0,
+								0
 							]
 						],
 						"settings":
@@ -4054,31 +4169,15 @@
 					"file": "app/views/kendocup/kenshis/_table_head.html.haml",
 					"settings":
 					{
-						"buffer_size": 453,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								126,
-								126
-							],
-							[
-								182,
-								182
-							],
-							[
-								234,
-								234
-							],
-							[
-								287,
-								287
-							],
-							[
-								341,
-								341
+								0,
+								0
 							]
 						],
 						"settings":
@@ -4098,15 +4197,15 @@
 					"file": "app/helpers/kendocup/kenshis_helper.rb",
 					"settings":
 					{
-						"buffer_size": 962,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								951,
-								951
+								0,
+								0
 							]
 						],
 						"settings":
@@ -4126,15 +4225,15 @@
 					"file": "app/helpers/kendocup/teams_helper.rb",
 					"settings":
 					{
-						"buffer_size": 492,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								15,
-								15
+								0,
+								0
 							]
 						],
 						"settings":
@@ -4154,20 +4253,20 @@
 					"file": "app/views/devise/shared/_links.html.erb",
 					"settings":
 					{
-						"buffer_size": 959,
+						"buffer_size": 1052,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								959
+								203,
+								203
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -4180,15 +4279,15 @@
 					"file": "app/models/kendocup/user.rb",
 					"settings":
 					{
-						"buffer_size": 3482,
+						"buffer_size": 3500,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								184,
-								208
+								2194,
+								2194
 							]
 						],
 						"settings":
@@ -4302,7 +4401,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1118.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -4319,7 +4418,7 @@
 						"selection":
 						[
 							[
-								465,
+								427,
 								427
 							]
 						],
@@ -7468,15 +7567,15 @@
 					"file": "app/views/kendocup/application/_footer.html.haml",
 					"settings":
 					{
-						"buffer_size": 785,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								14,
-								14
+								0,
+								0
 							]
 						],
 						"settings":
@@ -7730,15 +7829,15 @@
 					"file": "spec/models/kendocup/participation_spec.rb",
 					"settings":
 					{
-						"buffer_size": 2324,
+						"buffer_size": 2376,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								666,
-								666
+								1244,
+								1244
 							]
 						],
 						"settings":
@@ -8543,14 +8642,14 @@
 					"file": "app/controllers/kendocup/headlines_controller.rb",
 					"settings":
 					{
-						"buffer_size": 344,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								182,
+								0,
 								0
 							]
 						],
@@ -8807,15 +8906,15 @@
 					"file": "spec/controllers/kendocup/kenshis_controller_spec.rb",
 					"settings":
 					{
-						"buffer_size": 8772,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7095,
-								7095
+								0,
+								0
 							]
 						],
 						"settings":
@@ -8939,7 +9038,7 @@
 					"file": "config/locales/devise.en.yml",
 					"settings":
 					{
-						"buffer_size": 4025,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -8993,15 +9092,15 @@
 					"file": "app/views/kendocup/cups/index.html.haml",
 					"settings":
 					{
-						"buffer_size": 54,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								54,
-								54
+								0,
+								0
 							]
 						],
 						"settings":
@@ -9150,15 +9249,15 @@
 					"file": "app/views/kendocup/layouts/application.html.haml",
 					"settings":
 					{
-						"buffer_size": 2798,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								595,
-								595
+								0,
+								0
 							]
 						],
 						"settings":
@@ -9178,7 +9277,7 @@
 					"file": "spec/dummy/app/views/layouts/application.html.erb",
 					"settings":
 					{
-						"buffer_size": 295,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -9204,7 +9303,7 @@
 					"file": "app/views/kendocup/cups/show.html.haml",
 					"settings":
 					{
-						"buffer_size": 6818,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -9336,23 +9435,15 @@
 					"file": "app/views/kendocup/cups/show_past.html.haml",
 					"settings":
 					{
-						"buffer_size": 7207,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								345,
-								345
-							],
-							[
-								459,
-								459
-							],
-							[
-								4221,
-								4221
+								0,
+								0
 							]
 						],
 						"settings":
@@ -10824,15 +10915,15 @@
 					"file": "spec/models/kendocup/user_spec.rb",
 					"settings":
 					{
-						"buffer_size": 2730,
+						"buffer_size": 2710,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								197,
-								197
+								2424,
+								2424
 							]
 						],
 						"settings":
@@ -10956,15 +11047,15 @@
 					"file": "spec/controllers/kendocup/cups_controller_spec.rb",
 					"settings":
 					{
-						"buffer_size": 851,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								679,
-								679
+								0,
+								0
 							]
 						],
 						"settings":
@@ -11220,15 +11311,15 @@
 					"file": "config/locales/users.fr.yml",
 					"settings":
 					{
-						"buffer_size": 1377,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								938,
-								938
+								0,
+								0
 							]
 						],
 						"settings":
@@ -11352,7 +11443,139 @@
 					"file": "spec/models/kendocup/team_spec.rb",
 					"settings":
 					{
-						"buffer_size": 3258,
+						"buffer_size": 3310,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								712,
+								712
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/User/RSpec.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 85,
+					"file": "spec/routing/kendocup/cups_routing_spec.rb",
+					"settings":
+					{
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -11480,151 +11703,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 85,
-					"file": "spec/routing/kendocup/cups_routing_spec.rb",
-					"settings":
-					{
-						"buffer_size": 393,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								111,
-								111
-							]
-						],
-						"settings":
-						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2.0,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5.0,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10.0,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/User/RSpec.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
 					"buffer": 86,
 					"file": "config/locales/participations.fr.yml",
 					"settings":
 					{
-						"buffer_size": 594,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								63,
-								63
+								0,
+								0
 							]
 						],
 						"settings":
@@ -11748,15 +11839,15 @@
 					"file": "config/locales/kenshis.fr.yml",
 					"settings":
 					{
-						"buffer_size": 3270,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								93,
-								93
+								0,
+								0
 							]
 						],
 						"settings":
@@ -11880,15 +11971,15 @@
 					"file": "config/locales/registration.fr.yml",
 					"settings":
 					{
-						"buffer_size": 3122,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								51,
-								51
+								0,
+								0
 							]
 						],
 						"settings":
@@ -12012,15 +12103,15 @@
 					"file": "config/locales/registration.en.yml",
 					"settings":
 					{
-						"buffer_size": 2846,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								260,
-								260
+								0,
+								0
 							]
 						],
 						"settings":
@@ -12144,15 +12235,15 @@
 					"file": "config/locales/teams.en.yml",
 					"settings":
 					{
-						"buffer_size": 567,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								51,
-								51
+								0,
+								0
 							]
 						],
 						"settings":
@@ -12276,15 +12367,15 @@
 					"file": "config/locales/teams.fr.yml",
 					"settings":
 					{
-						"buffer_size": 615,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								51,
-								51
+								0,
+								0
 							]
 						],
 						"settings":
@@ -12408,15 +12499,15 @@
 					"file": "config/locales/users.en.yml",
 					"settings":
 					{
-						"buffer_size": 1248,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								944,
-								944
+								0,
+								0
 							]
 						],
 						"settings":
@@ -12700,7 +12791,7 @@
 					"file": "config/locales/kenshis.en.yml",
 					"settings":
 					{
-						"buffer_size": 3032,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -12992,15 +13083,15 @@
 					"file": "spec/controllers/kendocup/purchases_controller_spec.rb",
 					"settings":
 					{
-						"buffer_size": 1753,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1294,
-								1294
+								0,
+								0
 							]
 						],
 						"settings":
@@ -13124,15 +13215,15 @@
 					"file": "spec/controllers/kendocup/participations_controller_spec.rb",
 					"settings":
 					{
-						"buffer_size": 1865,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1376,
-								1376
+								0,
+								0
 							]
 						],
 						"settings":
@@ -16198,15 +16289,15 @@
 					"file": "config/locales/cups.en.yml",
 					"settings":
 					{
-						"buffer_size": 3716,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3716,
-								3716
+								0,
+								0
 							]
 						],
 						"settings":
@@ -16280,7 +16371,7 @@
 					"file": "spec/dummy/db/migrate/20141126210936_create_active_admin_comments.kendocup.rb",
 					"settings":
 					{
-						"buffer_size": 655,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -16476,15 +16567,15 @@
 					"file": "app/models/kendocup/participation.rb",
 					"settings":
 					{
-						"buffer_size": 3885,
+						"buffer_size": 3934,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								390,
-								390
+								1390,
+								1390
 							]
 						],
 						"settings":
@@ -16636,15 +16727,15 @@
 					"file": "app/controllers/kendocup/users_controller.rb",
 					"settings":
 					{
-						"buffer_size": 2300,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								223,
-								223
+								0,
+								0
 							]
 						],
 						"settings":
@@ -16692,15 +16783,15 @@
 					"file": "app/controllers/kendocup/registrations_controller.rb",
 					"settings":
 					{
-						"buffer_size": 2163,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								14,
-								14
+								0,
+								0
 							]
 						],
 						"settings":
@@ -16720,7 +16811,7 @@
 					"file": "app/views/kendocup/application/_flashes.html.haml",
 					"settings":
 					{
-						"buffer_size": 129,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -16728,7 +16819,7 @@
 						[
 							[
 								0,
-								129
+								0
 							]
 						],
 						"settings":
@@ -16746,15 +16837,15 @@
 					"file": "app/helpers/kendocup/application_helper.rb",
 					"settings":
 					{
-						"buffer_size": 298,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								287,
-								45
+								0,
+								0
 							]
 						],
 						"settings":
@@ -16772,7 +16863,7 @@
 					"file": "app/views/kendocup/teams/_table_head.html.haml",
 					"settings":
 					{
-						"buffer_size": 89,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -16798,15 +16889,15 @@
 					"file": "app/views/kendocup/teams/show.html.haml",
 					"settings":
 					{
-						"buffer_size": 364,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								286,
-								286
+								0,
+								0
 							]
 						],
 						"settings":
@@ -16877,34 +16968,6 @@
 				},
 				{
 					"buffer": 149,
-					"file": "app/views/kendocup/devise/registrations/_form.html.haml",
-					"settings":
-					{
-						"buffer_size": 1249,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								18,
-								26
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/Ruby Haml.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 150,
 					"file": "spec/dummy/config/environment.rb",
 					"settings":
 					{
@@ -16930,19 +16993,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 151,
+					"buffer": 150,
 					"file": "config/locales/devise.fr.yml",
 					"settings":
 					{
-						"buffer_size": 4834,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3608,
-								3430
+								0,
+								0
 							]
 						],
 						"settings":
@@ -16958,11 +17021,11 @@
 					"type": "text"
 				},
 				{
-					"buffer": 152,
+					"buffer": 151,
 					"file": "config/locales/cups.fr.yml",
 					"settings":
 					{
-						"buffer_size": 3789,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -16986,7 +17049,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 153,
+					"buffer": 152,
 					"file": "spec/dummy/config/locales/layout.en.yml",
 					"settings":
 					{
@@ -17014,7 +17077,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 154,
+					"buffer": 153,
 					"file": "spec/dummy/app/assets/javascripts/application.js",
 					"settings":
 					{
@@ -17040,19 +17103,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 155,
+					"buffer": 154,
 					"file": "spec/dummy/app/views/users/show.html.haml",
 					"settings":
 					{
-						"buffer_size": 1754,
+						"buffer_size": 1782,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1402,
-								1402
+								977,
+								977
 							]
 						],
 						"settings":
@@ -17062,13 +17125,13 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 297.0,
+						"translation.y": 331.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 156,
+					"buffer": 155,
 					"file": "spec/dummy/app/views/kenshis/_kenshi.html.haml",
 					"settings":
 					{
@@ -17096,7 +17159,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 157,
+					"buffer": 156,
 					"file": "spec/dummy/app/controllers/kenshis_controller.rb",
 					"settings":
 					{
@@ -17124,7 +17187,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 158,
+					"buffer": 157,
 					"file": "spec/dummy/app/helpers/kenshis_helper.rb",
 					"settings":
 					{
@@ -17152,10 +17215,10 @@
 					"type": "text"
 				},
 				{
-					"buffer": 159,
+					"buffer": 158,
 					"settings":
 					{
-						"buffer_size": 1851,
+						"buffer_size": 55310,
 						"regions":
 						{
 							"match":
@@ -17178,6 +17241,1430 @@
 									[
 										1429,
 										1462
+									],
+									[
+										2023,
+										2026
+									],
+									[
+										2177,
+										2180
+									],
+									[
+										2211,
+										2214
+									],
+									[
+										2287,
+										2290
+									],
+									[
+										2322,
+										2325
+									],
+									[
+										2374,
+										2377
+									],
+									[
+										2641,
+										2644
+									],
+									[
+										2658,
+										2661
+									],
+									[
+										2676,
+										2679
+									],
+									[
+										2694,
+										2697
+									],
+									[
+										2813,
+										2816
+									],
+									[
+										2850,
+										2853
+									],
+									[
+										2888,
+										2891
+									],
+									[
+										2926,
+										2929
+									],
+									[
+										3056,
+										3059
+									],
+									[
+										3090,
+										3093
+									],
+									[
+										3125,
+										3128
+									],
+									[
+										3160,
+										3163
+									],
+									[
+										3283,
+										3286
+									],
+									[
+										3316,
+										3319
+									],
+									[
+										3350,
+										3353
+									],
+									[
+										3384,
+										3387
+									],
+									[
+										3653,
+										3656
+									],
+									[
+										3692,
+										3695
+									],
+									[
+										3732,
+										3735
+									],
+									[
+										3772,
+										3775
+									],
+									[
+										4039,
+										4042
+									],
+									[
+										4049,
+										4052
+									],
+									[
+										4171,
+										4174
+									],
+									[
+										4198,
+										4201
+									],
+									[
+										4327,
+										4330
+									],
+									[
+										4353,
+										4356
+									],
+									[
+										4571,
+										4574
+									],
+									[
+										4620,
+										4623
+									],
+									[
+										4670,
+										4673
+									],
+									[
+										4720,
+										4723
+									],
+									[
+										4833,
+										4836
+									],
+									[
+										4899,
+										4902
+									],
+									[
+										4922,
+										4925
+									],
+									[
+										4975,
+										4978
+									],
+									[
+										5040,
+										5043
+									],
+									[
+										5062,
+										5065
+									],
+									[
+										5209,
+										5212
+									],
+									[
+										5304,
+										5307
+									],
+									[
+										5336,
+										5339
+									],
+									[
+										5439,
+										5442
+									],
+									[
+										5475,
+										5478
+									],
+									[
+										5547,
+										5550
+									],
+									[
+										5589,
+										5592
+									],
+									[
+										5607,
+										5610
+									],
+									[
+										5654,
+										5657
+									],
+									[
+										5696,
+										5699
+									],
+									[
+										5781,
+										5784
+									],
+									[
+										5809,
+										5812
+									],
+									[
+										6066,
+										6069
+									],
+									[
+										6108,
+										6111
+									],
+									[
+										6153,
+										6156
+									],
+									[
+										6216,
+										6219
+									],
+									[
+										6376,
+										6379
+									],
+									[
+										6440,
+										6443
+									],
+									[
+										6694,
+										6697
+									],
+									[
+										6736,
+										6739
+									],
+									[
+										6792,
+										6795
+									],
+									[
+										6829,
+										6832
+									],
+									[
+										6888,
+										6891
+									],
+									[
+										6928,
+										6931
+									],
+									[
+										7283,
+										7286
+									],
+									[
+										7575,
+										7578
+									],
+									[
+										7821,
+										7824
+									],
+									[
+										7851,
+										7854
+									],
+									[
+										7880,
+										7883
+									],
+									[
+										7909,
+										7912
+									],
+									[
+										8117,
+										8120
+									],
+									[
+										8149,
+										8152
+									],
+									[
+										8416,
+										8419
+									],
+									[
+										8472,
+										8475
+									],
+									[
+										8527,
+										8530
+									],
+									[
+										8582,
+										8585
+									],
+									[
+										8808,
+										8811
+									],
+									[
+										9064,
+										9067
+									],
+									[
+										9310,
+										9313
+									],
+									[
+										9618,
+										9621
+									],
+									[
+										9840,
+										9843
+									],
+									[
+										9865,
+										9868
+									],
+									[
+										10075,
+										10078
+									],
+									[
+										10332,
+										10335
+									],
+									[
+										10562,
+										10565
+									],
+									[
+										10824,
+										10827
+									],
+									[
+										10871,
+										10874
+									],
+									[
+										11087,
+										11090
+									],
+									[
+										11338,
+										11341
+									],
+									[
+										11578,
+										11581
+									],
+									[
+										11835,
+										11838
+									],
+									[
+										12056,
+										12059
+									],
+									[
+										12355,
+										12358
+									],
+									[
+										12611,
+										12614
+									],
+									[
+										12857,
+										12860
+									],
+									[
+										13158,
+										13161
+									],
+									[
+										13380,
+										13383
+									],
+									[
+										13405,
+										13408
+									],
+									[
+										13615,
+										13618
+									],
+									[
+										13872,
+										13875
+									],
+									[
+										14102,
+										14105
+									],
+									[
+										14364,
+										14367
+									],
+									[
+										14411,
+										14414
+									],
+									[
+										14627,
+										14630
+									],
+									[
+										14878,
+										14881
+									],
+									[
+										15118,
+										15121
+									],
+									[
+										15375,
+										15378
+									],
+									[
+										15596,
+										15599
+									],
+									[
+										15807,
+										15810
+									],
+									[
+										16067,
+										16070
+									],
+									[
+										16224,
+										16227
+									],
+									[
+										16270,
+										16273
+									],
+									[
+										16382,
+										16385
+									],
+									[
+										16432,
+										16435
+									],
+									[
+										16444,
+										16447
+									],
+									[
+										16456,
+										16459
+									],
+									[
+										16477,
+										16480
+									],
+									[
+										16493,
+										16496
+									],
+									[
+										16514,
+										16517
+									],
+									[
+										16575,
+										16578
+									],
+									[
+										16626,
+										16629
+									],
+									[
+										16639,
+										16642
+									],
+									[
+										16652,
+										16655
+									],
+									[
+										16674,
+										16677
+									],
+									[
+										16691,
+										16694
+									],
+									[
+										16713,
+										16716
+									],
+									[
+										16872,
+										16875
+									],
+									[
+										16897,
+										16900
+									],
+									[
+										17145,
+										17148
+									],
+									[
+										17192,
+										17195
+									],
+									[
+										17230,
+										17233
+									],
+									[
+										17428,
+										17431
+									],
+									[
+										17462,
+										17465
+									],
+									[
+										17585,
+										17588
+									],
+									[
+										17629,
+										17632
+									],
+									[
+										17664,
+										17667
+									],
+									[
+										17766,
+										17769
+									],
+									[
+										17815,
+										17818
+									],
+									[
+										17842,
+										17845
+									],
+									[
+										18094,
+										18097
+									],
+									[
+										18144,
+										18147
+									],
+									[
+										18183,
+										18186
+									],
+									[
+										18392,
+										18395
+									],
+									[
+										18426,
+										18429
+									],
+									[
+										18555,
+										18558
+									],
+									[
+										18602,
+										18605
+									],
+									[
+										18638,
+										18641
+									],
+									[
+										18748,
+										18751
+									],
+									[
+										18802,
+										18805
+									],
+									[
+										18830,
+										18833
+									],
+									[
+										19032,
+										19035
+									],
+									[
+										19072,
+										19075
+									],
+									[
+										19309,
+										19312
+									],
+									[
+										19350,
+										19353
+									],
+									[
+										19466,
+										19469
+									],
+									[
+										19480,
+										19483
+									],
+									[
+										19505,
+										19508
+									],
+									[
+										19638,
+										19641
+									],
+									[
+										19653,
+										19656
+									],
+									[
+										19679,
+										19682
+									],
+									[
+										19826,
+										19829
+									],
+									[
+										19844,
+										19847
+									],
+									[
+										19873,
+										19876
+									],
+									[
+										19972,
+										19975
+									],
+									[
+										19987,
+										19990
+									],
+									[
+										20013,
+										20016
+									],
+									[
+										20288,
+										20291
+									],
+									[
+										20790,
+										20793
+									],
+									[
+										20957,
+										20960
+									],
+									[
+										20971,
+										20974
+									],
+									[
+										20996,
+										20999
+									],
+									[
+										21127,
+										21130
+									],
+									[
+										21142,
+										21145
+									],
+									[
+										21168,
+										21171
+									],
+									[
+										21318,
+										21321
+									],
+									[
+										21336,
+										21339
+									],
+									[
+										21365,
+										21368
+									],
+									[
+										21498,
+										21501
+									],
+									[
+										21513,
+										21516
+									],
+									[
+										21539,
+										21542
+									],
+									[
+										21828,
+										21831
+									],
+									[
+										21996,
+										21999
+									],
+									[
+										22308,
+										22311
+									],
+									[
+										22329,
+										22332
+									],
+									[
+										22349,
+										22352
+									],
+									[
+										22369,
+										22372
+									],
+									[
+										22577,
+										22580
+									],
+									[
+										22590,
+										22593
+									],
+									[
+										22820,
+										22823
+									],
+									[
+										22833,
+										22836
+									],
+									[
+										23146,
+										23149
+									],
+									[
+										23186,
+										23189
+									],
+									[
+										23225,
+										23228
+									],
+									[
+										23264,
+										23267
+									],
+									[
+										23423,
+										23426
+									],
+									[
+										23455,
+										23458
+									],
+									[
+										23651,
+										23654
+									],
+									[
+										23682,
+										23685
+									],
+									[
+										23714,
+										23717
+									],
+									[
+										23746,
+										23749
+									],
+									[
+										23952,
+										23955
+									],
+									[
+										23976,
+										23979
+									],
+									[
+										24237,
+										24240
+									],
+									[
+										24297,
+										24300
+									],
+									[
+										24358,
+										24361
+									],
+									[
+										24419,
+										24422
+									],
+									[
+										24827,
+										24830
+									],
+									[
+										24894,
+										24897
+									],
+									[
+										24997,
+										25000
+									],
+									[
+										25053,
+										25056
+									],
+									[
+										25210,
+										25213
+									],
+									[
+										25276,
+										25279
+									],
+									[
+										25332,
+										25335
+									],
+									[
+										25390,
+										25393
+									],
+									[
+										25706,
+										25709
+									],
+									[
+										25749,
+										25752
+									],
+									[
+										25967,
+										25970
+									],
+									[
+										26020,
+										26023
+									],
+									[
+										26242,
+										26245
+									],
+									[
+										26300,
+										26303
+									],
+									[
+										26518,
+										26521
+									],
+									[
+										26569,
+										26572
+									],
+									[
+										26730,
+										26733
+									],
+									[
+										26760,
+										26763
+									],
+									[
+										26789,
+										26792
+									],
+									[
+										26818,
+										26821
+									],
+									[
+										27126,
+										27139
+									],
+									[
+										27164,
+										27177
+									],
+									[
+										27417,
+										27430
+									],
+									[
+										27451,
+										27464
+									],
+									[
+										27748,
+										27761
+									],
+									[
+										27970,
+										27983
+									],
+									[
+										28048,
+										28061
+									],
+									[
+										28086,
+										28099
+									],
+									[
+										28303,
+										28316
+									],
+									[
+										28567,
+										28580
+									],
+									[
+										28605,
+										28618
+									],
+									[
+										28796,
+										28809
+									],
+									[
+										29083,
+										29096
+									],
+									[
+										29291,
+										29304
+									],
+									[
+										29323,
+										29336
+									],
+									[
+										29673,
+										29686
+									],
+									[
+										29886,
+										29899
+									],
+									[
+										30046,
+										30059
+									],
+									[
+										30084,
+										30097
+									],
+									[
+										30549,
+										30562
+									],
+									[
+										30857,
+										30870
+									],
+									[
+										31114,
+										31127
+									],
+									[
+										31420,
+										31433
+									],
+									[
+										31701,
+										31714
+									],
+									[
+										31735,
+										31748
+									],
+									[
+										32032,
+										32045
+									],
+									[
+										32254,
+										32267
+									],
+									[
+										32332,
+										32345
+									],
+									[
+										32370,
+										32383
+									],
+									[
+										32587,
+										32600
+									],
+									[
+										32851,
+										32864
+									],
+									[
+										32889,
+										32902
+									],
+									[
+										33080,
+										33093
+									],
+									[
+										33367,
+										33380
+									],
+									[
+										33575,
+										33588
+									],
+									[
+										33607,
+										33620
+									],
+									[
+										33957,
+										33970
+									],
+									[
+										34170,
+										34183
+									],
+									[
+										34330,
+										34343
+									],
+									[
+										34368,
+										34381
+									],
+									[
+										34833,
+										34846
+									],
+									[
+										35141,
+										35154
+									],
+									[
+										35398,
+										35411
+									],
+									[
+										35704,
+										35717
+									],
+									[
+										35985,
+										35998
+									],
+									[
+										36306,
+										36319
+									],
+									[
+										36528,
+										36541
+									],
+									[
+										36606,
+										36619
+									],
+									[
+										36644,
+										36657
+									],
+									[
+										36861,
+										36874
+									],
+									[
+										37125,
+										37138
+									],
+									[
+										37163,
+										37176
+									],
+									[
+										37354,
+										37367
+									],
+									[
+										37641,
+										37654
+									],
+									[
+										37849,
+										37862
+									],
+									[
+										37881,
+										37894
+									],
+									[
+										38231,
+										38244
+									],
+									[
+										38444,
+										38457
+									],
+									[
+										38604,
+										38617
+									],
+									[
+										38642,
+										38655
+									],
+									[
+										39107,
+										39120
+									],
+									[
+										39415,
+										39428
+									],
+									[
+										39672,
+										39685
+									],
+									[
+										39978,
+										39991
+									],
+									[
+										40259,
+										40272
+									],
+									[
+										40580,
+										40593
+									],
+									[
+										40802,
+										40815
+									],
+									[
+										40880,
+										40893
+									],
+									[
+										41125,
+										41138
+									],
+									[
+										41389,
+										41402
+									],
+									[
+										41427,
+										41440
+									],
+									[
+										41618,
+										41631
+									],
+									[
+										41905,
+										41918
+									],
+									[
+										42113,
+										42126
+									],
+									[
+										42145,
+										42158
+									],
+									[
+										42495,
+										42508
+									],
+									[
+										42708,
+										42721
+									],
+									[
+										42868,
+										42881
+									],
+									[
+										42906,
+										42919
+									],
+									[
+										43371,
+										43384
+									],
+									[
+										43679,
+										43692
+									],
+									[
+										43936,
+										43949
+									],
+									[
+										44242,
+										44255
+									],
+									[
+										44523,
+										44536
+									],
+									[
+										44844,
+										44857
+									],
+									[
+										45066,
+										45079
+									],
+									[
+										45144,
+										45157
+									],
+									[
+										45414,
+										45427
+									],
+									[
+										45452,
+										45465
+									],
+									[
+										45643,
+										45656
+									],
+									[
+										45930,
+										45943
+									],
+									[
+										46138,
+										46151
+									],
+									[
+										46170,
+										46183
+									],
+									[
+										46520,
+										46533
+									],
+									[
+										46733,
+										46746
+									],
+									[
+										46893,
+										46906
+									],
+									[
+										46931,
+										46944
+									],
+									[
+										47396,
+										47409
+									],
+									[
+										47704,
+										47717
+									],
+									[
+										47961,
+										47974
+									],
+									[
+										48267,
+										48280
+									],
+									[
+										48548,
+										48561
+									],
+									[
+										48869,
+										48882
+									],
+									[
+										49091,
+										49104
+									],
+									[
+										49169,
+										49182
+									],
+									[
+										49439,
+										49452
+									],
+									[
+										49477,
+										49490
+									],
+									[
+										49668,
+										49681
+									],
+									[
+										49955,
+										49968
+									],
+									[
+										50163,
+										50176
+									],
+									[
+										50535,
+										50548
+									],
+									[
+										50748,
+										50761
+									],
+									[
+										50899,
+										50912
+									],
+									[
+										51207,
+										51220
+									],
+									[
+										51539,
+										51552
+									],
+									[
+										51820,
+										51833
+									],
+									[
+										52141,
+										52154
+									],
+									[
+										52363,
+										52376
+									],
+									[
+										52441,
+										52454
+									],
+									[
+										52711,
+										52724
+									],
+									[
+										52930,
+										52943
+									],
+									[
+										53217,
+										53230
+									],
+									[
+										53425,
+										53438
+									],
+									[
+										53797,
+										53810
+									],
+									[
+										54010,
+										54023
+									],
+									[
+										54161,
+										54174
+									],
+									[
+										54469,
+										54482
+									],
+									[
+										54961,
+										54972
 									]
 								],
 								"scope": ""
@@ -17186,14 +18673,14 @@
 						"selection":
 						[
 							[
-								1759,
-								1759
+								55219,
+								55219
 							]
 						],
 						"settings":
 						{
 							"detect_indentation": false,
-							"output_tag": 5,
+							"output_tag": 19,
 							"result_base_dir": "",
 							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
 							"result_line_regex": "^ +([0-9]+):",
@@ -17202,13 +18689,149 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1050.0,
+						"translation.y": 30744.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 159,
+					"file": "app/views/devise/registrations/new.html.erb",
+					"settings":
+					{
+						"buffer_size": 739,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								87,
+								87
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 160,
+					"file": "app/views/devise/unlocks/new.html.erb",
+					"settings":
+					{
+						"buffer_size": 412,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								100,
+								100
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 161,
+					"file": "app/views/devise/registrations/edit.html.erb",
+					"settings":
+					{
+						"buffer_size": 1270,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1179,
+								1179
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 108.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 162,
+					"file": "app/views/devise/passwords/edit.html.erb",
+					"settings":
+					{
+						"buffer_size": 667,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								96,
+								96
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 163,
+					"file": "app/views/devise/confirmations/new.html.erb",
+					"settings":
+					{
+						"buffer_size": 430,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								112,
+								112
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 164,
 					"file": "spec/dummy/app/controllers/teams_controller.rb",
 					"settings":
 					{
@@ -17236,19 +18859,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 161,
+					"buffer": 165,
 					"file": "spec/dummy/app/views/layouts/_navigation.html.haml",
 					"settings":
 					{
-						"buffer_size": 2928,
+						"buffer_size": 3076,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								812,
-								812
+								3037,
+								2804
 							]
 						],
 						"settings":
@@ -17258,13 +18881,13 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 507.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 162,
+					"buffer": 166,
 					"file": "app/controllers/kendocup/application_controller.rb",
 					"settings":
 					{
@@ -17275,8 +18898,8 @@
 						"selection":
 						[
 							[
-								1617,
-								1628
+								2073,
+								2073
 							]
 						],
 						"settings":
@@ -17286,13 +18909,13 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 644.0,
+						"translation.y": 759.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 163,
+					"buffer": 167,
 					"file": "spec/dummy/app/controllers/cups_controller.rb",
 					"settings":
 					{
@@ -17320,19 +18943,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 164,
+					"buffer": 168,
 					"file": "lib/kendocup/engine.rb",
 					"settings":
 					{
-						"buffer_size": 901,
+						"buffer_size": 907,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								159,
-								159
+								174,
+								82
 							]
 						],
 						"settings":
@@ -17348,19 +18971,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 165,
+					"buffer": 169,
 					"file": "app/models/kendocup/cup.rb",
 					"settings":
 					{
-						"buffer_size": 1582,
+						"buffer_size": 1630,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								300,
-								300
+								157,
+								157
 							]
 						],
 						"settings":
@@ -17376,7 +18999,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 166,
+					"buffer": 170,
 					"file": "README.md",
 					"settings":
 					{
@@ -17404,7 +19027,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 167,
+					"buffer": 171,
 					"file": "app/admin/team.rb",
 					"settings":
 					{
@@ -17432,7 +19055,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 168,
+					"buffer": 172,
 					"file": "spec/dummy/app/views/headlines/index.html.haml",
 					"settings":
 					{
@@ -17460,7 +19083,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 169,
+					"buffer": 173,
 					"file": "app/models/kendocup/kenshi.rb",
 					"settings":
 					{
@@ -17471,8 +19094,8 @@
 						"selection":
 						[
 							[
-								1668,
-								1675
+								2933,
+								2936
 							]
 						],
 						"settings":
@@ -17480,6 +19103,392 @@
 							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2276.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 174,
+					"file": "spec/dummy/app/controllers/registrations_controller.rb",
+					"settings":
+					{
+						"buffer_size": 2153,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								2153
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 175,
+					"file": "spec/dummy/config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 849,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								590,
+								432
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 176,
+					"file": "config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 816,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								706,
+								706
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 177,
+					"file": "spec/dummy/db/seeds2.rb",
+					"settings":
+					{
+						"buffer_size": 29,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2,
+								2
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 178,
+					"file": "spec/dummy/app/views/devise/sessions/new.html.erb",
+					"settings":
+					{
+						"buffer_size": 163,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								92,
+								92
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 179,
+					"file": "spec/dummy/app/views/devise/sessions/_form.html.erb",
+					"settings":
+					{
+						"buffer_size": 549,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								65,
+								65
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 180,
+					"file": "spec/dummy/app/helpers/application_helper.rb",
+					"settings":
+					{
+						"buffer_size": 1926,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1921,
+								1766
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 528.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 181,
+					"file": "config/initializers/devise.rb",
+					"settings":
+					{
+						"buffer_size": 13028,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								199,
+								199
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 182,
+					"file": "db/seeds.rb",
+					"settings":
+					{
+						"buffer_size": 847,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								434,
+								452
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 183,
+					"file": "spec/dummy/app/controllers/application_controller.rb",
+					"settings":
+					{
+						"buffer_size": 1461,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6,
+								27
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 184,
+					"file": "spec/dummy/config/locales/devise.en.yml",
+					"settings":
+					{
+						"buffer_size": 4146,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 185,
+					"file": "app/controllers/kendocup/omniauth_callbacks_controller.rb",
+					"settings":
+					{
+						"buffer_size": 929,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								885,
+								885
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 186,
+					"file": "app/views/devise/passwords/new.html.erb",
+					"settings":
+					{
+						"buffer_size": 418,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								97,
+								97
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 187,
+					"file": "app/views/devise/sessions/new.html.erb",
+					"settings":
+					{
+						"buffer_size": 91,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								55,
+								90
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -17540,6 +19549,170 @@
 		"selected_items":
 		[
 			[
+				"nav",
+				"spec/dummy/app/views/layouts/_navigation.html.haml"
+			],
+			[
+				"sessne",
+				"app/views/devise/sessions/new.html.erb"
+			],
+			[
+				"omni",
+				"app/controllers/kendocup/omniauth_callbacks_controller.rb"
+			],
+			[
+				"share",
+				"app/views/devise/shared/_links.html.erb"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"passwo",
+				"app/views/devise/passwords/new.html.erb"
+			],
+			[
+				"apphelp",
+				"spec/dummy/app/helpers/application_helper.rb"
+			],
+			[
+				"",
+				"config/routes.rb"
+			],
+			[
+				"devise",
+				"config/initializers/devise.rb"
+			],
+			[
+				"appc",
+				"spec/dummy/app/controllers/application_controller.rb"
+			],
+			[
+				"links",
+				"spec/dummy/app/views/devise/shared/_links.html.erb"
+			],
+			[
+				"see",
+				"db/seeds.rb"
+			],
+			[
+				"na",
+				"spec/dummy/app/views/layouts/_navigation.html.haml"
+			],
+			[
+				"confide",
+				"config/initializers/devise.rb"
+			],
+			[
+				"enginer",
+				"lib/kendocup/engine.rb"
+			],
+			[
+				"kendocup",
+				"lib/kendocup.rb"
+			],
+			[
+				"dummyroutes",
+				"spec/dummy/config/routes.rb"
+			],
+			[
+				"appcon",
+				"app/controllers/kendocup/application_controller.rb"
+			],
+			[
+				"devisesess",
+				"spec/dummy/app/views/devise/sessions/new.html.erb"
+			],
+			[
+				"sessnew",
+				"app/views/kendocup/devise/sessions/new.html.haml"
+			],
+			[
+				"dummyna",
+				"spec/dummy/app/views/layouts/_navigation.html.haml"
+			],
+			[
+				"seed",
+				"spec/dummy/db/seeds.rb"
+			],
+			[
+				"sessco",
+				"spec/dummy/app/controllers/registrations_controller.rb"
+			],
+			[
+				"kenshispe",
+				"spec/models/kendocup/kenshi_spec.rb"
+			],
+			[
+				"modelkensh",
+				"app/models/kendocup/kenshi.rb"
+			],
+			[
+				"userspec",
+				"spec/models/kendocup/user_spec.rb"
+			],
+			[
+				"usersho",
+				"spec/dummy/app/views/users/show.html.haml"
+			],
+			[
+				"modelken",
+				"app/models/kendocup/kenshi.rb"
+			],
+			[
+				"modeluser",
+				"app/models/kendocup/user.rb"
+			],
+			[
+				"cupspe",
+				"spec/models/kendocup/cup_spec.rb"
+			],
+			[
+				"cup",
+				"app/models/kendocup/cup.rb"
+			],
+			[
+				"partspe",
+				"spec/models/kendocup/participation_spec.rb"
+			],
+			[
+				"kensh",
+				"app/models/kendocup/kenshi.rb"
+			],
+			[
+				"modelke",
+				"app/models/kendocup/kenshi.rb"
+			],
+			[
+				"modelpart",
+				"app/models/kendocup/participation.rb"
+			],
+			[
+				"model",
+				"app/models/kendocup/cup.rb"
+			],
+			[
+				"teamspe",
+				"spec/models/kendocup/team_spec.rb"
+			],
+			[
+				"teacon",
+				"spec/dummy/app/controllers/teams_controller.rb"
+			],
+			[
+				"cupco",
+				"spec/dummy/app/controllers/cups_controller.rb"
+			],
+			[
+				"team",
+				"app/models/kendocup/team.rb"
+			],
+			[
+				"teamcat",
+				"app/models/kendocup/team_category.rb"
+			],
+			[
 				"apps",
 				"spec/dummy/app/assets/stylesheets/application.sass"
 			],
@@ -17548,24 +19721,12 @@
 				"app/models/kendocup/cup.rb"
 			],
 			[
-				"team",
-				"app/admin/team.rb"
-			],
-			[
-				"modelken",
-				"app/models/kendocup/kenshi.rb"
-			],
-			[
 				"modke",
 				"app/models/kendocup_ability.rb"
 			],
 			[
 				"headind",
 				"spec/dummy/app/views/headlines/index.html.haml"
-			],
-			[
-				"",
-				"app/admin/team.rb"
 			],
 			[
 				"modeltea",
@@ -17580,16 +19741,8 @@
 				"README.md"
 			],
 			[
-				"cupspe",
-				"spec/models/kendocup/cup_spec.rb"
-			],
-			[
 				"addyea",
 				"db/migrate/20150508205125_add_year_to_cup.rb"
-			],
-			[
-				"model",
-				"app/models/kendocup/cup.rb"
 			],
 			[
 				"apprb",
@@ -17610,10 +19763,6 @@
 			[
 				"apphaml",
 				"spec/dummy/app/views/layouts/application.html.haml"
-			],
-			[
-				"nav",
-				"spec/dummy/app/views/layouts/_navigation.html.haml"
 			],
 			[
 				"navigat",
@@ -17650,10 +19799,6 @@
 			[
 				"route",
 				"config/routes.rb"
-			],
-			[
-				"appcon",
-				"app/controllers/kendocup/application_controller.rb"
 			],
 			[
 				"app",
@@ -17700,10 +19845,6 @@
 				"spec/dummy/app/views/kenshis/new.html.haml"
 			],
 			[
-				"kensh",
-				"app/admin/kenshi.rb"
-			],
-			[
 				"acts",
 				"lib/kendocup/acts_as_fighter.rb"
 			],
@@ -17718,14 +19859,6 @@
 			[
 				"confrou",
 				"config/routes.rb"
-			],
-			[
-				"routes",
-				"spec/dummy/config/routes.rb"
-			],
-			[
-				"seed",
-				"db/seeds.rb"
 			],
 			[
 				"tea",
@@ -17786,10 +19919,6 @@
 			[
 				"devfr",
 				"spec/dummy/config/locales/devise.fr.yml"
-			],
-			[
-				"devise",
-				"spec/dummy/config/locales/devise.en.yml"
 			],
 			[
 				"regf",
@@ -17896,10 +20025,6 @@
 				"app/views/kendocup/devise/registrations/_form.html.haml"
 			],
 			[
-				"modeluser",
-				"app/models/kendocup/user.rb"
-			],
-			[
 				"sharedli",
 				"app/views/devise/shared/_links.html.erb"
 			],
@@ -17928,128 +20053,12 @@
 				"spec/dummy/app/controllers/cups_controller.rb"
 			],
 			[
-				"cupco",
-				"spec/controllers/kendocup/cups_controller_spec.rb"
-			],
-			[
 				"kepdf",
 				"app/pdfs/kendocup/kenshis_pdf.rb"
 			],
 			[
 				"addra",
 				"db/migrate/20150429202547_add_rank_to_teams_and_participations.rb"
-			],
-			[
-				"admin",
-				"app/admin/headline.rb"
-			],
-			[
-				"admipart",
-				"app/admin/participation.rb"
-			],
-			[
-				"ind",
-				"app/admin/individual_category.rb"
-			],
-			[
-				"appym",
-				"spec/dummy/config/application.yml"
-			],
-			[
-				"ge",
-				"Gemfile"
-			],
-			[
-				"readme",
-				"README.md"
-			],
-			[
-				"cupshow",
-				"app/views/kendocup/cups/show.html.haml"
-			],
-			[
-				"se",
-				"db/seeds.rb"
-			],
-			[
-				"seeds",
-				"spec/dummy/db/seeds.rb"
-			],
-			[
-				"see",
-				"db/seed.rb"
-			],
-			[
-				"git",
-				".gitignore"
-			],
-			[
-				"sees",
-				"spec/dummy/db/seeds.rb"
-			],
-			[
-				"gemfil",
-				"Gemfile"
-			],
-			[
-				"dummrou",
-				"spec/dummy/config/routes.rb"
-			],
-			[
-				"purchases_controller_spec.rb",
-				"spec/controllers/kendocup/purchases_controller_spec.rb"
-			],
-			[
-				"partspe",
-				"spec/models/kendocup/participation_spec.rb"
-			],
-			[
-				"cupcontspe",
-				"spec/controllers/kendocup/cups_controller_spec.rb"
-			],
-			[
-				"cupcon",
-				"app/controllers/kendocup/cups_controller.rb"
-			],
-			[
-				"cupsrou",
-				"spec/routing/kendocup/cups_routing_spec.rb"
-			],
-			[
-				"cupsconspe",
-				"spec/controllers/kendocup/cups_controller_spec.rb"
-			],
-			[
-				"cuconspe",
-				"spec/controllers/kendocup/cups_controller_spec.rb"
-			],
-			[
-				"userco",
-				"app/controllers/kendocup/users_controller.rb"
-			],
-			[
-				"activeadmin",
-				"config/initializers/active_admin.rb"
-			],
-			[
-				"projec",
-				"kendocup.sublime-project"
-			],
-			[
-				"applham",
-				"app/views/kendocup/layouts/application.html.haml"
-			],
-			[
-				"links",
-				"app/views/devise/shared/_links.html.erb"
-			],
-			[
-				"act",
-				"config/initializers/active_admin.rb"
-			],
-			[
-				"usercon",
-				"app/controllers/kendocup/users_controller.rb"
 			]
 		],
 		"width": 0.0

@@ -12,7 +12,8 @@ module Kendocup
       if current_user.present?
         redirect_to root_path, alert: exception.message, status: 401
       else
-        redirect_to new_user_session_path, alert: I18n.t("devise.failure.unauthenticated")
+        redirect_to "/#{I18n.locale}/users/sign_in", alert: I18n.t("devise.failure.unauthenticated")
+        # redirect_to new_user_session_path, alert: I18n.t("devise.failure.unauthenticated")
       end
     end
 
