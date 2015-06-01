@@ -2,7 +2,10 @@ class KenshisController < ApplicationController
 
   prepend_before_filter :set_user
 
-  load_and_authorize_resource class: Kendocup::Kenshi, param_method: :my_sanitizer, through: [:user], shallow: true
+  load_and_authorize_resource :cup, find_by: :year, class: Kendocup::Cup
+  load_and_authorize_resource :user, class: Kendocup::User
+  load_and_authorize_resource :kenshi, class: Kendocup::Kenshi, through: [:cup, :user], param_method: :my_sanitizer
+
   before_filter :set_variables, only: [:new, :edit, :update, :create]
   before_filter :check_deadline, only: [:new, :edit, :update, :create, :destroy]
   respond_to :html
@@ -44,33 +47,33 @@ class KenshisController < ApplicationController
   end
 
   def new
-    if @user.blank? || (@user != current_user && !current_user.admin?)
-      redirect_to new_user_kenshi_path(current_user, locale: I18n.locale)
-      return
-    end
-    if @user == current_user && params[:self] == 'true'
-      existing_kenshis = current_user.kenshis.where(first_name: current_user.
-        first_name, last_name: current_user.last_name)
-      if existing_kenshis.present?
-        redirect_to kenshi_path(existing_kenshis.first, locale: I18n.locale), notice: t("kenshis.self.exist")
-        return
-      else
-        @kenshi = Kendocup::Kenshi.from(current_user)
-        @title = t('kenshis.new.yourself')
-      end
-    elsif params[:id]
-      origin_kenshi = Kendocup::Kenshi.find(params[:id])
-      @kenshi = origin_kenshi.dup
-      @kenshi.first_name = @kenshi.last_name = @kenshi.email = @kenshi.dob = nil
-      @title = t("kenshis.new.duplicate", full_name: origin_kenshi.full_name)
-      origin_kenshi.participations.each do |participation|
-        @kenshi.participations << Participation.new(category: participation.category, team: participation.team, ronin: participation.ronin)
-      end
-    else
-      @kenshi.club = @user.club if @user.present?
-      @title = t('kenshis.new.title')
-    end
-    @kenshi.female = false if @kenshi.female.nil?
+    # if @user.blank? || (@user != current_user && !current_user.admin?)
+    #   redirect_to new_user_kenshi_path(current_user, locale: I18n.locale)
+    #   return
+    # end
+    # if @user == current_user && params[:self] == 'true'
+    #   existing_kenshis = current_user.kenshis.where(first_name: current_user.
+    #     first_name, last_name: current_user.last_name)
+    #   if existing_kenshis.present?
+    #     redirect_to kenshi_path(existing_kenshis.first, locale: I18n.locale), notice: t("kenshis.self.exist")
+    #     return
+    #   else
+    #     @kenshi = Kendocup::Kenshi.from(current_user)
+    #     @title = t('kenshis.new.yourself')
+    #   end
+    # elsif params[:id]
+    #   origin_kenshi = Kendocup::Kenshi.find(params[:id])
+    #   @kenshi = origin_kenshi.dup
+    #   @kenshi.first_name = @kenshi.last_name = @kenshi.email = @kenshi.dob = nil
+    #   @title = t("kenshis.new.duplicate", full_name: origin_kenshi.full_name)
+    #   origin_kenshi.participations.each do |participation|
+    #     @kenshi.participations << Participation.new(category: participation.category, team: participation.team, ronin: participation.ronin)
+    #   end
+    # else
+    #   @kenshi.club = @user.club if @user.present?
+    #   @title = t('kenshis.new.title')
+    # end
+    # @kenshi.female = false if @kenshi.female.nil?
     # @cup.team_categories.each do |cat|
     #   @kenshi.participations.build category: cat
     # end
@@ -210,7 +213,7 @@ class KenshisController < ApplicationController
     end
 
     def set_variables
-      @teams = Kendocup::Team.incomplete.order(:name)+Team.complete.order(:name)
+      @teams = Kendocup::Team.incomplete.order(:name)+Kendocup::Team.complete.order(:name)
       # @team_name = params[:kenshi][:team_name] if params[:kenshi] && params[:kenshi][:team_name]
     end
 

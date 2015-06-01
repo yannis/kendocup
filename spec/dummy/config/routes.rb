@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
+
   scope "(:locale)", locale: /fr|en/ do |locale|
-    mount Kendocup::Engine => "/"
 
     resources :cups, only: [:index, :show]
     resources :headlines, only: [:index, :show]

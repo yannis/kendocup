@@ -116,7 +116,7 @@ ActiveAdmin.register Kendocup::Kenshi, as: "Kenshi" do
   end
 
   # member_action :receipt do
-  #   @kenshi = Kenshi.find params[:id]
+  #   @kenshi = Kendocup::Kenshi.find params[:id]
   #   pdf = KenshiReceipt.new(@kenshi)
   #   send_data pdf.render, filename: @kenshi.full_name.parameterize('_')+"_receipt",
   #                         type: "application/pdf",
