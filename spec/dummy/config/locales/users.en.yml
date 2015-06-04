@@ -9,6 +9,9 @@ en:
       register_someone_else: Register someone else to the competition
       register_yourself: Register yourself to the competition
       your_registrations: Your registrations
+      register: "No registrations yet. Would you like to register %{yourself}? Or %{someone}?"
+      yourself: "yourself"
+      someone: "someone else"
     destroy:
       title: "Destroy account"
       confirm: "Are you sure? Your data as well as your registrations will be definitely destroyed."

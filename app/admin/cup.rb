@@ -9,10 +9,7 @@ ActiveAdmin.register Kendocup::Cup, as: "Cup" do
       @cup = Kendocup::Cup.where("extract(year from cups.start_on) = ?", params[:id]).first
     end
 
-    def authenticate_admin_user!
-      Rails.logger.debug "authenticate_admin_user called"
-      redirect_to root_url unless current_user.try(:admin?)
-    end
+
   end
 
   form do |f|

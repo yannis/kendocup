@@ -3,28 +3,13 @@ module Kendocup
   class ApplicationController < ActionController::Base
     protect_from_forgery with: :exception
 
-    before_filter :configure_permitted_parameters, if: :devise_controller?
     before_filter :set_current_cup
     before_filter :store_location_if_html, :only => [:index, :show]
 
-    rescue_from CanCan::AccessDenied do |exception|
-      # Rails.logger.debug "Access denied on #{exception.action} #{exception.subject.inspect}"
-      if current_user.present?
-        redirect_to root_path, alert: exception.message, status: 401
-      else
-        redirect_to new_user_session_path(locale: I18n.locale), alert: I18n.t("devise.failure.unauthenticated")
-        # redirect_to new_user_session_path, alert: I18n.t("devise.failure.unauthenticated")
-      end
-    end
-
-    def current_ability
-      @current_ability ||= KendocupAbility.new(current_user)
-    end
-
-
     # restrict access to admin module for non-admin users
     def authenticate_admin_user!
-      redirect_to root_url unless current_user.try(:admin?)
+      raise "Implement me in your own ApplicationController"
+      # redirect_to root_url unless current_user.try(:admin?)
     end
 
     def back
@@ -36,17 +21,12 @@ module Kendocup
       session[:return_to] = nil
     end
 
+
   protected
 
-    def configure_permitted_parameters
-      unless current_user_admin?
-        devise_parameter_sanitizer.for(:sign_up) << :admin
-      end
-    end
-
-    def current_user_admin?
-      user_signed_in? && current_user.admin?
-    end
+    # def current_user_admin?
+    #   user_signed_in? && current_user.admin?
+    # end
 
     def set_current_cup
       unless @current_cup.present?

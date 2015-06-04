@@ -1,5 +1,4 @@
 require 'haml'
-require 'devise'
 require "kendocup/engine"
 
 module Kendocup

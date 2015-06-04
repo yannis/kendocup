@@ -4,7 +4,7 @@ ActiveAdmin.register Kendocup::Club, as: "Club" do
 
   controller do
     def authenticate_admin_user!
-      redirect_to root_url unless current_user.try(:admin?)
+      redirect_to root_url if current_user.try(:admin?)
     end
   end
 end
