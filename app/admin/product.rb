@@ -38,18 +38,9 @@ ActiveAdmin.register Kendocup::Product, as: "Product" do
           column :first_name
           column :email
           column :club
-          # column :categories do
-          #   (kenshi.individual_categories.map{|c| link_to(c.name, [:admin, c])}+kenshi.teams.map{|t| "#{link_to(t.name, [:admin, t])} (#{link_to(t.team_category.name, [:admin, t.team_category])})"}).join(', ').html_safe
-          # end
-          # column :products do |kenshi|
-          #   kenshi.products.map{|c| link_to(c.name, [:admin, c])}.join(', ').html_safe
-          # end
           column :user do |kenshi|
             "#{kenshi.user.full_name} (#{kenshi.user.email})"
           end
-          # actions do |kenshi|
-          #   link_to "PDF", pdf_admin_kenshi_path(kenshi)
-          # end
         end
       end
     end
@@ -57,11 +48,12 @@ ActiveAdmin.register Kendocup::Product, as: "Product" do
 
   form do |f|
     f.inputs "Details" do
-      f.input :team_category
+      f.input :cup
+      f.input :event
       f.input :name_en
       f.input :name_fr
-      f.input :start_on, as: :string, input_html: {class: "hasDatetimePicker"}
-      f.input :duration
+      f.input :fee_chf
+      f.input :fee_eu
     end
     f.actions
   end

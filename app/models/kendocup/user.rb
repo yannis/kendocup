@@ -17,18 +17,6 @@ module Kendocup
     before_validation :format
     after_save :register_to_mailing_list
 
-    def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
-      user = Kendocup::User.where(provider: "", uid: auth.uid).first
-      unless user
-        birthday = auth.extra.raw_info.birthday.present? ? Date.strptime(auth.extra.raw_info.birthday, '%m/%d/%Y') : nil
-        user = User.new(first_name:auth.extra.raw_info.first_name, last_name:auth.extra.raw_info.last_name, female:(auth.extra.raw_info.gender=='female'), dob:birthday, provider:auth.provider, uid:auth.uid, email:auth.info.email, password:Devise.friendly_token[0,20])
-        user.skip_confirmation!
-        user.save
-        user
-      end
-      return user
-    end
-
     def club_name=(club_name)
       self.club = Club.find_or_initialize_by name: club_name
     end
