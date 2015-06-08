@@ -49,7 +49,9 @@ ActiveAdmin.register Kendocup::Product, as: "Product" do
   form do |f|
     f.inputs "Details" do
       f.input :cup
-      f.input :event
+      f.input :event do |event|
+        return "#{event.name} (#{event.cup.year})"
+      end
       f.input :name_en
       f.input :name_fr
       f.input :fee_chf

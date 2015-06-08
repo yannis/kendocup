@@ -1,6 +1,6 @@
 ActiveAdmin.register Kendocup::Event, as: "Event" do
 
-  permit_params :cup, :name_en, :name_fr, :start_on, :duration
+  permit_params :cup_id, :name_en, :name_fr, :start_on, :duration
 
   controller do
     def authenticate_admin_user!
@@ -22,7 +22,7 @@ ActiveAdmin.register Kendocup::Event, as: "Event" do
 
   form do |f|
     f.inputs "Details" do
-      f.input :cup
+      f.input :cup_id
       f.input :name_en
       f.input :name_fr
       f.input :start_on, as: :string, input_html: {class: "hasDatetimePicker"}
