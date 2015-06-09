@@ -22,7 +22,7 @@ ActiveAdmin.register Kendocup::Event, as: "Event" do
 
   form do |f|
     f.inputs "Details" do
-      f.input :cup_id
+      f.input :cup
       f.input :name_en
       f.input :name_fr
       f.input :start_on, as: :string, input_html: {class: "hasDatetimePicker"}

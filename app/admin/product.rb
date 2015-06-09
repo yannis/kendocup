@@ -49,9 +49,7 @@ ActiveAdmin.register Kendocup::Product, as: "Product" do
   form do |f|
     f.inputs "Details" do
       f.input :cup
-      f.input :event do |event|
-        return "#{event.name} (#{event.cup.year})"
-      end
+      f.input :event, collection: Kendocup::Event.all.map{|e| ["#{e.name} (#{e.cup.to_s})", e.id]}
       f.input :name_en
       f.input :name_fr
       f.input :fee_chf
