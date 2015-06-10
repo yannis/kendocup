@@ -10,6 +10,7 @@ ActiveAdmin.register Kendocup::TeamCategory, as: "TeamCategory" do
 
   index do
     column :name
+    column :cup
     column :teams_count, sortable: false do |team_category|
       team_category.teams.count
     end
@@ -21,6 +22,7 @@ ActiveAdmin.register Kendocup::TeamCategory, as: "TeamCategory" do
   show do |category|
     attributes_table do
       row :name
+      row :cup
       row :description
       row :pool_size
       row :out_of_pool

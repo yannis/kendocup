@@ -12,12 +12,8 @@ ActiveAdmin.register Kendocup::IndividualCategory, as: "IndividualCategory" do
   filter :name
 
   index do
-    column :cup do |category|
-      link_to category.cup.year, [:admin, cup]
-    end
-    column :name do |category|
-      link_to category.name, [:admin, category]
-    end
+    column :cup
+    column :name
     column :description
     column :pool_size
     column :out_of_pool
