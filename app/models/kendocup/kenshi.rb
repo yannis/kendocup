@@ -27,7 +27,7 @@ module Kendocup
     validates_presence_of :last_name
     validates_presence_of :grade
     validates_presence_of :dob
-    validates_uniqueness_of :last_name, scope: :first_name
+    validates_uniqueness_of :last_name, scope: [:cup_id, :first_name]
     validates_inclusion_of :grade, in: GRADES
     validates_inclusion_of :female, in: [true, false]
 

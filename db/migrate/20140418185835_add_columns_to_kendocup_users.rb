@@ -1,6 +1,5 @@
-class AddOmniauthColumnsToUsers < ActiveRecord::Migration
+class AddColumnsToKendocupUsers < ActiveRecord::Migration
   def change
-    # omiauthable
     add_column :users, :provider, :string
     add_column :users, :uid, :string
   end
