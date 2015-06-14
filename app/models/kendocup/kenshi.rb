@@ -34,6 +34,7 @@ module Kendocup
     accepts_nested_attributes_for :participations, allow_destroy: true
     accepts_nested_attributes_for :purchases, allow_destroy: true
 
+    before_validation :format
     after_validation :logs
 
     def self.from(user)
@@ -96,15 +97,18 @@ module Kendocup
     end
 
     def norm_first_name
-      first_name.try :titleize
+      # first_name.try :titleize
+      self.first_name.mb_chars.gsub(/[[:alpha:]]+/){|w| w.capitalize } if self.first_name
     end
 
     def norm_last_name
-      last_name.try :titleize
+      # last_name.try :titleize
+      self.last_name.gsub(/[[:alpha:]]+/){|w| w.capitalize } if self.last_name
     end
 
     def norm_club
-      club.name.try :titleize
+      # club.name.try :titleize
+      self.club.name.gsub(/[[:alpha:]]+/){|w| w.capitalize } if self.club.try(:name)
     end
 
     def purchased?(product)
@@ -141,6 +145,15 @@ module Kendocup
 
     def logs
       Rails.logger.debug "errors: #{self.errors.inspect}"
+    end
+
+  private
+
+    def format
+      # use POSIX bracket expression here
+      self.last_name = self.last_name.gsub(/[[:alpha:]]+/){|w| w.capitalize } if self.last_name
+      self.first_name = self.first_name.mb_chars.gsub(/[[:alpha:]]+/){|w| w.capitalize } if self.first_name
+      self.email = self.email.downcase if self.email
     end
   end
 end

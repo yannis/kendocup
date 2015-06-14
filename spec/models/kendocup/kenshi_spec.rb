@@ -52,6 +52,16 @@ module Kendocup
       end
     end
 
+    describe "A kenshi with badly formatted name and email" do
+
+      let(:kenshi){create :kendocup_kenshi, first_name: "FIRST-J.-sébastien mÜhlebäch", last_name: "LAST-J.-name nAme", email: 'STUPIDLY.FORAMaTTED@EMAIL.COM'}
+
+      it {expect(kenshi.norm_last_name).to eq 'Last-J.-Name Name'}
+      it {expect(kenshi.norm_first_name).to eq 'First-J.-Sébastien MÜhlebäch'}
+      it {expect(kenshi.full_name).to eq "First-J.-Sébastien MÜhlebäch Last-J.-Name Name"}
+      it {expect(kenshi.reload.email).to eq 'stupidly.foramatted@email.com'}
+    end
+
     describe "Updating a kenshi with participations data" do
       let(:kenshi){create :kendocup_kenshi, first_name: "Yannis", last_name: "Jaquet", female: false}
       let(:individual_category) {create :kendocup_individual_category, cup: kenshi.cup}

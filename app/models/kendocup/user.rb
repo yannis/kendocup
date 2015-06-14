@@ -48,7 +48,7 @@ module Kendocup
       kenshis.for_cup(cup).map{|k| k.fees(currency)}.inject{|sum,x| sum + x}
     end
 
-    private
+  private
 
     def format
       # use POSIX bracket expression here
