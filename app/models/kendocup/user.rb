@@ -6,8 +6,8 @@ module Kendocup
     has_many :kenshis, dependent: :destroy
 
     validates_presence_of :email, unless: lambda{
-      Rails.logger.debug "SELF: #{self.inspect}"
-      Rails.logger.debug "SELF BLANK?: #{self.uid.blank? && self.provider.blank?}"
+      # Rails.logger.debug "SELF: #{self.inspect}"
+      # Rails.logger.debug "SELF BLANK?: #{self.uid.blank? && self.provider.blank?}"
       self.uid.blank? && self.provider.blank?
     }
     # validates :email, presence: { unless: :uid? }

@@ -82,8 +82,8 @@ ActiveAdmin.register Kendocup::Kenshi, as: "Kenshi" do
     end
     f.inputs "Participations" do
       f.has_many :participations do |j|
-        j.input :category_individual, collection: IndividualCategory.all
-        j.input :category_team, collection: TeamCategory.all
+        j.input :category_individual, collection: Kendocup::IndividualCategory.all
+        j.input :category_team, collection: Kendocup::TeamCategory.all
         j.input :_destroy, as: :boolean
       end
     end
