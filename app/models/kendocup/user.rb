@@ -15,7 +15,6 @@ module Kendocup
     validates :first_name, presence: true
 
     before_validation :format
-    after_save :register_to_mailing_list
 
     def club_name=(club_name)
       self.club = Club.find_or_initialize_by name: club_name
@@ -52,13 +51,10 @@ module Kendocup
     private
 
     def format
-      self.last_name = self.last_name.gsub(/\w+/){|w| w.capitalize } if self.last_name
-      self.first_name = self.first_name.gsub(/\w+/){|w| w.capitalize } if self.first_name
+      # use POSIX bracket expression here
+      self.last_name = self.last_name.gsub(/[[:alpha:]]+/){|w| w.capitalize } if self.last_name
+      self.first_name = self.first_name.mb_chars.gsub(/[[:alpha:]]+/){|w| w.capitalize } if self.first_name
       self.email = self.email.downcase if self.email
-    end
-
-    def register_to_mailing_list
-      # MAILINGLIST.lists.subscribe({id: ENV["MAILCHIMP_LIST_ID"], email: {email: self.email}, merge_vars: {:FNAME => self.first_name, :LNAME => self.last_name}, double_optin: false}) unless ["test"].include?(Rails.env)
     end
 
     # def self.find_for_twitter_oauth(auth, signed_in_resource=nil)

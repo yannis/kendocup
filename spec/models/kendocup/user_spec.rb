@@ -31,15 +31,15 @@ module Kendocup
 
   describe "A basic user" do
     let!(:cup) {create :kendocup_cup}
-    let(:user){create :kendocup_user, first_name: "FIRST-J.-name nAme", last_name: "LAST-J.-name nAme", email: 'STUPIDLY.FORAMaTTED@EMAIL.COM'}
+    let(:user){create :kendocup_user, first_name: "FIRST-J.-sébastien mÜhlebäch", last_name: "LAST-J.-name nAme", email: 'STUPIDLY.FORAMaTTED@EMAIL.COM'}
 
     it {expect(user).to be_valid_verbose}
     it {expect(user).to_not be_admin}
     it {expect(user.has_kenshis?).to be false}
 
     it {expect(user.reload.last_name).to eq 'Last-J.-Name Name'}
-    it {expect(user.reload.first_name).to eq 'First-J.-Name Name'}
-    it {expect(user.full_name).to eq "First-J.-Name Name Last-J.-Name Name"}
+    it {expect(user.reload.first_name).to eq 'First-J.-Sébastien MÜhlebäch'}
+    it {expect(user.full_name).to eq "First-J.-Sébastien MÜhlebäch Last-J.-Name Name"}
     it {expect(user.reload.email).to eq 'stupidly.foramatted@email.com'}
     it {expect(user).to_not be_registered_for_cup(cup)}
 
