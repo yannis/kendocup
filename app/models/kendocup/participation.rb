@@ -95,7 +95,7 @@ module Kendocup
         if team_name.present?
           # self.team_id = nil
           self.ronin = nil
-          self.team = Team.find_or_initialize_by team_category: self.category, name: team_name
+          self.team = Kendocup::Team.find_or_initialize_by team_category: self.category, name: team_name
         elsif team_name.blank? || ronin.present?
           self.team = nil
         end
@@ -115,10 +115,10 @@ module Kendocup
         errors.add(:category, "can't have both an individual and a team category")
       end
       if @category_individual.present?
-        self.category = IndividualCategory.find(@category_individual)
+        self.category = Kendocup::IndividualCategory.find(@category_individual)
       end
       if @category_team.present?
-        self.category = TeamCategory.find(@category_team)
+        self.category = Kendocup::TeamCategory.find(@category_team)
       end
     end
   end

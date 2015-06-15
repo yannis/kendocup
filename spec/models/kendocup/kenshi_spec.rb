@@ -2,6 +2,8 @@ require 'spec_helper'
 
 module Kendocup
   RSpec.describe Kenshi, type: :model do
+    let(:cup){create :kendocup_cup}
+    before {create :kendocup_kenshi}
     it {should belong_to :cup}
     it {should belong_to :user}
     it {should belong_to :club}
@@ -53,8 +55,7 @@ module Kendocup
     end
 
     describe "A kenshi with badly formatted name and email" do
-
-      let(:kenshi){create :kendocup_kenshi, first_name: "FIRST-J.-sébastien mÜhlebäch", last_name: "LAST-J.-name nAme", email: 'STUPIDLY.FORAMaTTED@EMAIL.COM'}
+      let(:kenshi){create :kendocup_kenshi, first_name: "FIRST-J.-sébastien mÜhlebäch", last_name: "LAST-J.-name nAme", email: 'STUPIDLY.FORAMaTTED@EMAIL.COM', cup: cup}
 
       it {expect(kenshi.norm_last_name).to eq 'Last-J.-Name Name'}
       it {expect(kenshi.norm_first_name).to eq 'First-J.-Sébastien MÜhlebäch'}
@@ -63,7 +64,7 @@ module Kendocup
     end
 
     describe "Updating a kenshi with participations data" do
-      let(:kenshi){create :kendocup_kenshi, first_name: "Yannis", last_name: "Jaquet", female: false}
+      let(:kenshi){create :kendocup_kenshi, first_name: "Yannis", last_name: "Jaquet", female: false, cup: cup}
       let(:individual_category) {create :kendocup_individual_category, cup: kenshi.cup}
       let(:team_category) {create :kendocup_team_category, cup: kenshi.cup}
 
