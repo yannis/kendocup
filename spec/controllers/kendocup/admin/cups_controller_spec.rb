@@ -34,10 +34,11 @@ module Kendocup
     end
 
     describe "GET #destroy" do
+      before {get :destroy, id: cup.id}
       it "returns http success" do
-        get :destroy, id: cup.id
-        expect(response).to have_http_status(:success)
+        expect(response).to redirect_to("/")
       end
+      it {expect(assigns(:cup)).to eql cup}
     end
 
   end

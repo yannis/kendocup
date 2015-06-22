@@ -29,7 +29,11 @@ ActiveAdmin.register Kendocup::Team, as: "Team" do
       team.kenshis.map{|k| k.age_at_cup.to_i}.sum
     end
     column :fitness do |team|
-      team.kenshis.map{|k| k.age_at_cup.to_i}.sum/team.kenshis.map{|k| k.grade.to_i}.sum
+      if team.kenshis.present?
+        team.kenshis.map{|k| k.age_at_cup.to_i}.sum/team.kenshis.map{|k| k.grade.to_i}.sum
+      else
+        nil
+      end
     end
     actions do |team|
       [
