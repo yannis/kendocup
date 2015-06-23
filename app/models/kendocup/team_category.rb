@@ -8,5 +8,9 @@ module Kendocup
     has_many :teams, inverse_of: :team_category, dependent: :destroy
     has_many :participations, as: :category, dependent: :destroy
     has_many :kenshis, through: :teams
+
+    def full_name
+      "#{self.name} (#{self.cup.year})"
+    end
   end
 end

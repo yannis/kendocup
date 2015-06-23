@@ -2,14 +2,18 @@ ActiveAdmin.register Kendocup::Cup, as: "Cup" do
 
   permit_params :year, :start_on, :end_on, :deadline, :adult_fees_chf, :adult_fees_eur, :junior_fees_chf, :junior_fees_eur
 
+  # controller do
+  #   before_filter :set_cup, only: [:show, :edit, :update, :delete]
+
+  #   def set_cup
+  #     @cup = Kendocup::Cup.where("extract(year from cups.start_on) = ?", params[:id]).first
+  #   end
+  # end
+
   controller do
-    before_filter :set_cup, only: [:show, :edit, :update, :delete]
-
-    def set_cup
-      @cup = Kendocup::Cup.where("extract(year from cups.start_on) = ?", params[:id]).first
+    def find_resource
+      Kendocup::Cup.where(year: params[:id]).first!
     end
-
-
   end
 
   form do |f|

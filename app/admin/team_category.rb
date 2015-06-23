@@ -19,6 +19,9 @@ ActiveAdmin.register Kendocup::TeamCategory, as: "TeamCategory" do
     actions
   end
 
+  filter :cup, as: :check_boxes, collection: proc { Kendocup::Cup.all }
+  filter :name
+
   show do |category|
     attributes_table do
       row :name

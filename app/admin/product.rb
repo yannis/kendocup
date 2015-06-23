@@ -19,6 +19,9 @@ ActiveAdmin.register Kendocup::Product, as: "Product" do
     actions
   end
 
+  filter :cup, as: :check_boxes, collection: proc { Kendocup::Cup.all }
+  filter :name
+
   show do |product|
     attributes_table do
       row :name_en

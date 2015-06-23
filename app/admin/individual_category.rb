@@ -8,7 +8,7 @@ ActiveAdmin.register Kendocup::IndividualCategory, as: "IndividualCategory" do
     end
   end
 
-  filter :cup
+  filter :cup, as: :check_boxes, collection: proc { Kendocup::Cup.all }
   filter :name
 
   index do

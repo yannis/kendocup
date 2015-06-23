@@ -43,8 +43,7 @@ ActiveAdmin.register Kendocup::Team, as: "Team" do
   end
 
   filter :name
-  filter :cup
-  filter :team_category
+  filter :team_category, as: :check_boxes, collection: proc { Kendocup::TeamCategory.all }
   filter :rank
 
   show do |team|

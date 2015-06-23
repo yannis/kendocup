@@ -14,7 +14,7 @@ module Kendocup
 
     describe "GET #show" do
       it "returns http success" do
-        get :show, id: cup.id
+        get :show, id: cup.to_param
         expect(response).to have_http_status(:success)
       end
     end
@@ -28,16 +28,14 @@ module Kendocup
 
     describe "GET #edit" do
       it "returns http success" do
-        get :edit, id: cup.id
+        get :edit, id: cup.to_param
         expect(response).to have_http_status(:success)
       end
     end
 
     describe "GET #destroy" do
-      before {get :destroy, id: cup.id}
-      it "returns http success" do
-        expect(response).to redirect_to("/")
-      end
+      before {delete :destroy, id: cup.to_param}
+      it {expect(response).to be_redirect}
       it {expect(assigns(:cup)).to eql cup}
     end
 
