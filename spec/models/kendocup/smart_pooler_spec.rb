@@ -8,7 +8,13 @@ module Kendocup
 
     24.times do |i|
       let!("participation#{i+1}"){
-        create :kendocup_participation, category: individual_category, kenshi: create(:kendocup_kenshi, cup: cup)
+        begin
+          kenshi = create(:kendocup_kenshi, cup: cup)
+        rescue
+          puts "retries to create kenshi: SmartPooler spec, line 14"
+          retry
+        end
+        create :kendocup_participation, category: individual_category, kenshi: kenshi
       }
     end
 
