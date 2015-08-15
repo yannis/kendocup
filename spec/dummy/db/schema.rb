@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150508205125) do
+ActiveRecord::Schema.define(version: 20150815155232) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -58,6 +58,7 @@ ActiveRecord::Schema.define(version: 20150508205125) do
     t.integer  "duration"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name_de"
   end
 
   add_index "events", ["cup_id"], name: "index_events_on_cup_id", using: :btree
@@ -95,6 +96,8 @@ ActiveRecord::Schema.define(version: 20150508205125) do
     t.boolean  "shown",      default: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "title_de"
+    t.text     "content_de"
   end
 
   add_index "headlines", ["cup_id"], name: "index_headlines_on_cup_id", using: :btree
@@ -110,6 +113,7 @@ ActiveRecord::Schema.define(version: 20150508205125) do
     t.integer  "cup_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "description_de"
   end
 
   add_index "individual_categories", ["cup_id"], name: "index_individual_categories_on_cup_id", using: :btree
@@ -164,6 +168,8 @@ ActiveRecord::Schema.define(version: 20150508205125) do
     t.integer  "cup_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name_de"
+    t.text     "description_de"
   end
 
   create_table "purchases", force: :cascade do |t|
@@ -187,6 +193,7 @@ ActiveRecord::Schema.define(version: 20150508205125) do
     t.integer  "cup_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "description_de"
   end
 
   add_index "team_categories", ["cup_id"], name: "index_team_categories_on_cup_id", using: :btree

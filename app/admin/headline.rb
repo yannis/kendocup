@@ -1,7 +1,7 @@
 ActiveAdmin.register Kendocup::Headline, as: "Headline" do
 
 
-  permit_params :title_en, :title_fr, :content_fr, :content_en, :shown, :cup_id
+  permit_params :title_en, :title_fr, :title_de, :content_fr, :content_en, :content_de, :shown, :cup_id
 
   controller do
     def authenticate_admin_user!
@@ -13,8 +13,10 @@ ActiveAdmin.register Kendocup::Headline, as: "Headline" do
     column :cup
     column :title_en
     column :title_fr
+    column :title_en
     column :content_en
     column :content_fr
+    column :content_de
     column :shown
     actions
   end
@@ -26,6 +28,7 @@ ActiveAdmin.register Kendocup::Headline, as: "Headline" do
       row :title_fr
       row :content_en
       row :content_fr
+      row :content_de
       row :shown
     end
   end
@@ -33,6 +36,7 @@ ActiveAdmin.register Kendocup::Headline, as: "Headline" do
   filter :cup
   filter :title_fr
   filter :title_en
+  filter :title_de
   filter :shown
 
   form do |f|
@@ -40,8 +44,10 @@ ActiveAdmin.register Kendocup::Headline, as: "Headline" do
       f.input :cup
       f.input :title_en
       f.input :title_fr
+      f.input :title_de
       f.input :content_en
       f.input :content_fr
+      f.input :content_de
       f.input :shown
     end
     f.actions

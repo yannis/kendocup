@@ -1,6 +1,6 @@
 ActiveAdmin.register Kendocup::IndividualCategory, as: "IndividualCategory" do
 
-  permit_params :name, :pool_size, :out_of_pool, :min_age, :max_age, :description_en, :description_fr, :cup_id
+  permit_params :name, :pool_size, :out_of_pool, :min_age, :max_age, :description_en, :description_fr, :description_de, :cup_id
 
   controller do
     def authenticate_admin_user!
@@ -14,7 +14,9 @@ ActiveAdmin.register Kendocup::IndividualCategory, as: "IndividualCategory" do
   index do
     column :cup
     column :name
-    column :description
+    column :description_en
+    column :description_fr
+    column :description_de
     column :pool_size
     column :out_of_pool
     column :min_age
@@ -37,7 +39,9 @@ ActiveAdmin.register Kendocup::IndividualCategory, as: "IndividualCategory" do
     attributes_table do
       row :cup
       row :name
-      row :description
+      row :description_en
+      row :description_fr
+      row :description_de
       row :pool_size
       row :out_of_pool
     end

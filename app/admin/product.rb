@@ -1,5 +1,5 @@
 ActiveAdmin.register Kendocup::Product, as: "Product" do
-  permit_params :name_en, :name_fr, :description_en, :description_fr, :cup_id, :event_id, :fee_chf, :fee_eu
+  permit_params :name_en, :name_fr, :name_de, :description_en, :description_fr, :description_de, :cup_id, :event_id, :fee_chf, :fee_eu
 
   controller do
     def authenticate_admin_user!
@@ -9,11 +9,19 @@ ActiveAdmin.register Kendocup::Product, as: "Product" do
 
   index do
     column :name_en do |product|
-      link_to product.name, [:admin, product]
+      link_to product.name_en, [:admin, product]
+    end
+    column :name_fr do |product|
+      link_to product.name_fr, [:admin, product]
+    end
+    column :name_de do |product|
+      link_to product.name_de, [:admin, product]
     end
     column :cup
     column :event
     column :description_en
+    column :description_fr
+    column :description_de
     column :fee_chf
     column :fee_eu
     actions
@@ -26,10 +34,12 @@ ActiveAdmin.register Kendocup::Product, as: "Product" do
     attributes_table do
       row :name_en
       row :name_fr
+      row :name_de
       row :cup
       row :event
       row :description_en
       row :description_fr
+      row :description_de
       row :fee_chf
       row :fee_eu
     end
@@ -55,6 +65,10 @@ ActiveAdmin.register Kendocup::Product, as: "Product" do
       f.input :event, collection: Kendocup::Event.all.map{|e| ["#{e.name} (#{e.cup.to_s})", e.id]}
       f.input :name_en
       f.input :name_fr
+      f.input :name_de
+      f.input :description_en
+      f.input :description_fr
+      f.input :description_de
       f.input :fee_chf
       f.input :fee_eu
     end
