@@ -19,6 +19,7 @@ module Kendocup
     it {should respond_to :club}
     it {should respond_to :grade}
     it {should respond_to :email}
+    it {should respond_to :remarks}
 
     it {should validate_presence_of :cup_id}
     it {should validate_presence_of :user_id}

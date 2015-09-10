@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150815155232) do
+ActiveRecord::Schema.define(version: 20150910090301) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -130,6 +130,7 @@ ActiveRecord::Schema.define(version: 20150815155232) do
     t.string   "grade"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "remarks"
   end
 
   add_index "kenshis", ["club_id"], name: "index_kenshis_on_club_id", using: :btree

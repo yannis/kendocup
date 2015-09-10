@@ -1,6 +1,6 @@
 ActiveAdmin.register Kendocup::Kenshi, as: "Kenshi" do
 
-  permit_params :id, :user, :cup_id, :last_name, :first_name, :female, :email, :dob, :email, :grade, :club_id, :user_id, purchases_attributes: [:_destroy, :product_id, :id], participations_attributes: [:id, :category_individual, :category_team, :_destroy]
+  permit_params :id, :user, :cup_id, :last_name, :first_name, :female, :email, :dob, :email, :grade, :club_id, :user_id, :remarks, purchases_attributes: [:_destroy, :product_id, :id], participations_attributes: [:id, :category_individual, :category_team, :_destroy]
 
   controller do
     def authenticate_admin_user!
@@ -13,6 +13,7 @@ ActiveAdmin.register Kendocup::Kenshi, as: "Kenshi" do
   filter :last_name
   filter :email
   filter :grade
+  filter :remarks
 
   index do
     column :cup
@@ -20,6 +21,7 @@ ActiveAdmin.register Kendocup::Kenshi, as: "Kenshi" do
     column :first_name
     column :email
     column :grade
+    column :remarks
     column :categories do |kenshi|
       (kenshi.individual_categories.map{|c| link_to(c.name, [:admin, c])}+kenshi.teams.map{|t| "#{link_to(t.name, [:admin, t])} (#{link_to(t.team_category.name, [:admin, t.team_category])})"}).join(', ').html_safe
     end
@@ -45,6 +47,7 @@ ActiveAdmin.register Kendocup::Kenshi, as: "Kenshi" do
       row :email
       row :club
       row :user
+      row :remarks
     end
     if kenshi.participations.present?
       panel "Participations" do
@@ -79,6 +82,7 @@ ActiveAdmin.register Kendocup::Kenshi, as: "Kenshi" do
       f.input :email
       f.input :dob, as: :datepicker
       f.input :grade, collection: Kendocup::Kenshi::GRADES
+      f.input :remarks
     end
     f.inputs "Participations" do
       f.has_many :participations do |j|
