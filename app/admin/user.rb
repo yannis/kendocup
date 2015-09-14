@@ -17,12 +17,15 @@ ActiveAdmin.register Kendocup::User, as: "User" do
     column :current_sign_in_at
     column :last_sign_in_at
     column :sign_in_count
+    column :admin
+    column :provider
     actions
   end
 
   filter :first_name
   filter :last_name
   filter :email
+  filter :admin
 
   show do |user|
     attributes_table do
@@ -31,6 +34,7 @@ ActiveAdmin.register Kendocup::User, as: "User" do
       row :email
       row :club
       row :dob
+      row :admin
     end
 
     if user.kenshis.present?

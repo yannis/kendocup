@@ -17,6 +17,7 @@ module Kendocup
     it {should respond_to :description_de}
     it {should respond_to :fee_chf}
     it {should respond_to :fee_eu}
+    it {should respond_to :year}
 
     it {should validate_presence_of :name_en}
     it {should validate_presence_of :name_fr}

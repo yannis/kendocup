@@ -13,6 +13,7 @@ ActiveAdmin.register Kendocup::Kenshi, as: "Kenshi" do
   filter :last_name
   filter :email
   filter :grade
+  filter :products, as: :check_boxes, collection: proc { Kendocup::Product.all.map{|p| ["#{p.name} (#{p.year})", p.id]} }
   filter :remarks
 
   index do
@@ -62,6 +63,16 @@ ActiveAdmin.register Kendocup::Kenshi, as: "Kenshi" do
           column :pool_position
           column :admin_links do  |participation|
             [link_to("View", admin_participation_path(participation)), link_to("Edit", edit_admin_participation_path(participation)), link_to("Destroy", admin_participation_path(participation), method: :delete, confirm: "Are you sure?")].join(" ").html_safe
+          end
+        end
+      end
+    end
+    if kenshi.purchases.present?
+      panel "Participations" do
+        table_for kenshi.purchases do |purchase|
+          column :product
+          column :admin_links do  |purchase|
+            [link_to("View", admin_purchase_path(purchase)), link_to("Edit", edit_admin_purchase_path(purchase)), link_to("Destroy", admin_purchase_path(purchase), method: :delete, confirm: "Are you sure?")].join(" ").html_safe
           end
         end
       end

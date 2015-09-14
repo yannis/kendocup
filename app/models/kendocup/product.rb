@@ -19,5 +19,7 @@ module Kendocup
     validates_numericality_of :fee_eu, allow_nil: true
 
     translate :name
+
+    delegate :year,to: :cup
   end
 end
