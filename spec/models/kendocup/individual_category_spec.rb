@@ -16,6 +16,7 @@ module Kendocup
     it {should respond_to :min_age}
     it {should respond_to :max_age}
     it {should respond_to :description}
+    it {should respond_to :year}
 
     it {should validate_presence_of :cup_id}
     it {should validate_presence_of :name}
@@ -26,6 +27,7 @@ module Kendocup
     let!(:individual_category) {create :kendocup_individual_category, name: 'open', pool_size: 3, out_of_pool: 2, cup: create(:kendocup_cup, start_on: Date.parse("2016-09-28"))}
     it {expect(individual_category).to be_valid_verbose}
     it {expect(individual_category.name).to eql 'open'}
+    it {expect(individual_category.year).to eql 2016}
 
     context "with a pool of 3 participations" do
       let!(:participation1){create :kendocup_participation, category: individual_category, pool_number: 1, pool_position: 1, kenshi: create(:kendocup_kenshi, cup: individual_category.cup)}

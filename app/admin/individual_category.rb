@@ -51,7 +51,7 @@ ActiveAdmin.register Kendocup::IndividualCategory, as: "IndividualCategory" do
           h2 do
             "Pool #{pool.number}"
           end
-          # begin
+          begin
             table_for pool.participations do |participation|
               column :full_name do |participation|
                 link_to participation.full_name, admin_kenshi_path(participation.kenshi) if participation.kenshi
@@ -61,14 +61,17 @@ ActiveAdmin.register Kendocup::IndividualCategory, as: "IndividualCategory" do
               column :age do |participation|
                 participation.kenshi.age_at_cup
               end
+              column :pool_number do |participation|
+                best_in_place participation, :pool_number, type: :input, path: [:admin, participation]
+              end
               column :admin_links do  |participation|
                 # link_to "Move to another pool", edit_admin_participation_path(participation)
                 [link_to("View", admin_participation_path(participation)), link_to("Edit", edit_admin_participation_path(participation)), link_to("Destroy", admin_participation_path(participation, method: :delete))].join(" ").html_safe
               end
             end
-          # rescue
-          #   "Pool invalid"
-          # end
+          rescue
+            "Pool invalid"
+          end
         end
       end
 

@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/bernat/best_in_place.git
+  revision: 77cd37d74e04e6a1134565ada15bbf50a79482e7
+  specs:
+    best_in_place (3.0.3)
+      actionpack (>= 3.2)
+      railties (>= 3.2)
+
 PATH
   remote: .
   specs:
@@ -68,6 +76,8 @@ GEM
       sass (~> 3.4)
       thor
     builder (3.2.2)
+    byebug (4.0.5)
+      columnize (= 0.9.0)
     capybara (2.4.4)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -81,6 +91,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.9.1.1)
+    columnize (0.9.0)
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.5.2)
@@ -239,6 +250,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  best_in_place!
+  byebug
   capybara
   factory_girl_rails
   faker
