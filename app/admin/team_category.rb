@@ -9,8 +9,9 @@ ActiveAdmin.register Kendocup::TeamCategory, as: "TeamCategory" do
   end
 
   index do
-    column :name
-    column :cup
+    column :name do |c|
+      link_to "#{c.name} (#{c.year})", [:admin, c]
+    end
     column :teams_count, sortable: false do |team_category|
       team_category.teams.count
     end

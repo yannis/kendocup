@@ -9,13 +9,13 @@ ActiveAdmin.register Kendocup::Product, as: "Product" do
 
   index do
     column :name_en do |product|
-      link_to product.name_en, [:admin, product]
+      link_to product.name_en, [:admin, product] if product.name_en
     end
     column :name_fr do |product|
-      link_to product.name_fr, [:admin, product]
+      link_to product.name_fr, [:admin, product] if product.name_fr
     end
     column :name_de do |product|
-      link_to product.name_de, [:admin, product]
+      link_to product.name_de, [:admin, product] if product.name_de
     end
     column :cup
     column :event

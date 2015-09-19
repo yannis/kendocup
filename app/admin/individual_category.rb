@@ -12,8 +12,9 @@ ActiveAdmin.register Kendocup::IndividualCategory, as: "IndividualCategory" do
   filter :name
 
   index do
-    column :cup
-    column :name
+    column :name do |c|
+      link_to "#{c.name} (#{c.year})", [:admin, c]
+    end
     column :description_en
     column :description_fr
     column :description_de

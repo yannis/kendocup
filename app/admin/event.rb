@@ -9,10 +9,15 @@ ActiveAdmin.register Kendocup::Event, as: "Event" do
   end
 
   index do
-    column :cup
-    column :name_en
-    column :name_fr
-    column :name_de
+    column :name_en do |c|
+      link_to "#{c.name_en} (#{c.year})", [:admin, c]
+    end
+    column :name_fr do |c|
+      link_to "#{c.name_fr} (#{c.year})", [:admin, c]
+    end
+    column :name_de do |c|
+      link_to "#{c.name_de} (#{c.year})", [:admin, c]
+    end
     column :start_on
     column :duration
     actions

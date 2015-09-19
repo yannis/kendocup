@@ -9,6 +9,8 @@ module Kendocup
     validates_presence_of :name_de
     validates_presence_of :start_on
 
+    delegate :year, to: :cup
+
     translate :name
   end
 end
