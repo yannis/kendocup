@@ -28,17 +28,7 @@ ActiveAdmin.register Kendocup::Team, as: "Team" do
     column :total_age do |team|
       team.kenshis.map{|k| k.age_at_cup.to_i}.sum
     end
-    column :fitness do |team|
-      begin
-        if team.kenshis.present?
-          team.kenshis.map{|k| k.age_at_cup.to_i}.sum/team.kenshis.map{|k| k.grade.to_i}.sum
-        else
-          nil
-        end
-      rescue Exception => e
-        e
-      end
-    end
+    column :fitness
     actions do |team|
       [
         link_to( "PDF", pdf_admin_team_path(team))

@@ -81,6 +81,10 @@ module Kendocup
       name.mb_chars.normalize(:kd).gsub(/[^\x00-\x7F]/n,'').upcase.to_s
     end
 
+    def fitness
+      self.kenshis.inject(0) { |sum, k| sum + k.fitness }
+    end
+
   protected
 
     def number_of_participations

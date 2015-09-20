@@ -147,6 +147,10 @@ module Kendocup
       Rails.logger.debug "errors: #{self.errors.inspect}"
     end
 
+    def fitness
+      return (self.grade.to_f/self.age_at_cup.to_f).round(4)
+    end
+
   private
 
     def format

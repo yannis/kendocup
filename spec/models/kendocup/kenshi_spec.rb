@@ -2,7 +2,7 @@ require 'spec_helper'
 
 module Kendocup
   RSpec.describe Kenshi, type: :model do
-    let(:cup){create :kendocup_cup}
+    let(:cup){create :kendocup_cup, start_on: 10.years.since}
     before {create :kendocup_kenshi}
     it {should belong_to :cup}
     it {should belong_to :user}
@@ -113,6 +113,24 @@ module Kendocup
           }
           it {expect(kenshi.participations.count).to eq 1}
         end
+      end
+    end
+    describe "fitness" do
+      context "kenshi aged 20 and 0Dan" do
+        let (:kenshi) { build :kendocup_kenshi, dob: 20.years.ago, grade: "kyu", cup: cup}
+        it {expect(kenshi.fitness).to eql 0.0}
+      end
+      context "kenshi aged 20 and 1Dan" do
+        let (:kenshi) { build :kendocup_kenshi, dob: 20.years.ago, grade: "1Dan", cup: cup}
+        it {expect(kenshi.fitness).to eql 0.0333}
+      end
+      context "kenshi aged 20 and 3Dan" do
+        let (:kenshi) { build :kendocup_kenshi, dob: 20.years.ago, grade: "3Dan", cup: cup}
+        it {expect(kenshi.fitness).to eql 0.1}
+      end
+      context "kenshi aged 60 and 8Dan" do
+        let (:kenshi) { build :kendocup_kenshi, dob: 60.years.ago, grade: "3Dan", cup: cup}
+        it {expect(kenshi.fitness).to eql 0.0429}
       end
     end
   end

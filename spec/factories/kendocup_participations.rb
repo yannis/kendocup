@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :kendocup_participation, :class => 'Kendocup::Participation' do
-    association :category, factory: :kendocup_individual_category
-    association :kenshi, factory: :kendocup_kenshi
+    category { create :kendocup_individual_category}
+    kenshi {|p| create :kendocup_kenshi, cup: p.category.cup}
   end
 end
