@@ -46,10 +46,9 @@ ActiveAdmin.register Kendocup::Participation, as: "Participation" do
         f.input :pool_number
         f.input :pool_position
         f.input :rank
-      else
-        f.input :category_team, collection: Kendocup::TeamCategory.all.map{|c| ["#{c.name} (#{c.cup.year})", c.id]}
+      elsif f.object.category.is_a?(Kendocup::TeamCategory)
         f.input :ronin
-        f.input :team
+        f.input :team, collection: f.object.category.cup.teams.map{|c| ["#{c.name} (#{c.cup.year})", c.id]}
       end
     end
 
