@@ -22,12 +22,12 @@ ActiveAdmin.register Kendocup::Team, as: "Team" do
     column :valid do |team|
       team.isvalid?
     end
-    column :total_grade do |team|
-      team.kenshis.map{|k| k.grade.to_i}.sum
-    end
-    column :total_age do |team|
-      team.kenshis.map{|k| k.age_at_cup.to_i}.sum
-    end
+    # column :total_grade do |team|
+    #   team.kenshis.map{|k| k.grade.to_i}.sum
+    # end
+    # column :total_age do |team|
+    #   team.kenshis.map{|k| k.age_at_cup.to_i}.sum
+    # end
     column :fitness
     actions do |team|
       [
