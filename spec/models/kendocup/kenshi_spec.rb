@@ -82,6 +82,7 @@ module Kendocup
 
         it {expect(kenshi.participations.count).to eql 2}
         it {expect(kenshi.participations.map{|p| p.category.name}).to match_array [individual_category.name, team_category.name]}
+        it {expect(kenshi.individual_categories.count).to eql 1}
         it {expect(kenshi.takes_part_to? individual_category).to be true}
         it {expect(kenshi.competition_fee(:chf)).to eql 30}
         it {expect(kenshi.competition_fee(:eur)).to eql 25}

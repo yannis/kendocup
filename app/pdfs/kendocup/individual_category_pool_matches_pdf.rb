@@ -27,10 +27,10 @@ module Kendocup
         #   image logo, at: [0,0], width: 60
         # end
 
-        bounding_box [bounds.right-280, bounds.top+20], width: 200 do
+        bounding_box [bounds.right-280, bounds.top+20], width: 280 do
           font_size 24
           fill_color "3399CC"
-          text "Coupe Kasahara 2013", align: :right
+          text "#{ENV['CUP_NAME']} #{individual_category.cup.year}", align: :right
         end
 
         font_size 12

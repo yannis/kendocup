@@ -10,9 +10,9 @@ module Kendocup
     belongs_to :user, inverse_of: :kenshis
     belongs_to :club, inverse_of: :kenshis
     has_many :participations, inverse_of: :kenshi, dependent: :destroy, autosave: true
-    # has_many :categories, through: :participations, source: :category
-    has_many :individual_categories, through: :participations, source: :category, source_type: "IndividualCategory"
-    has_many :team_categories, through: :participations, source: :category, source_type: "TeamCategory"
+    # has_many :categories, through: :participations
+    has_many :individual_categories, through: :participations, source: :category, source_type: "Kendocup::IndividualCategory"
+    has_many :team_categories, through: :participations, source: :category, source_type: "Kendocup::TeamCategory"
     has_many :teams, through: :participations
     has_many :purchases, dependent: :destroy
     has_many :products, through: :purchases
