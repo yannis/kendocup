@@ -9,5 +9,10 @@ module Kendocup
     has_many :kenshis, through: :participations
 
     delegate :year, to: :cup
+
+
+    def full_name
+      "#{self.name} (#{self.cup.year})"
+    end
   end
 end

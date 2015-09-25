@@ -131,16 +131,17 @@ ActiveAdmin.register Kendocup::Cup, as: "Cup" do
   # end
 
   member_action :download_kenshi_list, method: :get do
-    @cup = Cup.all.detect{|c| c.year.to_i == params[:id].to_i}
+    @cup = Kendocup::Cup.all.detect{|c| c.year.to_i == params[:id].to_i}
     kenshis = @cup.kenshis
     csv = CSV.generate do |csv|
       header = ["Last name", "First name", "Club", "Dob", "Grade"]
       [@cup.team_categories, @cup.individual_categories, @cup.products].flatten.each do |tc|
         header << tc.name
       end
+      header += ["Competition fee (CHF)", "Competition fee (€)", "Product fee (CHF)", "Product fee (€)", "Total fee (CHF)", "Total fee (€)"]
       csv << header.flatten
       kenshis.each do |kenshi|
-        kcsv = [ kenshi.norm_last_name, kenshi.norm_first_name, kenshi.club.name, kenshi.dob, kenshi.grade ]
+        kcsv = [ kenshi.norm_last_name, kenshi.norm_first_name, kenshi.club.name, kenshi.dob, kenshi.grade]
         @cup.team_categories.each do |tc|
           kcsv << (kenshi.takes_part_to?(tc) ? kenshi.participations.to(tc).first.team : nil)
         end
@@ -150,6 +151,7 @@ ActiveAdmin.register Kendocup::Cup, as: "Cup" do
         @cup.products.each do |p|
           kcsv << (kenshi.consume?(p) ? p.name : nil)
         end
+        kcsv += [kenshi.competition_fee(:chf), kenshi.competition_fee(:eur), kenshi.competition_fee(:chf), kenshi.competition_fee(:eur), kenshi.fees(:chf), kenshi.fees(:eur) ]
         csv << kcsv.flatten
       end
     end

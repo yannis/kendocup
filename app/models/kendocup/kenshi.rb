@@ -11,7 +11,6 @@ module Kendocup
     belongs_to :club, inverse_of: :kenshis
     has_many :participations, inverse_of: :kenshi, dependent: :destroy, autosave: true
     # has_many :categories, through: :participations, source: :category
-
     has_many :individual_categories, through: :participations, source: :category, source_type: "IndividualCategory"
     has_many :team_categories, through: :participations, source: :category, source_type: "TeamCategory"
     has_many :teams, through: :participations
@@ -115,7 +114,7 @@ module Kendocup
       self.products.include? product
     end
 
-    def competition_fee(currency)
+    def competition_fee(currency=:chf)
       if participations.present?
         junior? ? self.cup.junior_fees(currency) : self.cup.adult_fees(currency)
       else
@@ -123,7 +122,7 @@ module Kendocup
       end
     end
 
-    def products_fee(currency)
+    def products_fee(currency=:chf)
       products_fee = 0
       products.each do |product|
         products_fee += (currency.to_sym == :chf ? product.fee_chf : product.fee_eu)
@@ -131,7 +130,7 @@ module Kendocup
       products_fee
     end
 
-    def fees(currency)
+    def fees(currency=:chf)
       currency = currency.to_sym
       self.competition_fee(currency)+self.products_fee(currency)
     end

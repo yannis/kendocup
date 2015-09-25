@@ -8,6 +8,27 @@ ActiveAdmin.register Kendocup::Kenshi, as: "Kenshi" do
     end
   end
 
+  csv do
+    column :cup
+    column :last_name
+    column :first_name
+    column :email
+    column :grade
+    column :remarks
+    column :individual_categories do |kenshi|
+      kenshi.individual_categories.map(&:full_name).join(', ')
+    end
+    column :team_categories do |kenshi|
+      kenshi.team_categories.map(&:full_name).join(', ')
+    end
+    column :products do |kenshi|
+      kenshi.products.map(&:name).join(', ')
+    end
+    column :user do |kenshi|
+      "#{kenshi.user.full_name} (#{kenshi.user.email})"
+    end
+  end
+
   filter :cup
   filter :first_name
   filter :last_name
