@@ -17,7 +17,7 @@ module Kendocup
         text @team_category.name, align: :center
       end
 
-      @team_category.teams.each do |team|
+      @team_category.teams.order(:name).each do |team|
         start_new_page layout: :portrait
 
         bounding_box [bounds.left+10, bounds.top-50], :width => 500 do
