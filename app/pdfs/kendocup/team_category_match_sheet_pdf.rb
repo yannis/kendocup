@@ -24,7 +24,7 @@ module Kendocup
       bounding_box [bounds.right-280, bounds.top+20], :width => 280 do
         font_size 24
         fill_color "3399CC"
-          text "#{ENV['CUP_NAME']} #{individual_category.cup.year}", align: :right
+          text "#{ENV['CUP_NAME']} #{team_category.cup.year}", align: :right
       end
 
       font_size 12

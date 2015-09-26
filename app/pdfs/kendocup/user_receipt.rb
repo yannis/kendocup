@@ -13,7 +13,7 @@ module Kendocup
 
       bounding_box [bounds.left + 110, bounds.top], :width => 200 do
         font_size 24
-        text "#{ENV['CUP_NAME']} #{individual_category.cup.year}", align: :right
+        text "#{ENV['CUP_NAME']}", align: :right
         font_size 14
         text "info@kendo-geneve.ch"
         text "kasaharacup.com"
