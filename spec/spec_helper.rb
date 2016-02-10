@@ -1,4 +1,3 @@
-
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path("../dummy/config/environment.rb",  __FILE__)
 require 'rspec/rails'
@@ -51,6 +50,14 @@ RSpec.configure do |config|
     it {flash[:alert].should eq I18n.t("kenshis.deadline_passed", email: 'info@kendo-geneve.ch')}
   end
 
+end
+
+
+Shoulda::Matchers.configure do |config|
+  config.integrate do |with|
+    with.test_framework :rspec
+    with.library :rails
+  end
 end
 
 # Checks for pending migrations before tests are run.

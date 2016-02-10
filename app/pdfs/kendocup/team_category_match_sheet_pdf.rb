@@ -21,7 +21,7 @@ module Kendocup
         image logo, :at => [0,0], :width => 60
       end
 
-      bounding_box [bounds.right-280, bounds.top+20], :width => 280 do
+      bounding_box [bounds.right-280, bounds.top+20], :width => 200 do
         font_size 24
         fill_color "3399CC"
           text "#{ENV['CUP_NAME']} #{team_category.cup.year}", align: :right

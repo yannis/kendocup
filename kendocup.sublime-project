@@ -2,9 +2,26 @@
 	"folders":
 	[
 		{
-			"path": "/Users/yannis/railsapps/kendocup",
-      "folder_exclude_patterns": ["bundle", "log", ".sass-cache", ".yardoc", "coverage", "tmp"],
-      "file_exclude_patterns": ["*.sublime-workspace*"]
+			"file_exclude_patterns":
+			[
+				"*.sublime-workspace*"
+			],
+			"folder_exclude_patterns":
+			[
+				"bundle",
+				"log",
+				".sass-cache",
+				".yardoc",
+				"coverage",
+				"tmp"
+			],
+			"path": "/Users/yannis/railsapps/kendocup"
 		}
-	]
+	],
+	"settings":
+	{
+		"FuzzyFilePath":
+		{
+		}
+	}
 }

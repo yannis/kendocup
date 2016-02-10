@@ -28,7 +28,7 @@ module Kendocup
     it {should validate_presence_of :dob}
     it {should validate_presence_of :club}
     it {should validate_presence_of :grade}
-    it {should validate_uniqueness_of(:last_name).scoped_to(:cup_id, :first_name)}
+    it {should validate_uniqueness_of(:last_name).scoped_to :cup_id, :first_name }
 
     it { should validate_inclusion_of(:grade).in_array Kenshi::GRADES }
     # it { should ensure_inclusion_of(:female).in_array [true, false] }
