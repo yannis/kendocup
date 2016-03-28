@@ -16,7 +16,7 @@ In your Gemfile:
 
     gem "kendocup", github: "yannis/kendocup"
 
-and ```bundle``
+and ```bundle install```
 
 In your routes.rb
 
@@ -78,4 +78,3 @@ Restart your rails server and try to sign in by opening ```/en/users/sign_in```
 - password: adminuser
 
 and now go to ```/admin``` you should be in activeadmin
-
