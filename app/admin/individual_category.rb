@@ -63,7 +63,7 @@ ActiveAdmin.register Kendocup::IndividualCategory, as: "IndividualCategory" do
                 participation.kenshi.age_at_cup
               end
               column :pool_number do |participation|
-                best_in_place participation, :pool_number, type: :input, path: [:admin, participation]
+                best_in_place participation, :pool_number, type: :input, url: [:admin, participation]
               end
               column :admin_links do  |participation|
                 # link_to "Move to another pool", edit_admin_participation_path(participation)
