@@ -1,8 +1,8 @@
 GIT
-  remote: git://github.com/bernat/best_in_place.git
-  revision: 332eda290cb133683a99d43a30321bab27d85e70
+  remote: https://github.com/bernat/best_in_place.git
+  revision: bc00bb7912193ea5c9c8984455cb5fe01905e6cb
   specs:
-    best_in_place (3.1.0)
+    best_in_place (3.1.1)
       actionpack (>= 3.2)
       railties (>= 3.2)
 
